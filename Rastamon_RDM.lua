@@ -110,47 +110,47 @@ function init_gear_sets()
     -- Midcast Sets
     
     sets.midcast.FastRecast = {
-    main="Bolelabunga",
-    sub={ name="Genbu's Shield", augments={'"Cure" potency +2%','"Cure" spellcasting time -7%',}},
-    ammo="Impatiens",
-    head="Atrophy Chapeau +1", --10%
-    body="Zendik Robe",--13%
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-    legs="Gyve Trousers",--4%
-    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},--5%
-    neck="Voltsurge Torque",--4%
-    waist="Witful Belt",--3%
-    left_ear="Estq. Earring",--2%
-    right_ear="Enchntr. Earring +1",--2%
-    left_ring="Veneficium Ring",
-    right_ring="Prolix Ring",--2%
-    back="Swith Cape +1",--4$
-}
+		main="Bolelabunga",
+		sub={ name="Genbu's Shield", augments={'"Cure" potency +2%','"Cure" spellcasting time -7%',}},
+		ammo="Impatiens",
+		head="Atrophy Chapeau +1", --10%
+		body="Zendik Robe",--13%
+		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+		legs="Gyve Trousers",--4%
+		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},--5%
+		neck="Voltsurge Torque",--4%
+		waist="Witful Belt",--3%
+		left_ear="Estq. Earring",--2%
+		right_ear="Enchntr. Earring +1",--2%
+		left_ring="Veneficium Ring",
+		right_ring="Prolix Ring",--2%
+		back="Swith Cape +1",--4$
+	}
 
     sets.midcast.Cure = {
-    main="Tamaxchi",
-    sub={ name="Genbu's Shield", augments={'"Cure" potency +2%','"Cure" spellcasting time -7%',}},
-    ammo="Knobkierrie",
-    head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
-    body="Zendik Robe",
-    hands="Atrophy Gloves +1",
-    legs="Atrophy Tights",
-    feet="Vanya Clogs",
-    neck="Nodens Gorget",
-    waist="Luminary Sash",
-    left_ear="Gwati Earring",
-    right_ear="Mendi. Earring",
-    left_ring="Stikini Ring",
-    right_ring="Karieyh Ring",
-    back="Tuilha Cape",
-}
+		main={ name="Serenity", augments={'MP+50','Enha.mag. skill +10','"Cure" potency +5%','"Cure" spellcasting time -10%',}},
+		sub="Clerisy Strap",
+		ammo="Homiliary",
+		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
+		body="Zendik Robe",
+		hands="Atrophy Gloves +1",
+		legs="Nares Trews",
+		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+		neck="Nodens Gorget",
+		waist="Fucho-no-Obi",
+		left_ear="Gwati Earring",
+		right_ear="Mendi. Earring",
+		left_ring="Stikini Ring",
+		right_ring="Stikini Ring",
+		back="Perimede Cape",
+	}
         
     sets.midcast.Curaga = sets.midcast.Cure
     --sets.midcast.CureSelf = {ring1="Kunaji Ring",ring2="Asklepian Ring"}
 
     sets.midcast['Enhancing Magic'] = {
     main="Bolelabunga",
-    sub="Culminus",
+    sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
     head="Leth. Chappel +1",
     body="Lethargy Sayon +1",
@@ -172,14 +172,14 @@ function init_gear_sets()
     sets.midcast.Stoneskin = {head="Umuthi Hat", neck="Nordens Gorget", waist="Siegel Sash" , legs="Doyen pants"}
     
 	sets.midcast['Enfeebling Magic'] = {
-		main={ name="Colada", augments={'INT+2','Mag. Acc.+25','"Mag.Atk.Bns."+24','DMG:+3',}},
-		sub="Ammurapi Shield",
+		main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
+		sub="Mephitis Grip",
 		ammo="Pemphredo Tathlum",
 		head={ name="Viti. Chapeau +1", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},
 		body={ name="Vanya Robe", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
 		hands="Leth. Gantherots +1",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
-		feet={ name="Vitivation Boots +1", augments={'Enhances "Paralyze II" effect',}},
+		feet={ name="Medium's Sabots", augments={'MP+50','MND+8','"Conserve MP"+6','"Cure" potency +3%',}},
 		neck="Incanter's Torque",
 		waist="Rumination Sash",
 		left_ear="Gwati Earring",
@@ -191,29 +191,11 @@ function init_gear_sets()
 
     sets.midcast['Dia III'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitivation Chapeau +1"})
 	
-	sets.midcast['Paralyze II'] = set_combine(sets.midcast['Enfeebling Magic'], {main={ name="Colada", augments={'INT+2','Mag. Acc.+25','"Mag.Atk.Bns."+24','DMG:+3',}},
-    sub="Culminus",})
+	sets.midcast['Paralyze II'] = set_combine(sets.midcast['Enfeebling Magic'], {feet="Vitivation boots +1",})
 	
-	sets.midcast['Blind II'] = {
-		main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
-		sub="Mephitis Grip",
-		ammo="Pemphredo Tathlum",
-		head={ name="Viti. Chapeau +1", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},
-		body={ name="Vanya Robe", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
-		hands="Leth. Gantherots +1",
-		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
-		feet={ name="Vitivation Boots +1", augments={'Enhances "Paralyze II" effect',}},
-		neck="Incanter's Torque",
-		waist="Rumination Sash",
-		left_ear="Gwati Earring",
-		right_ear="Hermetic Earring",
-		left_ring="Kishar Ring",
-		right_ring="Stikini Ring",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
-}
+	sets.midcast['Blind II'] = (sets.midcast['Enfeebling Magic'])
 
-    sets.midcast['Slow II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitivation Chapeau +1", main={ name="Colada", augments={'INT+2','Mag. Acc.+25','"Mag.Atk.Bns."+24','DMG:+3',}},
-    sub="Culminus",})
+    sets.midcast['Slow II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitivation Chapeau +1"})
     
     sets.midcast['Elemental Magic'] = {
     main={ name="Colada", augments={'INT+2','Mag. Acc.+25','"Mag.Atk.Bns."+24','DMG:+3',}},
@@ -253,16 +235,17 @@ function init_gear_sets()
     back="Perimede Cape",
 }
 
-    --sets.midcast.Stun = set_combine(sets.midcast['Dark Magic'], {})
+    sets.midcast.Stun = set_combine(sets.midcast['Dark Magic'], {})
 
-    sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {ring1="Excelsis Ring", waist="Fucho-no-Obi"})
+    sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {main={ name="Rubicundity", augments={'Mag. Acc.+10','"Mag.Atk.Bns."+10','Dark magic skill +10','"Conserve MP"+7',}},
+    sub="Culminus", ring1="Excelsis Ring", waist="Fucho-no-Obi"})
 
     sets.midcast.Aspir = sets.midcast.Drain
 
 
     -- Sets for special buff conditions on spells.
 
-    sets.midcast.EnhancingDuration = {hands="Atrophy Gloves +1",back="Sucellos's Cape",feet="Lethargy Houseaux +1"}
+    sets.midcast.EnhancingDuration = {sub="Ammurapi Shield", hands="Atrophy Gloves +1",back="Sucellos's Cape",feet="Lethargy Houseaux +1"}
         
     sets.buff.ComposureOther = {head="Lethargy Chappel +1",
         body="Lethargy Sayon +1",hands="Lethargy Gantherots +1",

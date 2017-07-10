@@ -34,7 +34,7 @@
             nuke4
             bp70
             bp75 (merits and lvl 75-80 pacts)
-            astralflow 
+            astralflow
 
 --]]
 
@@ -59,13 +59,10 @@ function job_setup()
         'Inferno','Earthen Fury','Tidal Wave','Aerial Blast','Diamond Dust','Judgment Bolt','Searing Light','Howling Moon','Ruinous Omen',
         'Fire II','Stone II','Water II','Aero II','Blizzard II','Thunder II',
         'Fire IV','Stone IV','Water IV','Aero IV','Blizzard IV','Thunder IV',
-        'Thunderspark','Burning Strike','Meteorite','Nether Blast', 
+        'Thunderspark','Burning Strike','Meteorite','Nether Blast','Flaming Crush',
         'Meteor Strike','Heavenly Strike','Wind Blade','Geocrush','Grand Fall','Thunderstorm',
         'Holy Mist','Lunar Bay','Night Terror','Level ? Holy'}
-		
-		hybridRagePacts = S{
-        'Flaming Crush'}
-	--'Flaming Crush',
+
 
     pacts = {}
     pacts.cure = {['Carbuncle']='Healing Ruby'}
@@ -133,9 +130,9 @@ end
 function user_setup()
     state.OffenseMode:options('None', 'Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'PDT', 'DT')
+    state.IdleMode:options('Normal', 'PDT')
 
-    gear.perp_staff = {name="Nirvana"}
+    gear.perp_staff = {name="Espiritus"}
     
     select_default_macro_book()
 end
@@ -148,44 +145,28 @@ function init_gear_sets()
     --------------------------------------
     
     -- Precast sets to enhance JAs
-    sets.precast.JA['Astral Flow'] = {head="Glyphic Horn +1"}
+    sets.precast.JA['Astral Flow'] = {head="Glyphic Horn"}
     
-    sets.precast.JA['Elemental Siphon'] = {main="Nirvana",
-        head="Convoker's Horn +1",neck="Incanter's Torque", ear2="Andoaa Earing",
-        body="Beckoner's Doublet +1",hands="Glyphic Bracers +1",ring1="Evoker's Ring",ring2="Stikini Ring",
+    sets.precast.JA['Elemental Siphon'] = {main="Espiritus",
+        head="Beckoner's Horn +1",neck="Milic Torque", ear2="Andoaa Earing",
+        body="Beckoner's Doublet",hands="Glyphic Bracers +1",ring1="Evoker's Ring",ring2="Fervor Ring",
         legs="Tatsumaki Sitagoromo",feet="Beckoner's Pigaches +1", waist="Lucidity Sash", back="Conveyance Cape"}
 
-    sets.precast.JA['Mana Cede'] = {hands="Beckoner's Bracers +1"}
+    sets.precast.JA['Mana Cede'] = {hands="Beckoner's Bracers"}
 
-    -- Pact delay reduction gear Delay II -13, I -15
-    sets.precast.BloodPactWard = {
-	--main="Nirvana",
-	main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},-- II -2
-		neck="Incanter's Torque" ,
-		ammo="Sancus Sachet +1", -- II -7
-		head="Beckoner's Horn +1", 
-		body="Convoker's Doublet +3", -- I -15
-		hands="Beckoner's Bracers +1", 
-		ring1="Evoker's Ring", 
-		ring2="Stikini Ring",
-		ear2="Caller's Earring", -- I -1
-		ear1="Evans Earring", -- I -2
-		waist="Lucidity Sash", 
-		legs="Beckoner's Spats +1", 
-		back="Conveyance Cape", -- II -3
-		feet="Glyphic Pigaches +1" --II -1
-		}
+    -- Pact delay reduction gear
+    sets.precast.BloodPactWard = {main="Espiritus", neck="Milic Torque" ,ammo="Sancus Sachet",head="Convoker's Horn +1",body="Glyphic Doublet +1",hands="Glyphic Bracers +1",
+        ear2="Evans Earring", waist="Lucidity Sash", legs="Beckoner's Spats +1", back="Conveyance Cape", feet="Glyphic Pigaches +1"}
 
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
-	sets.precast.HybridBloodPactRage = sets.precast.BloodPactRage
 
     -- Fast cast sets for spells
     
     sets.precast.FC = {
-        head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+        head={ name="Merlinic Hood", augments={'"Fast Cast"+5','MND+4','Mag. Acc.+7','"Mag.Atk.Bns."+5',}},
 		ammo="Impatiens",
-		neck="Voltsurge Torque", ear1="Enchanter Earring +1", ear2="Loquacious Earring",
-        body="Zendik Robe",ring1="Kishar Ring", ring2="Veneficium ring",
+		neck="Voltsurge Torque", ear2="Loquacious Earring",
+        body="Helios Jacket",ring1="Prolix Ring", ring2="Veneficium ring",
         back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Amalric Nails",}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
@@ -194,45 +175,15 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-		main="Nirvana",
-		sub="Elan Strap",
-		ammo="Amar Cluster",
-		head={ name="Merlinic Hood", augments={'"Mag.Atk.Bns."+20','Magic burst dmg.+10%','INT+4',}},
-		body="Count's Garb",
-		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-		legs={ name="Amalric Slops", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},
-		neck="Fotia Gorget",
-		waist="Fotia Belt",
-		left_ear="Friomisi Earring",
-		right_ear="Novio Earring",
-		left_ring="Karieyh Ring",
-		right_ring="Rufescent Ring",
-		back="Seshaw Cape",
-	}
+        head="Nahtirah Hat",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+        body="Convoker's Doublet",hands="Yaoyotl Gloves",ring1="Rajas Ring",ring2="K'ayres Ring",
+        back="Pahtli Cape",waist="Cascade Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Myrkr'] = {
         head="Nahtirah Hat",ear1="Evans Earring",ear2="Loquacious Earring",
-        body="Convoker's Doublet +3",hands="Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
-        back="Pahtli Cape",waist="Fucho-no-Obi",legs="Assiduity pants +1",feet="Chelona Boots +1"}
-		
-	sets.precast.WS['Graland of Bliss'] = {
-		main="Nirvana",
-		sub="Elan Strap",
-		ammo="Amar Cluster",
-		head={ name="Merlinic Hood", augments={'"Mag.Atk.Bns."+20','Magic burst dmg.+10%','INT+4',}},
-		body="Count's Garb",
-		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-		legs={ name="Amalric Slops", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},
-		neck="Fotia Gorget",
-		waist="Fotia Belt",
-		left_ear="Friomisi Earring",
-		right_ear="Novio Earring",
-		left_ring="Karieyh Ring",
-		right_ring="Rufescent Ring",
-		back="Seshaw Cape",}
+        body="Convoker's Doublet",hands="Beckoner's Bracers",ring1="Evoker's Ring",ring2="Sangoma Ring",
+        back="Pahtli Cape",waist="Fucho-no-Obi",legs="Nares Trews",feet="Chelona Boots +1"}
 
     
     --------------------------------------
@@ -240,35 +191,25 @@ function init_gear_sets()
     --------------------------------------
 
     sets.midcast.FastRecast = {
-        ammo="Sancus Sachet +1",
-		head={ name="Merlinic Hood", augments={'"Mag.Atk.Bns."+20','Magic burst dmg.+10%','INT+4',}},
-		body="Shango Robe",
-		hands={ name="Glyphic Bracers +1", augments={'Inc. Sp. "Blood Pact" magic burst dmg.',}},
-		legs="Gyve Trousers",
-		feet="Convoker's Pigaches +3",
-		neck="Voltsurge Torque",
-		waist="Witful Belt",
-		left_ear="Enchntr. Earring +1",
-		right_ear="Loquac. Earring",
-		left_ring="Prolix Ring",
-		right_ring="Veneficium Ring",
-		back="Swith Cape +1",
-		}
-
-    sets.midcast.Cure = {main="Nirvana",sub="Elan Strap",
         head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
-		neck="Incanter's Torque",ear2="Loquacious Earring",
+		ear2="Loquacious Earring",
+        body="Helios Jacket",ring1="Prolix Ring", ring2="Veneficium ring",
+        back="Swith Cape +1",waist="Witful Belt",legs="Helios Spats",feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+29','"Fast Cast"+5','Mag. Acc.+5',}},}
+
+    sets.midcast.Cure = {main="Espiritus",sub="Vox Grip",
+        head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
+		neck="Colossus's Torque",ear2="Loquacious Earring",
         body="Heka's Kalasiris",hands="Telchine Gloves",ring1="Ephedra Ring",ring2="Sirona's Ring",
         back="Swith Cape +1",waist=gear.ElementalObi,legs="Nares Trews",feet="Hagondes Sabots"}
 
     sets.midcast.Stoneskin = {waist="Siegel Sash"}
 
-    sets.midcast['Elemental Magic'] = {main="Lehbrailg +2",sub="Elan Strap",
+    sets.midcast['Elemental Magic'] = {main="Lehbrailg +2",sub="Vox Grip",
         head="Hagondes Hat",neck="Stoicheion Medal",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Hagondes Coat +1",hands="Yaoyotl Gloves",ring1="Icesoul Ring",ring2="Acumen Ring",
         back="Toro Cape",waist=gear.ElementalBelt,legs="Hagondes Pants",feet="Hagondes Sabots"}
 
-    sets.midcast['Dark Magic'] = {main="Lehbrailg +2",sub="Elan Strap",
+    sets.midcast['Dark Magic'] = {main="Lehbrailg +2",sub="Vox Grip",
         head="Nahtirah Hat",neck="Aesir Torque",ear1="Lifestorm Earring",ear2="Psystorm Earring",
         body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Excelsis Ring",ring2="Sangoma Ring",
         waist="Fuchi-no-Obi",legs="Bokwus Slops",feet="Bokwus Boots"}
@@ -276,94 +217,31 @@ function init_gear_sets()
 
     -- Avatar pact sets.  All pacts are Ability type.
     
-    sets.midcast.Pet.BloodPactWard = {
-		main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
-		sub="Vox Grip",
-		ammo="Sancus Sachet +1",
-		head="Con. Horn +1",
-		body="Beck. Doublet +1",
-		hands="Lamassu Mitts +1",
-		legs="Beck. Spats +1",
-		feet={ name="Apogee Pumps", augments={'MP+60','Summoning magic skill +15','Blood Pact Dmg.+7',}},
-		neck="Incanter's Torque",
-		waist="Kobo Obi",
-		left_ear="Evans Earring",
-		right_ear="Andoaa Earring",
-		left_ring="Evoker's Ring",
-		right_ring="Stikini Ring",
-		back={ name="Conveyance Cape", augments={'Summoning magic skill +4','Pet: Enmity+11','Blood Pact Dmg.+3','Blood Pact ab. del. II -3',}},
-		}
+    sets.midcast.Pet.BloodPactWard = {main="Espiritus",ammo="Sancus Sachet",
+        head="Convoker's Horn +1",neck="Milic Torque",
+        body="Beckoner's Doublet",hands="Glyphic Bracers +1",earring1="Andoaa Earring", 
+		ring1="Evoker's Ring",ring2="Fervor Ring",
+        waist="Lucidity Sash",legs="Beckoner's Spats +1", feet="Apogee Pumps", back="Conveyance Cape"}
 
-    sets.midcast.Pet.DebuffBloodPactWard = {main="Nirvana",
-		ammo="Sancus Sachet +1",
-        head="Convoker's Horn +1",
-		neck="Incanter's Torque",
-        body="Beckoner's Doublet +1",
-		hands="Lamassu Mitts +1",
-		right_ear="Andoaa Earring",
-		ring1="Evoker's Ring",
-		ring2="Stikini Ring",
-        waist="Kobo Obi",
-		legs="Beckoner's Spats +1", 
-		feet="Beckoner's Pigaches +1", 
-		back="Conveyance Cape"}
+    sets.midcast.Pet.DebuffBloodPactWard = {main="Espiritus",ammo="Sancus Sachet",
+        head="Convoker's Horn +1",neck="Milic Torque",
+        body="Beckoner's Doublet",hands="Glyphic Bracers +1",ring1="Evoker's Ring",ring2="Varar Ring",
+        waist="Lucidity Sash",legs="Beckoner's Spats +1", feet="Beckoner's Pigaches +1", back="Conveyance Cape"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
-	
-	sets.midcast.Pet.PhysicalBloodPactRage = {
-		main="Nirvana",
-		sub="Elan Strap",
-		ammo="Sancus Sachet +1",
-		head={ name="Apogee Crown +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
-		body="Convoker's Doublet +3",
-		hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+22','Blood Pact Dmg.+10','Pet: Mag. Acc.+9',}},
-		legs={ name="Apogee Slacks", augments={'Pet: STR+15','Blood Pact Dmg.+13','Pet: "Dbl. Atk."+3',}},
-		feet="Convoker's Pigaches +3",
-		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
-		left_ear="Gelos Earring",
-		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
-		right_ring="Varar Ring",
-		back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10',}},
-	}
+    
+    sets.midcast.Pet.PhysicalBloodPactRage = {main="Espiritus",ammo="Sancus Sachet",
+        head="Apogee Crown",neck="Caller's Pendant",
+        body="Beckoner's Doublet",hands="Glyphic Bracers +1",ring1="Evoker's Ring",ring2="Varar Ring",
+        waist="Incarnation Sash",legs="Apogee Slacks", feet="Apogee Pumps", back="Scintillating Cape"}
 
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = sets.midcast.Pet.PhysicalBloodPactRage
 
-    sets.midcast.Pet.MagicalBloodPactRage = {
-		main={ name="Grioavolr", augments={'Pet: INT+10','Pet: Mag. Acc.+30','Pet: "Mag.Atk.Bns."+30',}},
-        ammo="Sancus Sachet +1",
-		head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-		neck="Adad Amulet", 
-		ring1="Varar Ring",
-        body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-		left_ear="Gelos Earring",
-		right_ear="Lugalbanda Earring",
-		hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+22','Blood Pact Dmg.+10','Pet: Mag. Acc.+9',}},
-		ring2="Varar Ring",
-        waist="Regal Belt",
-		legs="Enticer's Pants", 
-		feet="Convoker's Pigaches +3", 
-		back="Scintillating Cape"
-		}		
-		
-	sets.midcast.Pet.HybridBloodPactRage = {
-		main="Nirvana",
-		sub="Elan Strap",
-		ammo="Sancus Sachet +1",
-		head={ name="Apogee Crown +1", augments={'Pet: Attack+25','Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8',}},
-		body="Con. Doublet +3",
-		hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+22','Blood Pact Dmg.+10','Pet: Mag. Acc.+9',}},
-		legs={ name="Apogee Slacks", augments={'Pet: STR+15','Blood Pact Dmg.+13','Pet: "Dbl. Atk."+3',}},
-		feet="Convoker's Pigaches +3",
-		neck="Shulmanu Collar",
-		waist="Regal Belt",
-		left_ear="Gelos Earring",
-		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
-		right_ring="Varar Ring",
-		back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10',}},
-	}
+    sets.midcast.Pet.MagicalBloodPactRage = {main="Eminent Pole",ammo="Sancus Sachet",
+        head={ name="Psycloth Tiara", augments={'Pet: Attack+25','Pet: "Mag.Atk.Bns."+15','Pet: Enmity+7',}},
+		neck="Caller's Pendant",
+        body="Apogee Dalmatica",hands="Apogee Mitts",ring1="Evoker's Ring",ring2="Fervor Ring",
+        waist="Incarnation Sash",legs="Enticer's Pants", feet="Apogee Pumps", back="Campestres's Cape"}
 
     sets.midcast.Pet.MagicalBloodPactRage.Acc = sets.midcast.Pet.MagicalBloodPactRage
 
@@ -382,21 +260,21 @@ function init_gear_sets()
     --------------------------------------
     
     -- Resting sets
-    sets.resting = {main=gear.Staff.HMP,ammo="Sancus Sachet +1",
+    sets.resting = {main=gear.Staff.HMP,ammo="Sancus Sachet",
         head="Beckoner's Horn +1",neck="Wiglen Gorget",ear1="Evans Earring",ear2="Loquacious Earring",
-        body="Apogee Dalmatica",hands=" Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Paguroidea Ring",
-        back="Campestres's Cape",waist="Convoker's Pigaches +2",legs="Assiduity pants +1",feet="Beckoner's Pigaches +1"}
+        body="Apogee Dalmatica",hands="Beckoner's Bracers",ring1="Evoker's Ring",ring2="Paguroidea Ring",
+        back="Campestres's Cape",waist="Austerity Belt",legs="Nares Trews",feet="Beckoner's Pigaches +1"}
     
     -- Idle sets
-    sets.idle = {main=gear.Staff.PDT,sub="Elan Strap",ammo="Sancus Sachet +1",
-        head="Beckoner's Horn +1",neck="Shulmanu Collar",ear1="Gelos Earring",ear2="Lugalbanda Earring",
-        body="Apogee Dalmatica",hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
-        back="Campestres's Cape",waist="Regal Belt",legs="Assiduity pants +1",feet="Beckoner's Pigaches +1"}
+    sets.idle = {main=gear.Staff.PDT,sub="Vox Grip",ammo="Sancus Sachet",
+        head="Beckoner's Horn +1",neck="Wiglen Gorget",ear1="Evans Earring",ear2="Loquacious Earring",
+        body="Apogee Dalmatica",hands="Beckoner's Bracers",ring1="Evoker's Ring",ring2="Sangoma Ring",
+        back="Campestres's Cape",waist="Fucho-no-Obi",legs="Nares Trews",feet="Beckoner's Pigaches +1"}
 
-    sets.idle.PDT = {main=gear.Staff.PDT,sub="Elan Strap",ammo="Sancus Sachet +1",
+    sets.idle.PDT = {main=gear.Staff.PDT,sub="Vox Grip",ammo="Sancus Sachet",
         head="Beckoner's Horn +1",neck="Twilight Torque",ear1="Evans Earring",ear2="Loquacious Earring",
         body="Apogee Dalmatica",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Sangoma Ring",
-        back="Campestres's Cape",waist="Convoker's Pigaches +2",legs="Hagondes Pants",feet="Herald's Gaiters"}
+        back="Campestres's Cape",waist="Fucho-no-Obi",legs="Hagondes Pants",feet="Herald's Gaiters"}
 
     -- perp costs:
     -- spirits: 7
@@ -409,82 +287,52 @@ function init_gear_sets()
     -- Aim for -14 perp, and refresh in other slots.
     
     -- -perp gear:
-    -- Nirvana: -5
+    -- Espiritus: -5
     -- Glyphic Horn: -4
-    -- Beckoner's Doublet +1/Glyphic Doublet: -4
+    -- Beckoner's Doublet/Glyphic Doublet: -4
     -- Evoker's Ring: -1
     -- Convoker's Pigaches: -4
     -- total: -18
     
     -- Can make due without either the head or the body, and use +refresh items in those slots.
     
-    sets.idle.Avatar = {
-		main="Nirvana",
-		sub="Elan Strap",
-		ammo="Sancus Sachet +1",
-		head="Beckoner's Horn +1",
-		body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-		hands="Asteria Mitts +1",
-		legs="Assid. Pants +1",
-		feet="Convoker's Pigaches +3",
-		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
-		left_ear="Enmerkar Earring",
-		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
-		right_ring="Speaker's Ring",
-		back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10',}},
-	}
+    sets.idle.Avatar = {main="Espiritus",sub="Vox Grip",ammo="Sancus Sachet",
+        head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Evans Earring",ear2="Andoaa Earring",
+        body="Apogee Dalmatica",hands="Beckoner's Bracers",ring1="Evoker's Ring",ring2="Varar Ring",
+        back="Campestres's Cape",waist="Lucidity Sash",legs="Assiduity Pants +1",feet="Apogee Pumps"}
 
-    sets.idle.PDT.Avatar = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
-        head="Beckoner's Horn +1",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Andoaa Earring",
-        body="Apogee Dalmatica",hands="Convoker's bracers +3",ring1="Evoker's Ring",ring2="Defending Ring",
-        back="Campestres's Cape",waist="Regal Belt",legs="Hagondes Pants +1",feet="Beckoner's Pigaches +1"}
-
-    sets.idle.Spirit = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
-        head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Enmerkar Earring",ear2="Andoaa Earring",
-        body="Apogee Dalmatica",hands="Convoker's bracers +3",ring1="Evoker's Ring",ring2="Varar Ring",
+    sets.idle.PDT.Avatar = {main="Espiritus",sub="Vox Grip",ammo="Sancus Sachet",
+        head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Evans Earring",ear2="Andoaa Earring",
+        body="Apogee Dalmatica",hands="Regimen Mittens",ring1="Evoker's Ring",ring2="Defending Ring",
         back="Campestres's Cape",waist="Lucidity Sash",legs="Hagondes Pants +1",feet="Beckoner's Pigaches +1"}
 
-    sets.idle.Town = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
-        head="Beckoner's Horn +1",neck="Shulmanu Collar",ear1="Gelos Earring",ear2="Lugalbanda Earring",
-        body="Convoker's Doublet +3",hands="Convoker's bracers +3",ring1="Evoker's Ring",ring2="Varar Ring",
-        back="Campestres's Cape",waist="Regal Belt",legs="Assiduity Pants +1",feet="Convoker's Pigaches +3"}
+    sets.idle.Spirit = {main="Espiritus",sub="Vox Grip",ammo="Sancus Sachet",
+        head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Evans Earring",ear2="Andoaa Earring",
+        body="Apogee Dalmatica",hands="Serpentes Cuffs",ring1="Evoker's Ring",ring2="Varar Ring",
+        back="Campestres's Cape",waist="Lucidity Sash",legs="Hagondes Pants +1",feet="Beckoner's Pigaches +1"}
+
+    sets.idle.Town = {main="Espiritus",sub="Vox Grip",ammo="Sancus Sachet",
+        head="Beckoner's Horn +1",neck="Wiglen Gorget",ear1="Evans Earring",ear2="Andoaa Earring",
+        body="Apogee Dalmatica",hands="Serpentes Cuffs",ring1="Sheltered Ring",ring2="Varar Ring",
+        back="Campestres's Cape",waist="Lucidity Sash",legs="Hagondes Pants +1",feet="Apogee Pumps"}
 
     -- Favor uses Caller's Horn instead of Convoker's Horn for refresh
     sets.idle.Avatar.Favor = {head="Beckoner's Horn +1"}
-    
-	sets.idle.Avatar.Melee = {
-		main="Nirvana",
-		sub="Elan Strap",
-		ammo="Sancus Sachet +1",
-		head="Beckoner's Horn +1",
-		body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-		hands="Convoker's bracers +3",
-		legs="Assid. Pants +1",
-		feet="Convoker's Pigaches +3",
-		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
-		left_ear="Enmerkar Earring",
-		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
-		right_ring="Varar Ring",
-		back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10',}},
-	}
+    sets.idle.Avatar.Melee = {head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Evans Earring",ear2="Andoaa Earring",
+        body="Apogee Dalmatica", hands="Apogee Mitts", back="Campestres's Cape",waist="Incarnation Sash",legs="Assiduity Pants +1", feet="Apogee Pumps"}
         
     sets.perp = {}
     -- Caller's Bracer's halve the perp cost after other costs are accounted for.
     -- Using -10 (Gridavor, ring, Conv.feet), standard avatars would then cost 5, halved to 2.
     -- We can then use Hagondes Coat and end up with the same net MP cost, but significantly better defense.
     -- Weather is the same, but we can also use the latent on the pendant to negate the last point lost.
-    sets.perp.Day = {hands="Beckoner's Bracers +1"}
-    sets.perp.Weather = {neck="Caller's Pendant",body="Apogee Dalmatica",hands="Beckoner's Bracers +1"}
+    sets.perp.Day = {hands="Beckoner's Bracers"}
+    sets.perp.Weather = {neck="Caller's Pendant",body="Apogee Dalmatica",hands="Beckoner's Bracers"}
     -- Diabolos's Rope doesn't gain us anything at this time
-    --sets.perp.Diabolos = {waist="Diabolos's Rope"}
-	sets.perp.Carbuncle = {hands="Asteria Mitts +1"}
+    sets.perp.Diabolos = {waist="Diabolos's Rope"}
     sets.perp.Alexander = sets.midcast.Pet.BloodPactWard
 
-    sets.perp.staff_and_grip = {main=gear.perp_staff,sub="Elan Strap"}
+    sets.perp.staff_and_grip = {main=gear.perp_staff,sub="Vox Grip"}
     
     -- Defense sets
     sets.defense.PDT = {main=gear.Staff.PDT,
@@ -507,23 +355,10 @@ function init_gear_sets()
     --------------------------------------
     
     -- Normal melee group
-    sets.engaged = {
-		main="Nirvana",
-		sub="Elan Strap",
-		ammo="Sancus Sachet +1",
-		head="Beckoner's Horn +1",
-		body="Convoker's Doublet +3",
-		hands="Convoker's bracers +3",
-		legs="Assid. Pants +1",
-		feet="Convoker's Pigaches +3",
-		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
-		left_ear="Enmerkar Earring",
-		right_ear="Andoaa Earring",
-		left_ring="Varar Ring",
-		right_ring="Varar Ring",
-		back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10',}},
-	}
+    sets.engaged = {main="Espiritus",sub="Vox Grip",ammo="Sancus Sachet",
+        head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Evans Earring",ear2="Andoaa Earring",
+        body="Apogee Dalmatica",hands="Beckoner's Bracers",ring1="Evoker's Ring",ring2="Varar Ring",
+        back="Campestres's Cape",waist="Incarnation Sash",legs="Assiduity Pants +1",feet="Apogee Pumps"}
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -540,7 +375,7 @@ end
 
 function job_midcast(spell, action, spellMap, eventArgs)
     if state.Buff['Astral Conduit'] and pet_midaction() then
-        eventArgs.useMidcastGear = true
+        eventArgs.handled = true
     end
 end
 
@@ -603,8 +438,6 @@ function job_get_spell_map(spell)
     if spell.type == 'BloodPactRage' then
         if magicalRagePacts:contains(spell.english) then
             return 'MagicalBloodPactRage'
-		elseif hybridRagePacts:contains(spell.english) then
-			return 'HybridBloodPactRage'
         else
             return 'PhysicalBloodPactRage'
         end

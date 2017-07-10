@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Serenity", augments={'MP+50','Enha.mag. skill +10','"Cure" potency +5%','"Cure" spellcasting time -10%',}},
+    sub="Clerisy Strap",
+    ammo="Homiliary",
+    head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
+    body="Zendik Robe",
+    hands="Atrophy Gloves +1",
+    legs="Nares Trews",
+    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+    neck="Nodens Gorget",
+    waist="Fucho-no-Obi",
+    left_ear="Gwati Earring",
+    right_ear="Mendi. Earring",
+    left_ring="Stikini Ring",
+    right_ring="Stikini Ring",
+    back="Perimede Cape",
+}

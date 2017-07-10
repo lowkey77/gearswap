@@ -84,8 +84,8 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		left_ear="Brutal Earring",
 		right_ear="Cessance Earring",
-		left_ring="Niqmaddu Ring",
-		right_ring="Karieyh Ring",
+		right_ring="Niqmaddu Ring",
+		left_ring="Karieyh Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},
 	}
     --sets.precast.WS.Acc = set_combine(sets.precast.WS, {back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}})
