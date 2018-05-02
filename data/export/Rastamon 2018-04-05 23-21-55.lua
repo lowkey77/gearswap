@@ -1,0 +1,17 @@
+sets.exported={
+    main="Sequence",
+    sub="Murgleis",
+    ammo="Homiliary",
+    head="Aya. Zucchetto +2",
+    body="Atrophy Tabard +3",
+    hands="Atrophy Gloves +3",
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Nodens Gorget",
+    waist="Fucho-no-Obi",
+    left_ear="Regal Earring",
+    right_ear="Digni. Earring",
+    left_ring="Meridian Ring",
+    right_ring="Persis Ring",
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+}

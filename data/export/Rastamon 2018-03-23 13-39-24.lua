@@ -1,0 +1,17 @@
+sets.exported={
+    main="Sequence",
+    sub="Culminus",
+    ammo="Homiliary",
+    head={ name="Viti. Chapeau +2", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},
+    body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic Damage +10','INT+3','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs={ name="Amalric Slops", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    feet={ name="Vitiation Boots +2", augments={'Enhances "Paralyze II" effect',}},
+    neck="Nodens Gorget",
+    waist="Fucho-no-Obi",
+    left_ear="Regal Earring",
+    right_ear="Digni. Earring",
+    left_ring="Meridian Ring",
+    right_ring="Persis Ring",
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+}
