@@ -52,7 +52,7 @@ function init_gear_sets()
 	-- Precast Sets
 	
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Chainspell'] = {body="Vitiation Tabard +2"}
+	sets.precast.JA['Chainspell'] = {body="Vitiation Tabard +3"}
 	
 
 	-- Waltz set (chr and vit)
@@ -64,6 +64,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	
 	-- 80% Fast Cast (including trait) for all spells, plus 5% quick cast
+	-- 30% Job Trait, 6% Job Trait, 46% gear (only need 44%)
     -- No other FC sets necessary.
 	--85% FC
 	sets.precast.FC = {
@@ -71,16 +72,16 @@ function init_gear_sets()
 		sub="Culminus",
 		ammo="Impatiens",
 		head="Atrophy chapeau +3", --16%
-		body="Vitiation Tabard +2",--14%
+		body="Vitiation Tabard +3",--15%
 		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		legs="Ayanmo Cosciales +2",--6%
 		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},--5%
-		neck="Voltsurge Torque",--4%
+		neck="Loricate Torque +1",
 		waist="Witful Belt",--3%
-		left_ear="Estq. Earring",--2%
-		right_ear="Enchntr. Earring +1",--2%
+		left_ear="Etiolation Earring",--1%
+		right_ear="Thureous Earring",
 		left_ring="Veneficium Ring",
-		right_ring="Prolix Ring",--2%
+		right_ring="Defending Ring",
 		back="Perimede Cape",
 		}
 		
@@ -127,13 +128,13 @@ function init_gear_sets()
 	{
 		ammo="Regal Gem",
 		head="Aya. Zucchetto +2",
-		body="Ayanmo Corazza +2",
+		body="Vitiation Tabard +3",
 		hands="Atrophy Gloves +3",
 		legs="Jhakri Slops +2",
 		feet="Jhakri Pigaches +2",
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
-		left_ear="Telos Earring",
+		left_ear="Regal Earring",
 		right_ear="Cessance Earring",
 		left_ring="Rufescent Ring",
 		right_ring="Persis Ring",
@@ -161,7 +162,7 @@ function init_gear_sets()
 	{
 		ammo="Regal Gem",
 		head="Vitiation Chapeau +2",
-		body="Jhakri Robe +2",
+		body="Vitiation Tabard +3",
 		hands="Jhakri Cuffs +2",
 		legs="Jhakri Slops +2",
 		feet="Jhakri Pigaches +2",
@@ -305,7 +306,7 @@ function init_gear_sets()
 		sub="Ammurapi Shield",
 		ammo="Regal Gem",
 		head="Carmine Mask",
-		body="Vitiation Tabard +2",
+		body="Vitiation Tabard +3",
 		hands="Atrophy Gloves +3",
 		legs="Atrophy Tights +2",
 		feet="Lethargy Houseaux +1",
@@ -323,7 +324,7 @@ function init_gear_sets()
 			sub="Ammurapi Shield",
 			ammo="Regal Gem",
 			head="Befouled Crown",
-			body="Vitiation Tabard +2",
+			body="Vitiation Tabard +3",
 			hands="Vitiation Gloves +1",
 			legs="Atrophy Tights +2",
 			feet="Lethargy Houseaux +1",
