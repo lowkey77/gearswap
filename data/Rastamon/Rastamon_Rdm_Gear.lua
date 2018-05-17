@@ -325,7 +325,7 @@ function init_gear_sets()
 			ammo="Regal Gem",
 			head="Befouled Crown",
 			body="Vitiation Tabard +3",
-			hands="Vitiation Gloves +1",
+			hands="Vitiation Gloves +3",
 			legs="Atrophy Tights +2",
 			feet="Lethargy Houseaux +1",
 			neck="Incanter's Torque",
@@ -366,7 +366,7 @@ function init_gear_sets()
 	sets.midcast.Enspell = set_combine(sets.midcast['Enhancing Magic'], {head="Umuthi Hat", hands="Ayanmo Manopolas +2"})
 	
 	--Set for Gain spells
-	sets.midcast.BoostStat = set_combine(sets.midcast['Enhancing Magic'], {hands="Vitiation Gloves +2"})
+	sets.midcast.BoostStat = set_combine(sets.midcast['Enhancing Magic'], {hands="Vitiation Gloves +3"})
 	
 	sets.midcast['Enfeebling Magic'] = {                         
 		main="Murgleis",
