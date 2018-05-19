@@ -360,8 +360,8 @@ function init_gear_sets()
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {head="Umuthi Hat", neck="Nordens Gorget", waist="Siegel Sash" , legs="Doyen pants"})
 	
-	sets.midcast['Shock Spikes'] = set_combine(sets.midcast['Enhancing Magic'], {legs="Vitiation Tights +1"})
-	sets.midcast['Ice Spikes'] = set_combine(sets.midcast['Enhancing Magic'], {legs="Vitiation Tights +1"})
+	sets.midcast['Shock Spikes'] = set_combine(sets.midcast['Enhancing Magic'], {legs="Vitiation Tights +3"})
+	sets.midcast['Ice Spikes'] = set_combine(sets.midcast['Enhancing Magic'], {legs="Vitiation Tights +3"})
 	
 	sets.midcast.Enspell = set_combine(sets.midcast['Enhancing Magic'], {head="Umuthi Hat", hands="Ayanmo Manopolas +2"})
 	
@@ -651,7 +651,7 @@ function init_gear_sets()
 		legs="Aya. Cosciales +2",
 		feet="Aya. Gambieras +2",
 		neck="Combatant's Torque",
-		waist="Windbuffed belt +1",
+		waist="Windbuffet belt +1",
 		left_ear="Telos Earring",
 		right_ear="Cessance Earring",
 		left_ring="Hetairoi Ring",
@@ -665,7 +665,8 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2",
 		hands="Aya. Manopolas +2",
 		legs="Aya. Cosciales +2",
-		feet="Aya. Gambieras +2",
+		--feet="Aya. Gambieras +2",
+		feet="Carmine Cuisses +1",
 		neck="Clotharius Torque",
 		waist="Reki Yotai",
 		left_ear="Telos Earring",

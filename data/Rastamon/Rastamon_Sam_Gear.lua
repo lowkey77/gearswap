@@ -1,6 +1,6 @@
 -- Setup vars that are user-dependent.
 function user_setup()
-    state.OffenseMode:options('Normal','SomeAcc','Acc','FullAcc','Fodder')
+    state.OffenseMode:options('Normal','SomeAcc','Acc','FullAcc','Zanshin','Fodder')
     state.HybridMode:options('Normal','DTLite','PDT','Reraise')
     state.WeaponskillMode:options('Normal','SomeAcc','Acc','FullAcc','Fodder')
     state.RangedMode:options('Normal', 'Acc')
@@ -372,6 +372,24 @@ function init_gear_sets()
 		right_ring="Niqmaddu Ring",
 		back=gear.stp_jse_back,
 			}
+			
+	sets.engaged.Zanshin = {
+		sub="Utu Grip",
+		ammo="Ginsen",
+		head="Flamma Zucchetto +2",
+		body="Tatenashi Haramaki",
+		hands="Wakido Kote +3",
+		legs="Tatena. Haidate",
+		feet="Wakido Sune. +3",
+		neck="Moonbeam Nodowa",
+		waist="Ioskeha Belt",
+		left_ear="Dedition Earring",
+		right_ear="Cessance Earring",
+		left_ring="Regal Ring",
+		right_ring="Niqmaddu Ring",
+		back=gear.stp_jse_back,
+			}
+			
     sets.engaged.Acc = {
 		sub="Utu Grip",
 		ammo="Ginsen",
