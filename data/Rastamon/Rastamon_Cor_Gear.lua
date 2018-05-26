@@ -42,7 +42,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 	
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Culottes +1"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +1"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
@@ -50,7 +50,7 @@ function init_gear_sets()
     
     sets.precast.CorsairRoll = {range="Compensator",
         head="Lanun Tricorne +1",neck="Regal Necklace",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Lanun Frac",hands="Chasseur's Gants +1",ring1="Defending Ring",ring2="Dark Ring",
+        body="Lanun Frac",hands="Chasseur's Gants",ring1="Barataria Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt",legs="Desultor Tassets",feet=gear.herculean_dt_feet}
 		
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
@@ -58,8 +58,8 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +1"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
     
     sets.precast.CorsairShot = {}
     
@@ -206,7 +206,7 @@ function init_gear_sets()
         body="Meg. Cuirie +1",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Apate Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Meg. Chausses +1",feet="Meg. Jam. +1"}
 		
-	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
+	sets.buff['Triple Shot'] = {body="Chasseur's Frac"}
     
     -- Sets to return to when not performing an action.
 	
@@ -317,5 +317,5 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-    set_macro_page(1, 11)
+    set_macro_page(1, 14)
 end
