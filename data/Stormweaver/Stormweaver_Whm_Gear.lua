@@ -8,7 +8,7 @@ function user_setup()
 	state.ResistDefenseMode:options('MEVA')
 
 	gear.obi_cure_waist = "Austerity Belt +1"
-	gear.obi_cure_back = "Alaunus's Cape"
+	gear.obi_cure_back = "Twilight Cape"
 
 	gear.obi_nuke_waist = "Sekhmet Corset"
 	gear.obi_nuke_back = "Toro Cape"
@@ -355,7 +355,7 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Sors Shield",waist="Emphatikos Rope",legs="Shedir Seraweels"})
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",sub="Genmei Shield",head="Inyanga Tiara +1", body="Piety Briault +2",hands="Ebers Mitts",legs="Theophany Pantaloons +2"})
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",sub="Genmei Shield",head="Inyanga Tiara +2", body="Piety Briault +2",hands="Ebers Mitts",legs="Theophany Pantaloons +2"})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
@@ -469,7 +469,7 @@ function init_gear_sets()
 		}
 
 	sets.idle.PDT = {main="Terra's Staff", sub="Oneiros Grip",ammo="Staunch Tathlum",
-		head="Inyanga Tiara +1",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Ethereal Earring",
+		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Ethereal Earring",
 		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Umbra Cape",waist="Flax Sash",legs="Gende. Spats +1",feet=gear.chironic_refresh_feet}
 		
