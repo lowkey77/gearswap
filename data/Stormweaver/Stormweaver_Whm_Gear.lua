@@ -54,7 +54,7 @@ function init_gear_sets()
 		head="Chironic Hat",
 		body="Inyanga Jubbah +2",
 		hands="Repartie Gloves",
-		legs="Ebers Pantaloons +1",
+		legs="Artsieq Hose",
 		feet="Regal Pumps",
 		neck="Orison Locket",
 		waist="Luminary Sash",

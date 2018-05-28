@@ -275,7 +275,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {ammo="Paeapua",
         head="Chev. Armet +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Shabti Cuirass",hands="Regal Gauntlets",ring1="Defending Ring",ring2="Kishar Ring",
-        waist="Zoran's Belt",legs=gear.odyssean_fc_legs,feet="Odyssean Greaves"}
+        waist="Goading Belt",legs=gear.odyssean_fc_legs,feet="Odyssean Greaves"}
 		
 	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum",
 		head="Souveran Schaller +1",neck="Loricate Torque +1",ear1="Creed Earring",ear2="Thureous Earring",
