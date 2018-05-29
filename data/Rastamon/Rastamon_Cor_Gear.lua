@@ -117,14 +117,14 @@ function init_gear_sets()
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Carmine Mask +1",ring2="Rufescent Ring",back="Bleating Mantle",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"})
 	
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
-        head="Lilitu Headpiece",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Rufescent Ring",ring2="Ifrit Ring +1",
-        back="Bleating Mantle",waist="Grunfeld Rope",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet}
+        head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Karieyh Ring",
+        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet}
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
         head="Carmine Mask +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Rufescent Ring",ring2="Karieyh Ring",
-        back="Bleating Mantle",waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Mummu Gamashes +1"}
+        body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Karieyh Ring",
+        back=gear.ranger_wsd_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Mummu Gamashes +1"}
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
