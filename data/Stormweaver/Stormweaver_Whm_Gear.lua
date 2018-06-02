@@ -90,13 +90,13 @@ function init_gear_sets()
 	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
     -- Precast sets to enhance JAs
-    sets.precast.JA.Benediction = {body="Piety Briault +2"}
+    sets.precast.JA.Benediction = {body="Piety Briault +3"}
 	sets.precast.JA.Devotion = {head="Piety Cap"}
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
 		head="Nahtirah Hat",ear1="Roundel Earring",
-		body="Piety Briault +2",hands="Theophany Mitts +3",
+		body="Piety Briault +3",hands="Theophany Mitts +3",
 		waist="Chaac Belt",back="Aurist's Cape +1"}
 
     -- Weaponskill sets
@@ -355,7 +355,7 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Sors Shield",waist="Emphatikos Rope",legs="Shedir Seraweels"})
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",sub="Genmei Shield",head="Inyanga Tiara +2", body="Piety Briault +2",hands="Ebers Mitts",legs="Theophany Pantaloons +2"})
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",sub="Genmei Shield",head="Inyanga Tiara +2", body="Piety Briault +3",hands="Ebers Mitts",legs="Theophany Pantaloons +2"})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
