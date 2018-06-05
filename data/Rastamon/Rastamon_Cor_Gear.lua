@@ -17,6 +17,7 @@ function user_setup()
 	gear.herculean_nuke_head = { name="Herculean Helm", augments={'Pet: "Mag.Atk.Bns."+1','MND+1','Accuracy+17 Attack+17','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
 	gear.herculean_wsd_legs={ name="Herculean Trousers", augments={'Pet: "Mag.Atk.Bns."+22','STR+9','Weapon skill damage +6%','Accuracy+15 Attack+15','Mag. Acc.+8 "Mag.Atk.Bns."+8',}}
 	gear.ranger_wsd_jse_back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+6','"Snapshot"+10',}}
+	gear.herculean_wsd_hands={ name="Herculean Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Weapon skill damage +2%','CHR+9',}}
 	
     -- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
@@ -47,7 +48,7 @@ function init_gear_sets()
 	
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Culottes +1"}
-    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +1"}
+    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +2"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +1"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
     
@@ -94,7 +95,7 @@ function init_gear_sets()
 		neck="Ocachi Gorget",
 		ear1="Enervating Earring",
 		ear2="Telos Earring",
-        body="Meg. Cuirie +2",
+        body="Laksamana's Frac +2",
 		hands="Meghanada Gloves +2",
 		ring1="Ilabrat Ring",
 		ring2="Apate Ring",
@@ -129,32 +130,32 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Laksamana's frac +2",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Karieyh Ring",
-        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Mummu Gamashes +1"}
+        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Laksamana's frac +2",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Apate Ring",
-        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Mummu Gamashes +1"}
+        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Ilabrat Ring",ring2="Archon Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet=gear.hercluean_nuke_feet}
+        body="Samnuha Coat",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Archon Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Leaden Salute'].Acc = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Ilabrat Ring",ring2="Archon Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet=gear.hercluean_nuke_feet}
+        body="Samnuha Coat",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Archon Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
         head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Novio Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Ilabrat Ring",ring2="Karieyh Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet=gear.hercluean_nuke_feet}
+        body="Samnuha Coat",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Karieyh Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
         head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Novio Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Ilabrat Ring",ring2="Karieyh Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet=gear.hercluean_nuke_feet}
+        body="Samnuha Coat",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Karieyh Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.precast.MaxTP = {}
@@ -192,7 +193,7 @@ function init_gear_sets()
     sets.midcast.RA = {
 		ammo=gear.RAbullet,
         head="Meghanada Visor +2",
-		neck="Ocachi Gorget",
+		neck="Combatant's Torque",
 		ear1="Enervating Earring",
 		ear2="Telos Earring",
         body="Meg. Cuirie +2",
@@ -286,7 +287,7 @@ function init_gear_sets()
 	sets.Weapons = {main="Fettering Blade", sub="Nusku Shield"}
 	sets.DualWeapons = {main="Fettering Blade", sub="Demersal Degen"}
 	sets.DualRangedWeapons = {main="Fettering Blade", sub="Kustawi +1"}
-	sets.DDGunWeapon = {range="Molybdosis"}
+	sets.DDGunWeapon = {range="Fomalhaut"}
 
     -- Engaged sets
 

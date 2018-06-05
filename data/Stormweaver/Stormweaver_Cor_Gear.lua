@@ -6,10 +6,10 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 
-    gear.RAbullet = "Eminent Bullet"
-    gear.WSbullet = "Eminent Bullet"
-    gear.MAbullet = "Orichalc. Bullet"
-    gear.QDbullet = "Animikii Bullet"
+    gear.RAbullet = "Chrono Bullet"
+    gear.WSbullet = "Chrono Bullet"
+    gear.MAbullet = "Chrono Bullet"
+    gear.QDbullet = "Chrono Bullet"
     options.ammo_warning_limit = 15
 
 	gear.tp_jse_back = {name="Camulus's Mantle",augments={'DEX+19','Accuracy+12 Attack+12',}}
@@ -212,7 +212,7 @@ function init_gear_sets()
 		left_ear="Enervating Earring",
 		right_ear="Volley Earring",
 		left_ring="Barataria Ring",
-		right_ring="Warp Ring",
+		right_ring="Mummu Ring",
 		back="Camulus's Mantle",
 	}
 	
