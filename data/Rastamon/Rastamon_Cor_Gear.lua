@@ -100,7 +100,7 @@ function init_gear_sets()
 		ring1="Ilabrat Ring",
 		ring2="Apate Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",
-		legs="Carmine Cuisses +1",
+		legs="Adhemar Kecks",
 		feet="Meg. Jam. +1"
 		}
 
