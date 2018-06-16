@@ -61,7 +61,7 @@ function init_gear_sets()
     sets.precast.Waltz['Healing Waltz'] = {}
 
     -- Fast cast sets for spells
-    sets.precast.FC = {neck="Voltsurge Torque",left_ear="Enchntr. Earring +1",right_ear="Loquacious Earring",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring"}
+    sets.precast.FC = {neck="Baetyl Pendant",left_ear="Enchntr. Earring +1",right_ear="Loquacious Earring",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring"}
 	   
     -- Ranged snapshot gear
     sets.precast.RA = {}
@@ -143,7 +143,7 @@ function init_gear_sets()
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Friomisi Earring",
-		right_ear="Ishvara Earring",
+		right_ear="Moonshade Earring",
 		left_ring="Karieyh Ring",
 		right_ring="Regal Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
@@ -197,7 +197,7 @@ function init_gear_sets()
 	
     -- Midcast Sets
     sets.midcast.FastRecast = {
-        head="Loess Barbuta +1",neck="Voltsurge Torque",left_ear="Enchntr. Earring +1",right_ear="Loquacious Earring",
+        head="Loess Barbuta +1",neck="Baetyl Pendant",left_ear="Enchntr. Earring +1",right_ear="Loquacious Earring",
         body="Tartarus Platemail",hands="Leyline Gloves",ring1="Prolix Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Tempus Fugit",legs="Wakido Haidate +3",feet="Amm Greaves"}
 		

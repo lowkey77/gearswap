@@ -222,7 +222,7 @@ function init_gear_sets()
 		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		legs="Gyve Trousers",--4%
 		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},--5%
-		neck="Voltsurge Torque",--4%
+		neck="Baetyl Pendant",--4%
 		waist="Witful Belt",--3%
 		left_ear="Estq. Earring",--2%
 		right_ear="Enchntr. Earring +1",--2%
@@ -490,7 +490,7 @@ function init_gear_sets()
 		}
 
     sets.midcast['Elemental Magic'].Proc = {main=empty, sub=empty,ammo="Impatiens",
-        head="Nahtirah Hat",neck="Voltsurge Torque",left_ear="Enchntr. Earring +1",right_ear="Loquacious Earring",
+        head="Nahtirah Hat",neck="Baetyl Pendant",left_ear="Enchntr. Earring +1",right_ear="Loquacious Earring",
         body="Helios Jacket",hands="Gende. Gages +1",left_ring="Kishar Ring",right_ring="Prolix Ring",
         back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		

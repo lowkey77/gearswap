@@ -83,7 +83,7 @@ function init_gear_sets()
 	
 	-- Fast cast sets for spells
 	
-	sets.precast.FC = {head="Vishap Armet +1", neck="Voltsurge Torque", ear2="Loquacious Earring"}
+	sets.precast.FC = {head="Vishap Armet +1", neck="Baetyl Pendant", ear2="Loquacious Earring"}
     
 	-- Midcast Sets
 	sets.midcast.FastRecast = {

@@ -41,7 +41,7 @@ function init_gear_sets()
 		ring2="Stikini Ring",
         legs="Tatsumaki Sitagoromo",
 		feet="Beckoner's Pigaches +1", 
-		waist="Lucidity Sash", 
+		waist="Kobo Obi", 
 		back="Conveyance Cape"
 		}
 
@@ -57,9 +57,9 @@ function init_gear_sets()
 		hands="Beckoner's Bracers +1", 
 		ring1="Evoker's Ring", 
 		ring2="Stikini Ring",
-		ear2="Caller's Earring", -- I -1
+		ear2="Andoaa Earring", -- I -1
 		ear1="Evans Earring", -- I -2
-		waist="Lucidity Sash", 
+		waist="Kobo Obi", 
 		legs="Beckoner's Spats +1", 
 		back="Conveyance Cape", -- II -3
 		feet="Glyphic Pigaches +1" --II -1
@@ -73,7 +73,7 @@ function init_gear_sets()
 		main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",
 		head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		ammo="Impatiens",
-		neck="Voltsurge Torque", 
+		neck="Baetyl Pendant", 
 		ear1="Enchanter Earring +1", 
 		ear2="Loquacious Earring",
         body="Zendik Robe",
@@ -156,7 +156,7 @@ function init_gear_sets()
 		hands={ name="Glyphic Bracers +1", augments={'Inc. Sp. "Blood Pact" magic burst dmg.',}},
 		legs="Gyve Trousers",
 		feet="Convoker's Pigaches +3",
-		neck="Voltsurge Torque",
+		neck="Baetyl Pendant",
 		waist="Witful Belt",
 		left_ear="Enchntr. Earring +1",
 		right_ear="Loquac. Earring",
@@ -220,12 +220,12 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 		
     sets.midcast.Stun = {main="Oranyan",sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
-		head="Amalric Coif",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+		head="Amalric Coif",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		body="Inyanga Jubbah +1",hands="Helios Gloves",ring1="Kishar Ring",ring2="Stikini Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		
     sets.midcast.Stun.Resistant = {main="Oranyan",sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
-		head="Amalric Coif",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Gwati Earring",
+		head="Amalric Coif",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Gwati Earring",
 		body="Inyanga Jubbah +1",hands="Helios Gloves",ring1="Kishar Ring",ring2="Stikini Ring",
 		back="Aurist's Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		
@@ -373,7 +373,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Shulmanu Collar",ear1="Gelos Earring",ear2="Lugalbanda Earring",
-        body="Shomonjijoe +1", hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
+        body="Witching Robe", hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
         back="Campestres's Cape",waist="Regal Belt",legs="Assiduity pants +1",feet="Baayami Sabots",}
 
     sets.idle.PDT = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
@@ -414,7 +414,7 @@ function init_gear_sets()
 		legs="Assid. Pants +1",
 		feet="Convoker's Pigaches +3",
 		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
+		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
 		left_ring="Varar Ring",
@@ -432,7 +432,7 @@ function init_gear_sets()
 		legs="Assid. Pants +1",
 		feet="Convoker's Pigaches +3",
 		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
+		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
 		left_ring="Varar Ring",
@@ -450,7 +450,7 @@ function init_gear_sets()
 		legs="Assid. Pants +1",
 		feet="Convoker's Pigaches +3",
 		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
+		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
 		left_ring="Varar Ring",
@@ -468,7 +468,7 @@ function init_gear_sets()
 		legs="Assid. Pants +1",
 		feet="Convoker's Pigaches +3",
 		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
+		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
 		left_ring="Varar Ring",
@@ -542,7 +542,7 @@ function init_gear_sets()
 		legs="Assid. Pants +1",
 		feet="Convoker's Pigaches +3",
 		neck="Shulmanu Collar",
-		waist="Incarnation Sash",
+		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Telos Earring",
 		left_ring="Varar Ring",

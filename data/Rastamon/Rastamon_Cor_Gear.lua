@@ -178,22 +178,22 @@ function init_gear_sets()
     sets.midcast.Utsusemi = sets.midcast.FastRecast
 
     sets.midcast.CorsairShot = {ammo=gear.QDbullet,
-        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Novio Earring",
+        head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Novio Earring",
         body="Samnuha Coat",hands="Leyline Gloves",ring1="Ilabrat Ring",ring2="Shiva Ring +1",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Mummu Kecks +1",feet="Chasseur's Bottes"}
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
         head="Carmine Mask +1",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Telos Earring",
         body="Samnuha Coat",hands="Leyline Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Mummu Kecks +1",feet="Mummu Gamash. +1"}
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Mummu Kecks +1",feet="Lanun Bottes +2"}
 
-    sets.midcast.CorsairShot['Dark Shot'] = set_combine(sets.midcast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes"})
+    sets.midcast.CorsairShot['Dark Shot'] = set_combine(sets.midcast.CorsairShot['Light Shot'], {feet="Lanun Bottes +2"})
 
     -- Ranged gear
     sets.midcast.RA = {
 		ammo=gear.RAbullet,
         head="Meghanada Visor +2",
-		neck="Combatant's Torque",
+		neck="Iskur Gorget",
 		ear1="Enervating Earring",
 		ear2="Telos Earring",
         body="Meg. Cuirie +2",
@@ -231,12 +231,12 @@ function init_gear_sets()
 			body="Meg. Cuirie +2",
 			hands="Meg. Gloves +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Mummu Gamash. +1",
+			feet="Lanun Bottes +2",
 			neck="Loricate Torque +1",
 			waist="Reiki Yotai",
 			left_ear="Etiolation Earring",
 			right_ear="Telos Earring",
-			left_ring="Ilabrat Ring",
+			left_ring="Karieyh Ring",
 			right_ring="Defending Ring",
 			back="Moonbeam Cape",
 		}
@@ -298,7 +298,7 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {
-		head="Dampening Tam",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
+		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
 		body="Meg. Cuirie +2",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
@@ -308,7 +308,7 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_acc_feet}
 
     sets.engaged.DW = {
-		head="Dampening Tam",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
+		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
 		body="Adhemar Jacket",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet=gear.herculean_ta_feet}
     

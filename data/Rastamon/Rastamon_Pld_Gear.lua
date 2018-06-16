@@ -144,7 +144,7 @@ function init_gear_sets()
     sets.precast.FC = {
 		ammo="Impatiens",
 		head="Carmine Mask",
-		neck="Voltsurge Torque",
+		neck="Baetyl Pendant",
 		ear1="Enchanter Earring +1",
 		ear2="Loquac. Earring",
 		body="Reverence Surcoat +2",
@@ -160,7 +160,7 @@ function init_gear_sets()
     sets.precast.FC.DT = {
 		ammo="Impatiens",
 		head="Carmine Mask",
-		neck="Voltsurge Torque",
+		neck="Baetyl Pendant",
 		ear1="Enchanter Earring +1",
 		ear2="Loquac. Earring",
 		body="Reverence Surcoat +2",
@@ -238,7 +238,7 @@ function init_gear_sets()
     sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Zennaroi Earring",ear2="Telos Earring"})
 	
 	sets.precast.WS['Flat Blade'] = {ammo="Ginsen",
-        head="Founder's Corona",neck="Voltsurge Torque",ear1="Gwati Earring",ear2="Digni. Earring",
+        head="Founder's Corona",neck="Baetyl Pendant",ear1="Gwati Earring",ear2="Digni. Earring",
         body="Sulevia's Plate. +2",hands="Leyline Gloves",ring1="Defending Ring",ring2="Stikini Ring",
         back="Ground. Mantle +1",waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Founder's Greaves"}
 
@@ -273,7 +273,7 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.midcast.FastRecast = {ammo="Paeapua",
-        head="Chev. Armet +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+        head="Chev. Armet +1",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Shabti Cuirass",hands="Regal Gauntlets",ring1="Defending Ring",ring2="Kishar Ring",
         waist="Goading Belt",legs=gear.odyssean_fc_legs,feet="Odyssean Greaves"}
 		
