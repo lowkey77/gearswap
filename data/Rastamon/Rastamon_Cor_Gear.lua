@@ -49,12 +49,12 @@ function init_gear_sets()
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Culottes +1"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +2"}
-    sets.precast.JA['Random Deal'] = {body="Lanun Frac +1"}
+    sets.precast.JA['Random Deal'] = {body="Lanun Frac +2"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
     
     sets.precast.CorsairRoll = {range="Compensator",
         head="Lanun Tricorne +1",neck="Regal Necklace",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Lanun Frac +1",hands="Chasseur's Gants",ring1="Barataria Ring",ring2="Defending Ring",
+        body="Lanun Frac +2",hands="Chasseur's Gants",ring1="Barataria Ring",ring2="Defending Ring",
         back=gear.tp_jse_back,waist="Flume Belt",legs="Desultor Tassets",feet=gear.herculean_dt_feet}
 		
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
@@ -139,22 +139,22 @@ function init_gear_sets()
 
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Archon Ring",
+        body="Lanun Frac +2",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Archon Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Leaden Salute'].Acc = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Archon Ring",
+        body="Lanun Frac +2",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Archon Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
         head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Novio Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Karieyh Ring",
+        body="Lanun Frac +2",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Karieyh Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
         head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Novio Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Karieyh Ring",
+        body="Lanun Frac +2",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Karieyh Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -179,12 +179,12 @@ function init_gear_sets()
 
     sets.midcast.CorsairShot = {ammo=gear.QDbullet,
         head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Novio Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Ilabrat Ring",ring2="Shiva Ring +1",
+        body="Lanun Frac +2",hands="Leyline Gloves",ring1="Ilabrat Ring",ring2="Shiva Ring +1",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
         head="Carmine Mask +1",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Telos Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
+        body="Lanun Frac +2",hands="Leyline Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Mummu Kecks +1",feet="Lanun Bottes +2"}
 
     sets.midcast.CorsairShot['Dark Shot'] = set_combine(sets.midcast.CorsairShot['Light Shot'], {feet="Lanun Bottes +2"})

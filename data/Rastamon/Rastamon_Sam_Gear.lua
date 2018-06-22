@@ -36,9 +36,9 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +1",back=gear.ws_jse_back}
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +2",back=gear.ws_jse_back}
     sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
-    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +1"}
+    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +2"}
 	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +1"}
 	sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +1"}
 	
@@ -222,7 +222,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {ammo="Staunch Tathlum",
         head=gear.valorous_wsd_head,neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-        body="Hiza. Haramaki +1",hands="Sakonji Kote +1",ring1="Karieyh Ring",ring2="Regal Ring",
+        body="Hiza. Haramaki +1",hands="Sakonji Kote +2",ring1="Karieyh Ring",ring2="Regal Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Wakido Haidate +3",feet="Flamma Gambieras +2"}
     
 
