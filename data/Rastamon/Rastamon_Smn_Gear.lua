@@ -152,7 +152,7 @@ function init_gear_sets()
 		sub="Clerisy Strap +1",
 		ammo="Sancus Sachet +1",
 		head={ name="Merlinic Hood", augments={'"Mag.Atk.Bns."+20','Magic burst dmg.+10%','INT+4',}},
-		body="Shango Robe",
+		body="Zendik Robe",
 		hands={ name="Glyphic Bracers +1", augments={'Inc. Sp. "Blood Pact" magic burst dmg.',}},
 		legs="Gyve Trousers",
 		feet="Convoker's Pigaches +3",
@@ -367,7 +367,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {main="Nirvana",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Wiglen Gorget",ear1="Evans Earring",ear2="Loquacious Earring",
-        body="Shomonjijoe +1",hands=" Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Paguroidea Ring",
+        body="Shomonjijoe +1",hands=" Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Varar Ring",
         back="Campestres's Cape",waist="Convoker's Pigaches +2",legs="Assiduity pants +1",feet="Baayami Sabots"}
     
     -- Idle sets

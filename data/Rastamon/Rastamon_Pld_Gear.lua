@@ -98,7 +98,7 @@ function init_gear_sets()
     sets.precast.JA['Chivalry'] = {
 		head="Rev. Coronet +1",neck="Phalaina Locket",ear1="Nourish. Earring +1",ear2="Nourish. Earring +1 +1",
 		body="Sulevia's Plate. +2",hands="Cab. Gauntlets +1",ring1="Stikini Ring",ring2="Rufescent Ring",
-		back=gear.enmity_jse_back,waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
+		back=gear.enmity_jse_back,waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Carmine Greaves"}
 
 	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands="Cab. Gauntlets +1"})		
     sets.precast.JA['Provoke'] = set_combine(sets.Enmity, {})
@@ -447,7 +447,7 @@ function init_gear_sets()
 		waist="Fucho-no-Obi",
 		left_ear="Odnowa Earring",
 		right_ear="Odnowa Earring +1",
-		left_ring="Paguroidea Ring",
+		left_ring="Meridian Ring",
 		right_ring="Karieyh Ring", 
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}
 		}

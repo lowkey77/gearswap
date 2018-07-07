@@ -83,7 +83,7 @@ function init_gear_sets()
     sets.precast.FC = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Dread Jupon",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Rawhide Trousers",feet="Carmine Greaves +1"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket"})
 
@@ -94,8 +94,8 @@ function init_gear_sets()
 		neck="Ocachi Gorget",
 		ear1="Enervating Earring",
 		ear2="Telos Earring",
-        body="Laksamana's Frac +2",
-		hands="Meghanada Gloves +2",
+        body="Laksamana's frac +3",
+		hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
 		ring1="Ilabrat Ring",
 		ring2="Apate Ring",
         back=gear.ranger_wsd_jse_back,
@@ -115,7 +115,7 @@ function init_gear_sets()
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 
-    sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Carmine Mask +1",ring2="Rufescent Ring",back="Bleating Mantle",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"})
+    sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Carmine Mask +1",ring2="Rufescent Ring",back="Bleating Mantle",legs="Carmine Cuisses +1",feet="Carmine Greaves"})
 	
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
@@ -129,12 +129,12 @@ function init_gear_sets()
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Laksamana's frac +2",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Karieyh Ring",
+        body="Laksamana's frac +3",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Karieyh Ring",
         back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Laksamana's frac +2",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Apate Ring",
+        body="Laksamana's frac +3",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Apate Ring",
         back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
@@ -143,7 +143,7 @@ function init_gear_sets()
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Leaden Salute'].Acc = {ammo=gear.MAbullet,
-        head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
+        head="Pixie Hairpin +1",neck="Baetyl Pendante",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Archon Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
@@ -153,7 +153,7 @@ function init_gear_sets()
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
-        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Novio Earring",ear2="Friomisi Earring",
+        head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Novio Earring",ear2="Friomisi Earring",
         body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Ilabrat Ring",ring2="Karieyh Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
@@ -165,7 +165,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Dread Jupon",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Rawhide Trousers",feet="Carmine Greaves +1"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
         
     -- Specific spells
 
@@ -183,7 +183,7 @@ function init_gear_sets()
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-        head="Carmine Mask +1",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Telos Earring",
+        head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Digni. Earring",ear2="Telos Earring",
         body="Lanun Frac +3",hands="Leyline Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Mummu Kecks +1",feet="Lanun Bottes +2"}
 

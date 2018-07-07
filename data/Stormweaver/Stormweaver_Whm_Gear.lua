@@ -348,6 +348,11 @@ function init_gear_sets()
 		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Theophany Duckbills +3"}
+		
+	sets.midcast['Erase'] = {main="Yagrush",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
+		head="Telchine Cap",neck="Cleric's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
+		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Theophany Duckbills +3"}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
 

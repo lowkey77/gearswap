@@ -378,7 +378,7 @@ function init_gear_sets()
 		hands="Regal Cuffs",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
 		feet="Vitiation Boots +2",
-		neck="Incanter's Torque",
+		neck="Duelist's Torque",
 		waist="Rumination Sash",
 		left_ear="Regal Earring",
 		right_ear="Digni. Earring",
@@ -397,13 +397,32 @@ function init_gear_sets()
 		hands="Lethargy Gantherots +1",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
 		feet="Vitiation Boots +2",
-		neck="Incanter's Torque",
+		neck="Duelist's Torque",
 		waist="Rumination Sash",
 		left_ear="Regal Earring",
 		right_ear="Dignitary's Earring",
 		left_ring="Stikini Rin",
 		right_ring="Stikini Ring",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}}
+		}
+		
+	sets.midcast['Dispel'] = {                         
+		main="Murgleis",
+		--main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
+		sub="Ammurapi Shield",
+		ammo="Regal Gem",
+		head="Viti. Chapeau +2",
+		body="Atrophy Tabard +3",
+		hands="Regal Cuffs",
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
+		feet="Vitiation Boots +2",
+		neck="Duelist's Torque",
+		waist="Rumination Sash",
+		left_ear="Regal Earring",
+		right_ear="Digni. Earring",
+		left_ring="Kishar Ring",
+		right_ring="Stikini Ring",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		}
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Atrophy chapeau +3",waist="Acuity Belt +1"})
@@ -641,7 +660,7 @@ function init_gear_sets()
 --	sets.engaged = {ammo="Ginsen",
 --		head="Aya. Zucchetto +2",neck="Asperity Necklace",left_ear="Cessance Earring",right_ear="Brutal Earring",
 --		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",left_ring="Petrov Ring",right_ring="Ilabrat Ring",
---		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
+--		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves"}
 
 	sets.engaged = {
 		ammo="Paeapua",
@@ -667,7 +686,7 @@ function init_gear_sets()
 		legs="Aya. Cosciales +2",
 		--feet="Aya. Gambieras +2",
 		feet="Carmine Cuisses +1",
-		neck="Clotharius Torque",
+		neck="Combatant's Torque",
 		waist="Reki Yotai",
 		left_ear="Telos Earring",
 		right_ear="Cessance Earring",

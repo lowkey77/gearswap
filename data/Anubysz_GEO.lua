@@ -38,8 +38,8 @@ function init_gear_sets()
     --------------------------------------
  
     -- Precast sets to enhance JAs-
-    sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
-    sets.precast.JA['Life cycle'] = {body="Geomancy Tunic +2"}
+    sets.precast.JA.Bolster = {body="Bagua Tunic +3"}
+    sets.precast.JA['Life cycle'] = {body="Geomancy Tunic +3"}
     sets.precast.JA['Full Circle'] = {head="Azimuth Hood +1"}
     sets.precast.JA['Curative Recantation'] = {hands="Bagua Mitaines +1"}
     sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +1"}
@@ -48,13 +48,13 @@ function init_gear_sets()
     -- Fast cast sets for spells
  
     sets.precast.FC = {
-		main="Bolelabunga",
+		main="Sucellus",
 		sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','"Cure" spellcasting time -6%','HP+25',}},
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
 		head={ name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','CHR+9','Mag. Acc.+3','"Mag.Atk.Bns."+14',}},
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','Magic Damage +12','INT+12','Mag. Acc.+12','"Mag.Atk.Bns."+10',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+2','Mag. Acc.+5',}},
-		legs="Geo. Pants +1",
+		legs="Geo. Pants +3",
 		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Magic burst dmg.+8%','CHR+15','"Mag.Atk.Bns."+5',}},
 		neck="Voltsurge Torque",
 		waist="Witful Belt",
@@ -76,15 +76,15 @@ function init_gear_sets()
         main="Idris",
 		sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','"Cure" spellcasting time -6%','HP+25',}},
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-		head="Jhakri Coronal +1",
+		head="Jhakri Coronal +2",
 		body="Jhakri Robe +2",
-		hands="Jhakri Cuffs +1",
-		legs="Jhakri Slops +1",
-		feet="Jhakri Pigaches +1",
+		hands="Jhakri Cuffs +2",
+		legs="Jhakri Slops +2",
+		feet="Jhakri Pigaches +2",
 		neck="Imbodla Necklace",
 		waist="Olseni Belt",
 		left_ear="Lifestorm Earring",
-		right_ear="Telos Earring",
+		right_ear="Telos Earfring",
 		left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -4%','Magic dmg. taken -3%','Breath dmg. taken -4%',}},
 		right_ring="Rajas Ring",
 		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Pet: "Regen"+10',}},
@@ -92,7 +92,7 @@ function init_gear_sets()
  
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Flash Nova'] = {
-		ammo="Dosis Tathlum",
+		ammo="Pemphredo Tathlum",
         head="Hagondes Hat",
 		neck="Eddy Necklace",
 		ear1="Friomisi Earring",
@@ -107,9 +107,9 @@ function init_gear_sets()
 		feet="Hagondes Sabots"
 		}
  
-    sets.precast.WS['Starlight'] = {ear2="Moonshade Earring"}
+    sets.precast.WS['Starlight'] = {ear2="Etiolation Earring"}
  
-    sets.precast.WS['Moonlight'] = {ear2="Moonshade Earring"}
+    sets.precast.WS['Moonlight'] = {ear2="Etiolation Earring"}
  
  
     --------------------------------------
@@ -124,7 +124,7 @@ function init_gear_sets()
 		head={ name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','CHR+9','Mag. Acc.+3','"Mag.Atk.Bns."+14',}},
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','Magic Damage +12','INT+12','Mag. Acc.+12','"Mag.Atk.Bns."+10',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+2','Mag. Acc.+5',}},
-		legs="Geo. Pants +1",
+		legs="Geo. Pants +3",
 		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Magic burst dmg.+8%','CHR+15','"Mag.Atk.Bns."+5',}},
 		neck="Voltsurge Torque",
 		waist="Witful Belt",
@@ -140,8 +140,8 @@ function init_gear_sets()
 		sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','"Cure" spellcasting time -6%','HP+25',}},
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
 		head="Azimuth Hood +1",
-		body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
-		hands="Geo. Mitaines +2",
+		body={ name="Bagua Tunic +3", augments={'Enhances "Bolster" effect',}},
+		hands="Geo. Mitaines +3",
 		legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
 		feet="Azimuth Gaiters +1",
 		neck="Incanter's Torque",
@@ -158,8 +158,8 @@ function init_gear_sets()
 		sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','"Cure" spellcasting time -6%','HP+25',}},
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
 		head="Azimuth Hood +1",
-		body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
-		hands="Geo. Mitaines +2",
+		body={ name="Bagua Tunic +3", augments={'Enhances "Bolster" effect',}},
+		hands="Geo. Mitaines +3",
 		legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
 		feet="Azimuth Gaiters +1",
 		neck="Incanter's Torque",
@@ -200,7 +200,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'] = {
 		main={ name="Grioavolr", augments={'Magic burst dmg.+2%','MND+20','Mag. Acc.+22','"Mag.Atk.Bns."+13','Magic Damage +6',}},
 		sub="Niobid Strap",
-		ammo="Dosis Tathlum",
+		ammo="Pemphredo Tathlum",
 		head={ name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','CHR+9','Mag. Acc.+3','"Mag.Atk.Bns."+14',}},
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','Magic Damage +12','INT+12','Mag. Acc.+12','"Mag.Atk.Bns."+10',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+2','Mag. Acc.+5',}},
@@ -218,7 +218,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].Resistant = {
 		main={ name="Grioavolr", augments={'Magic burst dmg.+2%','MND+20','Mag. Acc.+22','"Mag.Atk.Bns."+13','Magic Damage +6',}},
 		sub="Niobid Strap",
-		ammo="Dosis Tathlum",
+		ammo="Pemphredo Tathlum",
 		head={ name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','CHR+9','Mag. Acc.+3','"Mag.Atk.Bns."+14',}},
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','Magic Damage +12','INT+12','Mag. Acc.+12','"Mag.Atk.Bns."+10',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+2','Mag. Acc.+5',}},
@@ -258,7 +258,7 @@ function init_gear_sets()
 		main={ name="Rubicundity", augments={'Mag. Acc.+8','"Mag.Atk.Bns."+9','Dark magic skill +8','"Conserve MP"+6',}},
 		sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','"Cure" spellcasting time -6%','HP+25',}},
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-		head={ name="Bagua Galero +1", augments={'Enhances "Primeval Zeal" effect',}},
+		head={ name="Bagua f +1", augments={'Enhances "Primeval Zeal" effect',}},
 		body="Shango Robe",
 		hands={ name="Helios Gloves", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','"Drain" and "Aspir" potency +4',}},
 		legs="Azimuth Tights +1",
@@ -273,12 +273,12 @@ function init_gear_sets()
 		}
 		
 		sets.midcast['Enhancing Magic'] = {
-			main={ name="Kirin's Pole", augments={'DMG:+23','Enha.mag. skill +11',}},
-			sub="Fulcio Grip",
+			main="Gada",
+			sub="Ammurapi Shield",
 			ammo="Plumose Sachet",
 			head="Befouled Crown",
 			body={ name="Telchine Chas.", augments={'Accuracy+12 Attack+12','Pet: "Regen"+3','Pet: Damage taken -3%',}},
-			hands="Geo. Mitaines +2",
+			hands="Geo. Mitaines +3",
 			legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
 			feet="Regal Pumps +1",
 			neck="Colossus's Torque",
@@ -323,7 +323,7 @@ function init_gear_sets()
 		feet="Serpentes Sabots",
 		neck="Wiglen Gorget",
 		waist="Fucho-no-Obi",
-		left_ear={ name="Moonshade Earring", augments={'MP+25','Latent effect: "Refresh"+1',}},
+		left_ear="Etiolation Earring", 
 		right_ear="Magnetic Earring",
 		left_ring="Sheltered Ring",
 		right_ring="Renaye Ring",
@@ -355,7 +355,7 @@ function init_gear_sets()
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
 		head="Azimuth Hood +1",
 		body={ name="Telchine Chas.", augments={'Accuracy+12 Attack+12','Pet: "Regen"+3','Pet: Damage taken -3%',}},
-		hands="Geo. Mitaines +2",
+		hands="Geo. Mitaines +3",
 		legs={ name="Telchine Braconi", augments={'Accuracy+14 Attack+14','Pet: "Regen"+2','Pet: Damage taken -3%',}},
 		feet={ name="Bagua Sandals +1", augments={'Enhances "Radial Arcana" effect',}},
 		neck="Loricate Torque +1",
@@ -373,7 +373,7 @@ function init_gear_sets()
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
 		head="Azimuth Hood +1",
 		body={ name="Telchine Chas.", augments={'Accuracy+12 Attack+12','Pet: "Regen"+3','Pet: Damage taken -3%',}},
-		hands="Geo. Mitaines +2", 
+		hands="Geo. Mitaines +3", 
 		legs={ name="Telchine Braconi", augments={'Accuracy+14 Attack+14','Pet: "Regen"+2','Pet: Damage taken -3%',}},
 		feet={ name="Bagua Sandals +1", augments={'Enhances "Radial Arcana" effect',}},
 		neck="Loricate Torque +1",
@@ -400,7 +400,7 @@ function init_gear_sets()
 		-- ear1="Enchanter Earring +1",
 		-- ear2="Loquacious Earring",
         -- body="Respite Cloak",
-		-- hands="Geomancy Mitaines +1",
+		-- hands="Geomancy Mitaines +3",
 		-- ring1="Sheltered Ring",
 		-- ring2="Paguroidea Ring",
         -- back="Umbra Cape",
@@ -484,11 +484,11 @@ function init_gear_sets()
 		main="Idris",
 		sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','"Cure" spellcasting time -6%','HP+25',}},
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-		head="Jhakri Coronal +1",
+		head="Jhakri Coronal +2",
 		body="Jhakri Robe +2",
-		hands="Gazu Bracelet +1",
-		legs="Jhakri Slops +1",
-		feet="Jhakri Pigaches +1",
+		hands="Jhakri Cuffs +2",
+		legs="Jhakri Slops +2",
+		feet="Jhakri Pigaches +2",
 		neck="Lissome Necklace",
 		waist="Cetl Belt",
 		left_ear="Cessance Earring",
