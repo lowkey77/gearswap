@@ -88,21 +88,22 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {    main="Terra's Staff",
-		sub="Clerisy Strap",
-		range="Gjallarhorn",
-		head="Haruspex Hat",
-		body="Vrikodara Jupon",
-		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-		legs={ name="Lengo Pants", augments={'INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+3','"Refresh"+1',}},
-		feet="Chelona Boots",
-		neck="Voltsurge Torque",
-		waist="Witful Belt",
-		left_ear="Loquac. Earring",
-		right_ear="Enchntr. Earring +1",
-		left_ring="Weather. Ring",
-		right_ring="Prolix Ring",
-		back="Swith Cape",}
+    sets.precast.FC = {main="Kali",
+    sub={ name="Genbu's Shield", augments={'"Cure" potency +3%','HP+30','"Cure" spellcasting time -8%',}},
+    range="Marsyas",
+    head="Haruspex Hat",
+    body="Inyanga Jubbah +1",
+    hands="Weath. Cuffs +1",
+    legs="Gyve Trousers",
+    feet="Chelona Boots",
+    neck="Voltsurge Torque",
+    waist="Witful Belt",
+    left_ear="Enchntr. Earring +1",
+    right_ear="Mendi. Earring",
+    left_ring="Weather. Ring",
+    right_ring="Kunaji Ring",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
+	}
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Serenity",
 		body={ name="Vanya Robe", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
@@ -117,9 +118,8 @@ function init_gear_sets()
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC)
 
-    sets.precast.FC.BardSong = {    
+    sets.precast.FC.BardSong = {sub="Genmei Shield",    
 		main="Felibre's Dague",
-		sub="Kali",
 		range="Gjallarhorn",
 		head="Fili Calot +1",
 		body="Sha'ir Manteel",
@@ -170,44 +170,46 @@ function init_gear_sets()
     -- Midcast Sets
 
     -- General set for recast times.
-    sets.midcast.FastRecast = {    main="Terra's Staff",
-		sub="Clerisy Strap",
-		head="Haruspex Hat",
-		body="Vrikodara Jupon",
-		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-		legs={ name="Lengo Pants", augments={'INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+3','"Refresh"+1',}},
-		feet="Chelona Boots",
-		neck="Voltsurge Torque",
-		waist="Witful Belt",
-		left_ear="Loquac. Earring",
-		right_ear="Enchntr. Earring +1",
-		left_ring="Weather. Ring",
-		right_ring="Prolix Ring",
-		back="Swith Cape",}
+    sets.midcast.FastRecast = {main={ name="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+8','"Fast Cast"+5',}},
+	sub="Genmei Shield",
+    range="Gjallarhorn",
+    head="Haruspex Hat",
+    body="Anhur Robe",
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    legs="Gyve Trousers",
+    feet="Chelona Boots",
+    neck="Voltsurge Torque",
+    waist="Witful Belt",
+    left_ear="Loquac. Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Weather. Ring",
+    right_ring="Prolix Ring",
+    back="Swith Cape",}
         
     -- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
     sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
 	sets.midcast.Prelude = {back="Intarabus's Cape"}	
-    sets.midcast.Lullaby = {main={ name="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+8','"Fast Cast"+5',}},
-		sub="Kali",
+    sets.midcast.Lullaby = {main="Carnwenhan",
+		sub={ name="Genbu's Shield", augments={'"Cure" potency +3%','HP+30','"Cure" spellcasting time -8%',}}, -- ammurapi shield
 		range="Gjallarhorn",
-		head={ name="Bihu Roundlet +1", augments={'Enhances "Foe Sirvente" effect',}},
+		head="Brioso Roundlet +3",
 		body="Brioso Just. +1",
-		hands="Fili Manchettes +1",
-		legs={ name="Bihu Cannions +1", augments={'Enhances "Soul Voice" effect',}},
-		feet={ name="Artsieq Boots", augments={'MP+26','Mag. Acc.+18','MND+6',}},
-		neck="Moonbow Whistle",
-		waist="Tengu-no-Obi",
-		left_ear="Psystorm Earring",
-		right_ear="Lifestorm Earring",
+		hands="Brioso Cuffs +2",
+		legs="Inyanga Shalwar +2",
+		feet="Brioso Slippers +2",
+		neck="Mnbw. Whistle +1",
+		waist="Eschan Stone",
+		left_ear="Digni. Earring",
+		right_ear="Gwati Earring",
 		left_ring="Weather. Ring",
 		right_ring="Stikini Ring",
-		back="Rhapsode's Cape",}
+		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
+		}
     sets.midcast.Madrigal = {head="Fili Calot +1", back="Intarabus's Cape"}
     sets.midcast.March = {hands="Fili Manchettes +1"}
     sets.midcast.Minuet = {body="Fili Hongreline +1"}
     sets.midcast.Minne = {}
-    sets.midcast.Paeon = {head="Brioso Roundlet +1"}
+    sets.midcast.Paeon = {head="Brioso Roundlet +3"}
     sets.midcast.Carol = {head="Fili Calot +1",
 		body="Fili Hongreline +1",
 		hands="Fili Manchettes +1",
@@ -221,42 +223,43 @@ function init_gear_sets()
     
 
     -- For song buffs (duration and AF3 set bonus)
-    sets.midcast.SongEffect = {    
-		main="Kali",
-		sub="Kali",
+    sets.midcast.SongEffect = {main="Carnwenhan",
+	    sub="Genmei Shield",
 		range="Gjallarhorn",
 		head="Fili Calot +1",
 		body="Fili Hongreline +1",
 		hands="Fili Manchettes +1",
-		legs="Mdk. Shalwar +1",
-		feet="Brioso Slippers +1",
-		neck="Moonbow Whistle",
+		legs="Inyanga Shalwar +2",
+		feet="Brioso Slippers +2",
+		neck="Moonbow Whistle +1",
 		waist="Witful Belt",
 		left_ear="Loquac. Earring",
 		right_ear="Enchntr. Earring +1",
 		left_ring="Weather. Ring",
 		right_ring="Stikini Ring",
-		back="Rhapsode's Cape",}
+		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
+		}
 
     -- For song defbuffs (duration primary, accuracy secondary)
-    sets.midcast.SongDebuff = {main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
-		sub={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},	
-		head={ name="Bihu Roundlet +1", augments={'Enhances "Foe Sirvente" effect',}},
+    sets.midcast.SongDebuff = {main="Carnwenhan",
+	    sub={ name="Genbu's Shield", augments={'"Cure" potency +3%','HP+30','"Cure" spellcasting time -8%',}}, -- ammurapi shield
+		head="Brioso Roundlet +3",
 		body="Brioso Just. +1",
-		hands="Fili Manchettes +1",
-		legs="Mdk. Shalwar +1",
-		feet="Brioso Slippers +1",
-		neck="Moonbow Whistle",
+		hands="Brioso Cuffs +2",
+		legs="Brioso Cannions +2",
+		feet="Brioso Slippers +2",
+		neck="Moonbow Whistle +1",
 		waist="Channeler's Stone",
-		left_ear="Psystorm Earring",
-		right_ear="Lifestorm Earring",
+		left_ear="Digni. Earring",
+		right_ear="Gwati Earring",
 		left_ring="Weather. Ring",
 		right_ring="Stikini Ring",
-		back="Rhapsode's Cape",}
+		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
+		}
 
     -- For song defbuffs (accuracy primary, duration secondary)
-    sets.midcast.ResistantSongDebuff = {main="Lehbrailg +2",sub="Mephitis Grip",range="Gjallarhorn",
-        head="Brioso Roundlet +1",neck="Wind Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
+    sets.midcast.ResistantSongDebuff = {main="Carnwenhan",sub="Mephitis Grip",range="Gjallarhorn",
+        head="Brioso Roundlet +3",neck="Wind Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
         body="Brioso Justaucorps +1",hands="Aoidos' Manchettes +2",ring1="Prolix Ring",ring2="Sangoma Ring",
         back="Kumbira Cape",waist="Demonry Sash",legs="Brioso Cannions +1",feet="Bokwus Boots"}
 
@@ -272,7 +275,7 @@ function init_gear_sets()
 
     -- Dummy song with Daurdabla; minimize duration to make it easy to overwrite.
     sets.midcast.DaurdablaDummy = {main="Felibre's Dague",
-		sub={ name="Malevolence", augments={'INT+10','Mag. Acc.+10','"Mag.Atk.Bns."+8','"Fast Cast"+5',}},
+	    sub={ name="Genbu's Shield", augments={'"Cure" potency +3%','HP+30','"Cure" spellcasting time -8%',}},
 		range=info.ExtraSongInstrument,
 		head="Nahtirah Hat",
 		body="Vrikodara Jupon",
@@ -289,7 +292,6 @@ function init_gear_sets()
 
     -- Other general spells and classes.
     sets.midcast.Cure = {name="Serenity", augments={'MP+50','Enha.mag. skill +10','"Cure" potency +5%','"Cure" spellcasting time -10%',},
-		sub="Clerisy Strap",
 		range="Gjallarhorn",
 		head={ name="Gende. Caubeen +1", augments={'Phys. dmg. taken -1%','"Cure" potency +4%',}},
 		body={ name="Vanya Robe", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
@@ -334,42 +336,40 @@ function init_gear_sets()
     
     
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-    sets.idle = {    main="Terra's Staff",
-		sub="Mensch Strap",
-		range="Gjallarhorn",
-		head="Fili Calot +1",
-		body="Vrikodara Jupon",
-		hands="Fili Manchettes +1",
-		legs={ name="Lengo Pants", augments={'INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+3','"Refresh"+1',}},
-		feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
-		neck="Sanctity Necklace",
-		waist="Flume Belt",
-		left_ear="Infused Earring",
-		right_ear="Eabani Earring",
-		left_ring="Paguroidea Ring",
-		right_ring="Sheltered Ring",
-		back="Kumbira Cape",
-		}
+    sets.idle = {main="Carnwenhan",
+	sub="Genmei Shield",
+    range="Gjallarhorn",
+    head="Fili Calot +1",
+    body="Fili Hongreline +1",
+    hands="Fili Manchettes +1",
+    legs={ name="Bihu Cannions +1", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Infused Earring",
+    right_ear="Genmei Earring",
+    left_ring="Paguroidea Ring",
+    right_ring="Warp Ring",
+    back="Solemnity Cape",}
 
-    sets.idle.PDT = {    main="Terra's Staff",
-		sub="Mensch Strap",
-		range="Gjallarhorn",
-		head="Fili Calot +1",
-		body="Vrikodara Jupon",
-		hands="Fili Manchettes +1",
-		legs={ name="Lengo Pants", augments={'INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+3','"Refresh"+1',}},
-		feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
-		neck="Sanctity Necklace",
-		waist="Flume Belt",
-		left_ear="Infused Earring",
-		right_ear="Eabani Earring",
-		left_ring="Paguroidea Ring",
-		right_ring="Sheltered Ring",
-		back="Kumbira Cape",
-		}
+    sets.idle.PDT = {main="Carnwenhan",
+	sub="Genmei Shield",
+    range="Gjallarhorn",
+    head="Fili Calot +1",
+    body="Fili Hongreline +1",
+    hands="Fili Manchettes +1",
+    legs={ name="Bihu Cannions +1", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Infused Earring",
+    right_ear="Genmei Earring",
+    left_ring="Paguroidea Ring",
+    right_ring="Warp Ring",
+    back="Solemnity Cape",}
 
-    sets.idle.Town = {    main="Terra's Staff",
-		sub="Mensch Strap",
+    sets.idle.Town = {main="Carnwenhan",
+	    sub="Genmei Shield",
 		range="Gjallarhorn",
 		head="Fili Calot +1",
 		body="Vrikodara Jupon",
@@ -385,46 +385,56 @@ function init_gear_sets()
 		back="Kumbira Cape",
 		}
     
-    sets.idle.Weak = {    main="Terra's Staff",
-		sub="Mensch Strap",
-		range="Gjallarhorn",
-		head="Fili Calot +1",
-		body="Vrikodara Jupon",
-		hands="Fili Manchettes +1",
-		legs={ name="Lengo Pants", augments={'INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+3','"Refresh"+1',}},
-		feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
-		neck="Sanctity Necklace",
-		waist="Flume Belt",
-		left_ear="Infused Earring",
-		right_ear="Eabani Earring",
-		left_ring="Paguroidea Ring",
-		right_ring="Sheltered Ring",
-		back="Kumbira Cape",
-	}
+    sets.idle.Weak = {main="Carnwenhan",
+	sub="Genmei Shield",
+    range="Gjallarhorn",
+    head="Fili Calot +1",
+    body="Fili Hongreline +1",
+    hands="Fili Manchettes +1",
+    legs={ name="Bihu Cannions +1", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Infused Earring",
+    right_ear="Genmei Earring",
+    left_ring="Paguroidea Ring",
+    right_ring="Warp Ring",
+    back="Solemnity Cape",}
     
     
     -- Defense sets
 
-    sets.defense.PDT = {main=gear.Staff.PDT,sub="Mephitis Grip",
-        head="Gendewitha Caubeen",neck="Twilight Torque",
-        body="Gendewitha Bliaut",hands="Gendewitha Gages",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-        back="Umbra Cape",waist="Flume Belt",legs="Gendewitha Spats",feet="Gendewitha Galoshes"}
+    sets.defense.PDT = {main="Carnwenhan",
+	sub="Genmei Shield",
+    range="Gjallarhorn",
+    head="Fili Calot +1",
+    body="Fili Hongreline +1",
+    hands="Fili Manchettes +1",
+    legs={ name="Bihu Cannions +1", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Infused Earring",
+    right_ear="Genmei Earring",
+    left_ring="Paguroidea Ring",
+    right_ring="Warp Ring",
+    back="Solemnity Cape",}
 
-    sets.defense.MDT = {    main="Terra's Staff",
-		sub="Mensch Strap",
-		range="Gjallarhorn",
-		head="Fili Calot +1",
-		body="Vrikodara Jupon",
-		hands="Fili Manchettes +1",
-		legs={ name="Lengo Pants", augments={'INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+3','"Refresh"+1',}},
-		feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
-		neck="Loricate Torque +1",
-		waist="Flume Belt",
-		left_ear="Odnowa Earring +1",
-		right_ear="Eabani Earring",
-		left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -5%',}},
-		right_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Phys. dmg. taken -5%','Magic dmg. taken -5%',}},
-		back="Rhapsode's Cape",}
+    sets.defense.MDT = {main="Carnwenhan",
+	sub="Genmei Shield",
+    range="Gjallarhorn",
+    head="Fili Calot +1",
+    body="Fili Hongreline +1",
+    hands="Fili Manchettes +1",
+    legs={ name="Bihu Cannions +1", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Infused Earring",
+    right_ear="Genmei Earring",
+    left_ring="Paguroidea Ring",
+    right_ring="Warp Ring",
+    back="Solemnity Cape",}
 
     sets.Kiting = {feet="Aoidos' Cothurnes +2"}
 
@@ -482,9 +492,9 @@ end
 -- Set eventArgs.useMidcastGear to true if we want midcast gear equipped on precast.
 function job_precast(spell, action, spellMap, eventArgs)
     if spell.type == 'BardSong' then
-        if spell.english == "Knight's Minne" then
+        if spell.english == "Ice Carol" then
 			state.ExtraSongsMode.value = 'Dummy'	
-        elseif spell.english == "Knight's Minne II" then
+        elseif spell.english == "Wind Carol" then
 			state.ExtraSongsMode.value = 'Dummy'			
 		elseif spell.english == 'Honor March' then
 			equip(sets.precast.FC.BardSong.HonorMarch)
@@ -696,7 +706,7 @@ function calculate_duration(spellName, spellMap)
     if player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
     if player.equipment.legs == "Mdk. Shalwar +1" then mult = mult + 0.1 end
     if player.equipment.feet == "Brioso Slippers" then mult = mult + 0.1 end
-    if player.equipment.feet == "Brioso Slippers +1" then mult = mult + 0.11 end
+    if player.equipment.feet == "Brioso Slippers +2" then mult = mult + 0.11 end
     
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet" then mult = mult + 0.1 end
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +1" then mult = mult + 0.1 end
