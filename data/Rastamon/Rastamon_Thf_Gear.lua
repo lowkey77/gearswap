@@ -121,12 +121,12 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Yamarang",
 		head="Mummu Bonnet +1",
-		body={ name="Herculean Vest", augments={'Pet: DEX+1','"Mag.Atk.Bns."+17','Weapon skill damage +7%','Accuracy+4 Attack+4',}},
+		body={ name="Herculean Vest", augments={'Accuracy+23 Attack+23','Weapon skill damage +4%','DEX+8','Accuracy+3',}},
 		hands="Meghanada Gloves +2",
 		legs={ name="Herculean Trousers", augments={'Attack+18','"Triple Atk."+3','DEX+6','Accuracy+10',}},
-		feet="Mummu Gamash. +1",
+		feet="Mummu Gamash. +2",
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Cessance Earring",
@@ -140,7 +140,17 @@ function init_gear_sets()
 	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {neck="Combatant's Torque",ear1="Telos Earring",body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",waist="Olseni Belt",legs="Meg. Chausses +1",feet=gear.herculean_acc_feet})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {head="Dampening Tam",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",body="Adhemar Jacket",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",back=gear.ws_jse_back})
+    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {
+		head="Dampening Tam",
+		neck="Fotia Gorget",
+		ear1="Moonshade Earring",
+		ear2="Ishvara Earring",
+		body={ name="Herculean Vest", augments={'Accuracy+23 Attack+23','Weapon skill damage +4%','DEX+8','Accuracy+3',}},
+		hands="Meg. Gloves +2",
+		ring1="Ilabrat Ring",
+		ring2="Ramuh Ring +1",
+		back=gear.ws_jse_back
+		})
     sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Dampening Tam",neck="Fotia Gorget",ear1="Moonshade Earring",body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",back=gear.ws_jse_back})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring2="Ramuh Ring +1",back=gear.ws_jse_back})
 	sets.precast.WS["Rudra's Storm"].FullAcc = set_combine(sets.precast.WS.FullAcc, {back=gear.ws_jse_back})
@@ -167,10 +177,10 @@ function init_gear_sets()
     sets.precast.WS["Shark Bite"].TA = set_combine(sets.precast.WS["Shark Bite"].Fodder, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",legs="Darraigner's Brais"})
     sets.precast.WS["Shark Bite"].SATA = set_combine(sets.precast.WS["Shark Bite"].Fodder, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",legs="Darraigner's Brais"})
 	
-    sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +1",ring1="Begrudging Ring",waist="Fotia Belt",legs="Darraigner's Brais",feet="Mummu Gamash. +1"})
-    sets.precast.WS['Evisceration'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +1",ring1="Begrudging Ring",waist="Fotia Belt",legs="Mummu Kecks +1",feet="Mummu Gamash. +1"})
-    sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS.Acc, {head="Mummu Bonnet +1",ring1="Begrudging Ring",neck="Fotia Gorget",body="Meg. Cuirie +2",hands="Mummu Wrists +1",waist="Fotia Belt",legs="Mummu Kecks +1",feet="Mummu Gamash. +1"})
-	sets.precast.WS['Evisceration'].FullAcc = set_combine(sets.precast.WS.FullAcc, {head="Mummu Bonnet +1",body="Meg. Cuirie +2",hands="Mummu Wrists +1",legs="Mummu Kecks +1",feet="Mummu Gamash. +1"})
+    sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +1",ring1="Begrudging Ring",waist="Fotia Belt",legs="Darraigner's Brais",feet="Mummu Gamash. +2"})
+    sets.precast.WS['Evisceration'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +1",ring1="Begrudging Ring",waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
+    sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS.Acc, {head="Mummu Bonnet +1",ring1="Begrudging Ring",neck="Fotia Gorget",body="Meg. Cuirie +2",hands="Mummu Wrists +1",waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
+	sets.precast.WS['Evisceration'].FullAcc = set_combine(sets.precast.WS.FullAcc, {head="Mummu Bonnet +1",body="Meg. Cuirie +2",hands="Mummu Wrists +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Evisceration'].Fodder = set_combine(sets.precast.WS['Evisceration'], {})
     sets.precast.WS['Evisceration'].SA = set_combine(sets.precast.WS['Evisceration'].Fodder, {})
     sets.precast.WS['Evisceration'].TA = set_combine(sets.precast.WS['Evisceration'].Fodder, {})
@@ -179,10 +189,10 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'] = {
         head="Mummu Bonnet +1",neck="Fotia Gorget",ear1="Clearview Earring",ear2="Neritic Earring",
         body="Meg. Cuirie +2",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.ws_jse_back,waist="Fotia Belt",legs="Mummu Kecks +1",feet="Mummu Gamash. +1"}
+        back=gear.ws_jse_back,waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     sets.precast.WS['Aeolian Edge'] = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Yamarang",
         head=gear.herculean_nuke_head,
 		neck="Baetyl Pendant",
 		ear1="Friomisi Earring",
@@ -225,12 +235,12 @@ function init_gear_sets()
     sets.midcast.RA = {
         head="Mummu Bonnet +1",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
         body="Meg. Cuirie +2",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +1",feet="Mummu Gamash. +1"}
+        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     sets.midcast.RA.Acc = {
         head="Mummu Bonnet +1",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
         body="Meg. Cuirie +2",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +1",feet="Mummu Gamash. +1"}
+        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     --------------------------------------
     -- Idle/resting/defense sets
@@ -277,12 +287,12 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Yamarang",
 		head="Skulker's Bonnet +1",
 		body="Adhemar Jacket",
 		hands={ name="Floral Gauntlets", augments={'Rng.Acc.+15','Accuracy+15','"Triple Atk."+3','Magic dmg. taken -4%',}},
-		legs="Mummu Kecks +1",
-		feet="Mummu Gamash. +1",
+		legs="Mummu Kecks +2",
+		feet="Mummu Gamash. +2",
 		neck="Combatant's torque",
 		waist="Reiki Yotai",
 		left_ear="Cessance Earring",
@@ -297,7 +307,7 @@ function init_gear_sets()
         body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Petrov Ring",ring2="Epona's Ring",
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
-	sets.engaged.Acc = {ammo="Seeth. Bomblet +1",
+	sets.engaged.Acc = {ammo="Yamarang",
         head="Dampening Tam",neck="Combatant's Torque",ear1="Telos Earring",ear2="Suppanomimi",
         body="Meg. Cuirie +2",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Epona's Ring",
         back=gear.da_jse_back,waist="Olseni Belt",legs="Meg. Chausses +1",feet=gear.herculean_acc_feet}

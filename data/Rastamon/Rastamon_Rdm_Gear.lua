@@ -110,7 +110,7 @@ function init_gear_sets()
 	sets.precast.WS['Death Blossom'] = set_combine(sets.precast.WS, 
 	{
 		ammo="Regal Gem",
-		head="Vitiation Chapeau +2",
+		head="Vitiation Chapeau +3",
 		body="Ayanmo Corazza +2",
 		hands="Atrophy Gloves +3",
 		legs="Jhakri Slops +2",
@@ -161,7 +161,7 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, 
 	{
 		ammo="Regal Gem",
-		head="Vitiation Chapeau +2",
+		head="Vitiation Chapeau +3",
 		body="Vitiation Tabard +3",
 		hands="Jhakri Cuffs +2",
 		legs="Jhakri Slops +2",
@@ -373,11 +373,11 @@ function init_gear_sets()
 		--main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
 		sub="Ammurapi Shield",
 		ammo="Regal Gem",
-		head="Viti. Chapeau +2",
+		head="Vitiation Chapeau +3",
 		body="Atrophy Tabard +3",
 		hands="Regal Cuffs",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
-		feet="Vitiation Boots +2",
+		feet="Vitiation Boots +3",
 		neck="Duelist's Torque",
 		waist="Rumination Sash",
 		left_ear="Regal Earring",
@@ -392,16 +392,16 @@ function init_gear_sets()
 		--main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
 		sub="Ammurapi Shield",
 		ammo="Regal Gem",
-		head="Viti. Chapeau +2",
+		head="Vitiation Chapeau +3",
 		body="Atrophy Tabard +3",
 		hands="Lethargy Gantherots +1",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
-		feet="Vitiation Boots +2",
+		feet="Vitiation Boots +3",
 		neck="Duelist's Torque",
 		waist="Rumination Sash",
 		left_ear="Regal Earring",
 		right_ear="Dignitary's Earring",
-		left_ring="Stikini Rin",
+		left_ring="Stikini Ring",
 		right_ring="Stikini Ring",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}}
 		}
@@ -411,11 +411,11 @@ function init_gear_sets()
 		--main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
 		sub="Ammurapi Shield",
 		ammo="Regal Gem",
-		head="Viti. Chapeau +2",
+		head="Vitiation Chapeau +3",
 		body="Atrophy Tabard +3",
 		hands="Regal Cuffs",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
-		feet="Vitiation Boots +2",
+		feet="Vitiation Boots +3",
 		neck="Duelist's Torque",
 		waist="Rumination Sash",
 		left_ear="Regal Earring",
@@ -439,17 +439,17 @@ function init_gear_sets()
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Dia II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
-	sets.midcast['Dia III'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitiation Chapeau +2",waist="Chaac Belt"})
+	sets.midcast['Dia III'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitiation Chapeau +3",waist="Chaac Belt"})
 	
 	sets.midcast.Bio = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio III'] = set_combine(sets.midcast['Enfeebling Magic'], {waist="Chaac Belt",legs="Vitivation Tights +1",feet=gear.chironic_treasure_feet})
 
-	sets.midcast['Slow II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitiation Chapeau +2"})
-	sets.midcast['Slow II'].Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Vitiation Chapeau +2"})
+	sets.midcast['Slow II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitiation Chapeau +3"})
+	sets.midcast['Slow II'].Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Vitiation Chapeau +3"})
 	
-	sets.midcast['Blind II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitiation Chapeau +2",legs="Vitivation Tights +1"})
-	sets.midcast['Blind II'].Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Vitiation Chapeau +2"})
+	sets.midcast['Blind II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitiation Chapeau +3",legs="Vitivation Tights +1"})
+	sets.midcast['Blind II'].Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Vitiation Chapeau +3"})
 	
     sets.midcast['Elemental Magic'] = {
 		main=gear.grioavolr_nuke_staff,
@@ -467,7 +467,7 @@ function init_gear_sets()
         back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		waist=gear.ElementalObi,
 		legs="Jhakri Slops +2",
-		feet="Vitiation Boots +2"
+		feet="Vitiation Boots +3"
 		}
 		
     sets.midcast['Elemental Magic'].Resistant = {
@@ -486,7 +486,7 @@ function init_gear_sets()
         back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		waist=gear.ElementalObi,
 		legs="Jhakri Slops +2",
-		feet="Vitiation Boots +2"
+		feet="Vitiation Boots +3"
 		}
 		
     sets.midcast['Elemental Magic'].Fodder = {
@@ -570,7 +570,7 @@ function init_gear_sets()
 		main="Murgleis",
 		sub={ name="Genbu's Shield", augments={'"Cure" potency +2%','"Cure" spellcasting time -7%',}},
 		ammo="Homiliary",
-		head="Viti. Chapeau +2",
+		head="Vitiation Chapeau +3",
 		body="Atrophy Tabard +3",
 		hands="Atrophy Gloves +3",
 		legs="Nares Trews",
@@ -590,11 +590,11 @@ function init_gear_sets()
 		main="Murgleis",
 		sub="Culminus",
 		ammo="Homiliary",
-		head="Viti. Chapeau +2",
+		head="Vitiation Chapeau +3",
 		body="Atrophy Tabard +3",
 		hands="Atrophy Gloves +3",
 		legs="Nares Trews",
-		feet="Vitiation Boots +2",
+		feet="Vitiation Boots +3",
 		neck="Nodens Gorget",
 		waist="Fucho-no-Obi",
 		left_ear="Regal Earring",
@@ -605,17 +605,17 @@ function init_gear_sets()
 		}
 		
 	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",ammo="Impatiens",
-		head="Vitiation Chapeau +2",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
+		head="Vitiation Chapeau +3",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
 		body="Emet Harness +1",hands="Hagondes Cuffs +1",left_ring="Defending Ring",right_ring="Dark Ring",
 		back="Umbra Cape",waist="Flume Belt",legs="Hagondes Pants +1",feet="Gende. Galosh. +1"}
 		
 	sets.idle.MDT = {main="Murgleis",sub="Genmei Shield",ammo="Impatiens",
-		head="Vitiation Chapeau +2",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
+		head="Vitiation Chapeau +3",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
 		body="Vrikodara Jupon",hands="Hagondes Cuffs +1",left_ring="Defending Ring",right_ring="Shadow Ring",
 		back="Engulfer Cape +1",waist="Flume Belt",legs="Hagondes Pants +1",feet="Gende. Galosh. +1"}
 		
 	sets.idle.Weak = {main="Murgleis",sub="Genmei Shield",ammo="Homiliary",
-		head="Vitiation Chapeau +2",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
+		head="Vitiation Chapeau +3",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,left_ring="Defending Ring",right_ring="Dark Ring",
 		back="Umbra Cape",waist="Flume Belt",legs="Lengo Pants",feet=gear.chironic_refresh_feet}
 	
@@ -688,7 +688,7 @@ function init_gear_sets()
 		feet="Carmine Cuisses +1",
 		neck="Combatant's Torque",
 		waist="Reki Yotai",
-		left_ear="Telos Earring",
+		left_ear="Suppanomimi",
 		right_ear="Cessance Earring",
 		left_ring="Hetairoi Ring",
 		right_ring="Chirich Ring",
