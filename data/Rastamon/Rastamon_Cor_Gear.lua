@@ -13,7 +13,7 @@ function user_setup()
     options.ammo_warning_limit = 15
 
 	gear.tp_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Snapshot"+10',}}
-	gear.herculean_nuke_head = { name="Herculean Helm", augments={'Pet: "Mag.Atk.Bns."+1','MND+1','Accuracy+17 Attack+17','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
+	gear.herculean_nuke_head = { name="Herculean Helm", augments={'Mag. Acc.+8','AGI+10','Damage taken-4%','Accuracy+3 Attack+3','Mag. Acc.+18 "Mag.Atk.Bns."+18',}}
 	gear.herculean_wsd_legs={ name="Herculean Trousers", augments={'Pet: "Mag.Atk.Bns."+22','STR+9','Weapon skill damage +6%','Accuracy+15 Attack+15','Mag. Acc.+8 "Mag.Atk.Bns."+8',}}
 	gear.ranger_wsd_jse_back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.herculean_wsd_hands={ name="Herculean Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Weapon skill damage +2%','CHR+9',}}
@@ -320,8 +320,8 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_acc_feet}
 
     sets.engaged.DW = {
-		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Adhemar Jacket",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
+		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Suppanomimi",
+		body="Adhemar Jacket",hands="Floral Gauntlets",ring1="Chirich Ring",ring2="Regal Ring",
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet=gear.herculean_ta_feet}
     
     sets.engaged.DW.Acc = {

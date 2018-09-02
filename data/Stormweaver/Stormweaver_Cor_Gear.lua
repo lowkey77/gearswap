@@ -88,7 +88,7 @@ function init_gear_sets()
     sets.precast.RA = {ammo=gear.RAbullet,
         head="Chass. Tricorne",
         hands="Lanun Gants +1",
-        back="Camulus's Mantle",waist="Impulse Belt",legs="Adhemar Kecks",feet="Meg. Jam. +1"}
+        back="Camulus's Mantle",waist="Impulse Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
        
     -- Weaponskill sets
@@ -96,7 +96,7 @@ function init_gear_sets()
     sets.precast.WS = {
         head="Meghanada Visor +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos Earring",
         body="Meg. Cuirie +1",hands="Meg. Gloves +1",ring1="Ilabrat Ring",ring2="Karieyh Ring",
-        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +1"}
+        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -179,12 +179,12 @@ function init_gear_sets()
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Ocachi Gorget",ear1="Enervating Earring",ear2="Telos Earring",
         body="Meg. Cuirie +1",hands="Meg. Gloves +1",ring1="Ilabrat Ring",ring2="Apate Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Meg. Chausses +1",feet="Meg. Jam. +1"}
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Combatant's Torque",ear1="Enervating Earring",ear2="Telos Earring",
         body="Meg. Cuirie +1",hands="Meg. Gloves +1",ring1="Ilabrat Ring",ring2="Apate Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Meg. Chausses +1",feet="Meg. Jam. +1"}
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
     
@@ -205,8 +205,8 @@ function init_gear_sets()
 		head={ name="Lanun Tricorne", augments={'Enhances "Winning Streak" effect',}},
 		body={ name="Lanun Frac", augments={'Enhances "Loaded Deck" effect',}},
 		hands={ name="Floral Gauntlets", augments={'Rng.Acc.+13','Accuracy+14','"Triple Atk."+1','Magic dmg. taken -2%',}},
-		legs="Meg. Chausses +1",
-		feet="Meg. Jam. +1",
+		legs="Meg. Chausses +2",
+		feet="Meg. Jam. +2",
 		neck="Clotharius Torque",
 		waist="Eschan Stone",
 		left_ear="Enervating Earring",
@@ -230,12 +230,12 @@ function init_gear_sets()
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +1",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +1",feet=gear.herculean_dt_feet}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet=gear.herculean_dt_feet}
 
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +1",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +1",feet=gear.herculean_dt_feet}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet=gear.herculean_dt_feet}
     
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
@@ -271,7 +271,7 @@ function init_gear_sets()
     sets.engaged.DW.Acc = {
 		head="Dampening Tam",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
 		body="Meg. Cuirie +1",hands="Floral Gauntlets",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +1",feet=gear.herculean_acc_feet}
+		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet=gear.herculean_acc_feet}
 
 end
 
