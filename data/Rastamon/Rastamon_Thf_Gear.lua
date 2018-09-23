@@ -85,7 +85,7 @@ function init_gear_sets()
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
 		ammo="Yamarang",
-        head="Mummu Bonnet +1",
+        head="Mummu Bonnet +2",
 		neck="Unmoving Collar +1",
 		ear1="Enchntr. Earring +1",
 		ear2="Handler's Earring +1",
@@ -99,7 +99,7 @@ function init_gear_sets()
 		feet=gear.herculean_waltz_feet
 		}
 		
-	sets.Self_Waltz = {head="Mummu Bonnet +1",body="Passion Jacket",ring1="Asklepian Ring"}
+	sets.Self_Waltz = {head="Mummu Bonnet +2",body="Passion Jacket",ring1="Asklepian Ring"}
 		
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
@@ -122,7 +122,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
 		ammo="Yamarang",
-		head="Mummu Bonnet +1",
+		head="Mummu Bonnet +2",
 		body={ name="Herculean Vest", augments={'Accuracy+23 Attack+23','Weapon skill damage +4%','DEX+8','Accuracy+3',}},
 		hands="Meghanada Gloves +2",
 		legs={ name="Herculean Trousers", augments={'Attack+18','"Triple Atk."+3','DEX+6','Accuracy+10',}},
@@ -179,15 +179,15 @@ function init_gear_sets()
 	
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +1",ring1="Begrudging Ring",waist="Fotia Belt",legs="Darraigner's Brais",feet="Mummu Gamash. +2"})
     sets.precast.WS['Evisceration'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +1",ring1="Begrudging Ring",waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
-    sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS.Acc, {head="Mummu Bonnet +1",ring1="Begrudging Ring",neck="Fotia Gorget",body="Meg. Cuirie +2",hands="Mummu Wrists +1",waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
-	sets.precast.WS['Evisceration'].FullAcc = set_combine(sets.precast.WS.FullAcc, {head="Mummu Bonnet +1",body="Meg. Cuirie +2",hands="Mummu Wrists +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
+    sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS.Acc, {head="Mummu Bonnet +2",ring1="Begrudging Ring",neck="Fotia Gorget",body="Meg. Cuirie +2",hands="Mummu Wrists +1",waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
+	sets.precast.WS['Evisceration'].FullAcc = set_combine(sets.precast.WS.FullAcc, {head="Mummu Bonnet +2",body="Meg. Cuirie +2",hands="Mummu Wrists +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Evisceration'].Fodder = set_combine(sets.precast.WS['Evisceration'], {})
     sets.precast.WS['Evisceration'].SA = set_combine(sets.precast.WS['Evisceration'].Fodder, {})
     sets.precast.WS['Evisceration'].TA = set_combine(sets.precast.WS['Evisceration'].Fodder, {})
     sets.precast.WS['Evisceration'].SATA = set_combine(sets.precast.WS['Evisceration'].Fodder, {})
 
     sets.precast.WS['Last Stand'] = {
-        head="Mummu Bonnet +1",neck="Fotia Gorget",ear1="Clearview Earring",ear2="Neritic Earring",
+        head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Clearview Earring",ear2="Neritic Earring",
         body="Meg. Cuirie +2",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.ws_jse_back,waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
@@ -233,12 +233,12 @@ function init_gear_sets()
     -- Ranged gear
 
     sets.midcast.RA = {
-        head="Mummu Bonnet +1",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
+        head="Mummu Bonnet +2",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
         body="Meg. Cuirie +2",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     sets.midcast.RA.Acc = {
-        head="Mummu Bonnet +1",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
+        head="Mummu Bonnet +2",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
         body="Meg. Cuirie +2",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 

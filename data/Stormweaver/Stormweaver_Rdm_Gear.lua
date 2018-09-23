@@ -68,21 +68,21 @@ function init_gear_sets()
     -- No other FC sets necessary.
 	--85% FC
 	sets.precast.FC = {
-		main="Murgleis",
-		sub="Culminus",
-		ammo="Impatiens",
-		head="Atrophy chapeau +3", --16%
-		body="Vitiation Tabard +3",--15%
-		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-		legs="Ayanmo Cosciales +2",--6%
-		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},--5%
-		neck="Loricate Torque +1",
-		waist="Witful Belt",--3%
-		left_ear="Etiolation Earring",--1%
-		right_ear="Thureous Earring",
-		left_ring="Veneficium Ring",
-		right_ring="Defending Ring",
-		back="Perimede Cape",
+		main="Oranyan",
+		sub="Enki Strap",
+		ammo="Regal Gem",
+		head={ name="Chironic Hat", augments={'"Mag.Atk.Bns."+10','"Fast Cast"+6','Mag. Acc.+2',}},
+		body="Shango Robe",
+		hands={ name="Chironic Gloves", augments={'Mag. Acc.+15','"Cure" spellcasting time -10%','CHR+4',}},
+		legs="Aya. Cosciales +1",
+		feet="Navon Crackows",
+		neck="Voltsurge Torque",
+		waist="Channeler's Stone",
+		left_ear="Loquac. Earring",
+		right_ear="Gwati Earring",
+		left_ring="Kishar Ring",
+		right_ring="Lebeche Ring",
+    back="Perimede Cape",
 		}
 		
 	sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
@@ -214,21 +214,21 @@ function init_gear_sets()
 	sets.IceNuke = {}
 
 	sets.midcast.FastRecast = {
-		-- main=gear.grioavolr_fc_staff,
-		-- sub="Clerisy Strap +1",
-		ammo="Impatiens",
-		head="Atrophy chapeau +3", --14%
-		body="Zendik Robe",--13%
-		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-		legs="Gyve Trousers",--4%
-		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},--5%
-		neck="Baetyl Pendant",--4%
-		waist="Witful Belt",--3%
-		left_ear="Estq. Earring",--2%
-		right_ear="Enchntr. Earring +1",--2%
-		left_ring="Veneficium Ring",
-		right_ring="Prolix Ring",--2%
-		back="Swith Cape +1",--4$
+		main="Oranyan",
+		sub="Enki Strap",
+		ammo="Regal Gem",
+		head={ name="Chironic Hat", augments={'"Mag.Atk.Bns."+10','"Fast Cast"+6','Mag. Acc.+2',}},
+		body="Shango Robe",
+		hands={ name="Chironic Gloves", augments={'Mag. Acc.+15','"Cure" spellcasting time -10%','CHR+4',}},
+		legs="Aya. Cosciales +1",
+		feet="Navon Crackows",
+		neck="Voltsurge Torque",
+		waist="Channeler's Stone",
+		left_ear="Loquac. Earring",
+		right_ear="Gwati Earring",
+		left_ring="Kishar Ring",
+		right_ring="Lebeche Ring",
+		back="Perimede Cape",
 		}
 
     sets.midcast.Cure = {
@@ -302,21 +302,21 @@ function init_gear_sets()
 		}
 
 	sets.midcast['Enhancing Magic'] = {
-		main="Murgleis",
-		sub="Ammurapi Shield",
+		 main="Oranyan",
+		sub="Enki Strap",
 		ammo="Regal Gem",
-		head="Carmine Mask",
-		body="Vitiation Tabard +3",
-		hands="Atrophy Gloves +3",
-		legs="Atrophy Tights +2",
-		feet="Lethargy Houseaux +1",
+		head="Befouled Crown",
+		body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +1',}},
+		hands={ name="Chironic Gloves", augments={'Mag. Acc.+15','"Cure" spellcasting time -10%','CHR+4',}},
+		legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
+		feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},
 		neck="Incanter's Torque",
-		waist="Luminary Sash",
-		left_ear="Regal Earring",
-		right_ear="Andoaa Earring",
+		waist="Siegel Sash",
+		left_ear="Loquac. Earring",
+		right_ear="Gwati Earring",
 		left_ring="Stikini Ring",
 		right_ring="Stikini Ring",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
 		}
 		
 		sets.midcast['Temper II'] = {
@@ -324,27 +324,27 @@ function init_gear_sets()
 			sub="Ammurapi Shield",
 			ammo="Regal Gem",
 			head="Befouled Crown",
-			body={ name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}},
-			hands={ name="Viti. Gloves +3", augments={'Enhances "Phalanx II" effect',}},
-			legs="Atrophy Tights +2",
-			feet="Leth. Houseaux +1",
+			body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +1',}},
+			hands={ name="Chironic Gloves", augments={'Mag. Acc.+15','"Cure" spellcasting time -10%','CHR+4',}},
+			legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
+			feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},
 			neck="Incanter's Torque",
-			waist="Fucho-no-Obi",
-			left_ear="Regal Earring",
-			right_ear="Andoaa Earring",
+			waist="Siegel Sash",
+			left_ear="Loquac. Earring",
+			right_ear="Gwati Earring",
 			left_ring="Stikini Ring",
 			right_ring="Stikini Ring",
-			back="Fi Follet Cape +1",
+			back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
 			}
 		
 	-- Sets for special buff conditions on spells.
 		
 	sets.buff.ComposureOther = {
-		head="Lethargy Chappel +1",
-		body="Lethargy Sayon +1",
-		hands="Lethargy Gantherots +1",
-		legs="Lethargy Fuseau +1",
-		feet="Lethargy Houseaux +1"
+		head="Lethargy Chappel",
+		body="Lethargy Sayon",
+		hands="Lethargy Gantherots",
+		legs="Lethargy Fuseau",
+		feet="Lethargy Houseaux"
 		}
 		
 	sets.buff.RefreshOther = set_combine(sets.buff.ComposureOther,{
@@ -369,60 +369,57 @@ function init_gear_sets()
 	sets.midcast.BoostStat = set_combine(sets.midcast['Enhancing Magic'], {hands="Vitiation Gloves +3"})
 	
 	sets.midcast['Enfeebling Magic'] = {                         
-		main="Murgleis",
-		--main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
-		sub="Ammurapi Shield",
+		main="Contemplator",
+		sub="Enki Strap",
 		ammo="Regal Gem",
-		head="Vitiation Chapeau +3",
-		body="Atrophy Tabard +3",
-		hands="Regal Cuffs",
-		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
-		feet="Vitiation Boots +3",
-		neck="Duelist's Torque",
-		waist="Rumination Sash",
-		left_ear="Regal Earring",
-		right_ear="Digni. Earring",
+		head="Befouled Crown",
+		body={ name="Vanya Robe", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+		hands="Estq. Ganthrt. +1",
+		legs={ name="Psycloth Lappas", augments={'Mag. Acc.+10','Spell interruption rate down +15%','MND+7',}},
+		feet={ name="Medium's Sabots", augments={'MP+35','MND+7','"Cure" potency +1%',}},
+		neck="Incanter's Torque",
+		waist="Luminary Sash",
+		left_ear="Hermetic Earring",
+		right_ear="Gwati Earring",
 		left_ring="Kishar Ring",
 		right_ring="Stikini Ring",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
 		}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {
-		main="Murgleis",
-		--main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
-		sub="Ammurapi Shield",
+		main="Contemplator",
+		sub="Enki Strap",
 		ammo="Regal Gem",
-		head="Vitiation Chapeau +3",
-		body="Atrophy Tabard +3",
-		hands="Lethargy Gantherots +1",
-		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
-		feet="Vitiation Boots +3",
+		head="Befouled Crown",
+		body={ name="Vanya Robe", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+		hands="Estq. Ganthrt. +1",
+		legs={ name="Psycloth Lappas", augments={'Mag. Acc.+10','Spell interruption rate down +15%','MND+7',}},
+		feet={ name="Medium's Sabots", augments={'MP+35','MND+7','"Cure" potency +1%',}},
 		neck="Incanter's Torque",
-		waist="Rumination Sash",
-		left_ear="Regal Earring",
-		right_ear="Dignitary's Earring",
-		left_ring="Stikini Ring",
+		waist="Luminary Sash",
+		left_ear="Hermetic Earring",
+		right_ear="Gwati Earring",
+		left_ring="Kishar Ring",
 		right_ring="Stikini Ring",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}}
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
 		}
 		
 	sets.midcast['Dispel'] = {                         
-		main="Murgleis",
-		--main={ name="Grioavolr", augments={'Enfb.mag. skill +14','MP+22','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +1',}},
-		sub="Ammurapi Shield",
+		main="Contemplator",
+		sub="Enki Strap",
 		ammo="Regal Gem",
-		head="Vitiation Chapeau +3",
-		body="Atrophy Tabard +3",
-		hands="Regal Cuffs",
-		legs={ name="Chironic Hose", augments={'Mag. Acc.+28','Spell interruption rate down -4%','CHR+14',}},
-		feet="Vitiation Boots +3",
-		neck="Duelist's Torque",
-		waist="Rumination Sash",
-		left_ear="Regal Earring",
-		right_ear="Digni. Earring",
+		head="Befouled Crown",
+		body={ name="Vanya Robe", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+		hands="Estq. Ganthrt. +1",
+		legs={ name="Psycloth Lappas", augments={'Mag. Acc.+10','Spell interruption rate down +15%','MND+7',}},
+		feet={ name="Medium's Sabots", augments={'MP+35','MND+7','"Cure" potency +1%',}},
+		neck="Incanter's Torque",
+		waist="Luminary Sash",
+		left_ear="Hermetic Earring",
+		right_ear="Gwati Earring",
 		left_ring="Kishar Ring",
 		right_ring="Stikini Ring",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
 		}
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Atrophy chapeau +3",waist="Acuity Belt +1"})
@@ -587,21 +584,21 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {
-		main="Murgleis",
-		sub="Culminus",
-		ammo="Homiliary",
-		head="Vitiation Chapeau +3",
-		body="Atrophy Tabard +3",
-		hands="Atrophy Gloves +3",
+		main="Bolelabunga",
+		sub="Ammurapi Shield",
+		ammo="Regal Gem",
+		head="Befouled Crown",
+		body={ name="Witching Robe", augments={'MP+25','"Mag.Atk.Bns."+7',}},
+		hands={ name="Chironic Gloves", augments={'Mag. Acc.+15','"Cure" spellcasting time -10%','CHR+4',}},
 		legs="Nares Trews",
-		feet="Vitiation Boots +3",
-		neck="Nodens Gorget",
+		feet={ name="Chironic Slippers", augments={'Attack+10','Accuracy+21','Phalanx +5','Accuracy+9 Attack+9','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+		neck="Loricate Torque +1",
 		waist="Fucho-no-Obi",
-		left_ear="Regal Earring",
-		right_ear="Dignitary's Earring",
-		left_ring="Meridian Ring",
-		right_ring="Persis Ring",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+		left_ear="Loquac. Earring",
+		right_ear="Gwati Earring",
+		left_ring="Stikini Ring",
+		right_ring="Stikini Ring",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
 		}
 		
 	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",ammo="Impatiens",

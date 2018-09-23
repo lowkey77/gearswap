@@ -8,8 +8,8 @@ function user_setup()
 
     gear.RAbullet = "Chrono Bullet"
     gear.WSbullet = "Chrono Bullet"
-    gear.MAbullet = "Chrono Bullet"
-    gear.QDbullet = "Chrono Bullet"
+    gear.MAbullet = "Living Bullet"
+    gear.QDbullet = "Living Bullet"
     options.ammo_warning_limit = 15
 
 	gear.tp_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Snapshot"+10',}}
@@ -45,7 +45,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 	
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Culottes +1"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +2"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
@@ -59,9 +59,9 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +1"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
     
     sets.precast.CorsairShot = {}
@@ -73,7 +73,7 @@ function init_gear_sets()
         body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
 		
-	sets.Self_Waltz = {head="Mummu Bonnet +1",body="Passion Jacket",ring1="Asklepian Ring"}
+	sets.Self_Waltz = {head="Mummu Bonnet +2",body="Passion Jacket",ring1="Asklepian Ring"}
         
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
@@ -222,7 +222,7 @@ function init_gear_sets()
         body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Apate Ring",
         back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Carmine Cuisses +1",feet="Meghanada Jambeaux +2"}
 		
-	sets.buff['Triple Shot'] = {body="Chasseur's Frac"}
+	sets.buff['Triple Shot'] = {head="Oshosi Mask", body="Chasseur's Frac +1", legs="Oshosi Trousers"}
     
     -- Sets to return to when not performing an action.
 	
@@ -238,7 +238,6 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {
 			ammo=gear.RAbullet,
-			range="Fomalhaut",
 			head="Meghanada Visor +2",
 			body="Meg. Cuirie +2",
 			hands="Meg. Gloves +2",
@@ -261,7 +260,6 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {
 			ammo=gear.RAbullet,
-			range="Fomalhaut",
 			head="Meghanada Visor +2",
 			body="Meg. Cuirie +2",
 			hands="Meg. Gloves +2",
@@ -278,7 +276,6 @@ function init_gear_sets()
 
     sets.defense.MDT = {
 			ammo=gear.RAbullet,
-			range="Fomalhaut",
 			head="Meghanada Visor +2",
 			body="Meg. Cuirie +2",
 			hands="Meg. Gloves +2",

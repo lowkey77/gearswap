@@ -11,8 +11,8 @@ function user_setup()
 	
     update_combat_form()
 
-	gear.ws_jse_back = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	gear.stp_jse_back = {name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}
+	gear.ws_jse_back = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
+	gear.stp_jse_back = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}
 	gear.valorous_wsd_head = { name="Valorous Mask", augments={'Accuracy+17 Attack+17','Weapon skill damage +5%','Accuracy+12','Attack+7',}}
 	gear.valorous_wsd_body = { name="Valorous Mail", augments={'Accuracy+27','Weapon skill damage +4%','VIT+1',}}
 	gear.valorous_wsd_hands = { name="Valorous Mitts", augments={'Accuracy+18 Attack+18','Weapon skill damage +3%','AGI+2','Accuracy+13','Attack+6',}}
@@ -36,9 +36,9 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +2",back=gear.ws_jse_back}
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +3",back=gear.ws_jse_back}
     sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
-    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +2"}
+    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +3"}
 	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +1"}
 	sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +1"}
 	
@@ -77,12 +77,12 @@ function init_gear_sets()
         --body="Dagon breastplate",
 		body="Sakonji Domaru +3",
 		hands=gear.valorous_wsd_hands,
-		right_ring="Niqmaddu Ring",
-		left_ring="Karieyh Ring",
+		right_ring="Karieyh Ring",
+		left_ring="Niqmaddu Ring",
         back=gear.ws_jse_back,
 		waist="Fotia Belt",
 		legs="Wakido Haidate +3",
-		feet="Wakido Sune. +3",
+		feet={ name="Valorous Greaves", augments={'Attack+27','Weapon skill damage +5%','VIT+5','Accuracy+2',}},
 		}
 		
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {})
@@ -97,7 +97,7 @@ function init_gear_sets()
     sets.precast.WS['Tachi: Fudo'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS['Tachi: Fudo'].Fodder = set_combine(sets.precast.WS.Fodder, {})
 	
-    sets.precast.WS['Tachi: Shoha'] = set_combine(sets.precast.WS, {body="Dagon breastplate", left_ear="Moonshade Earring"})
+    sets.precast.WS['Tachi: Shoha'] = set_combine(sets.precast.WS, {left_ear="Moonshade Earring"})
     sets.precast.WS['Tachi: Shoha'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS['Tachi: Shoha'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Tachi: Shoha'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -222,7 +222,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {ammo="Staunch Tathlum",
         head=gear.valorous_wsd_head,neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-        body="Hiza. Haramaki +1",hands="Sakonji Kote +2",ring1="Karieyh Ring",ring2="Regal Ring",
+        body="Hiza. Haramaki +1",hands="Sakonji Kote +3",ring1="Karieyh Ring",ring2="Regal Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Wakido Haidate +3",feet="Flamma Gambieras +2"}
     
 
@@ -381,7 +381,7 @@ function init_gear_sets()
 		body="Kasuga Domaru +1",
 		hands="Wakido Kote +3",
 		legs="Tatena. Haidate",
-		feet="Wakido Sune. +3",
+		feet="Ryuo Sune-Ate +1",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",
 		left_ear="Dedition Earring",
