@@ -297,8 +297,9 @@ function init_gear_sets()
 	sets.Self_Refresh = {
 		head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		body="Atrophy Tabard +3", 
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
-		waist="Gishdubar Sash"
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
+		waist="Gishdubar Sash",
+		feet="Inspirited Boots",
 		}
 
 	sets.midcast['Enhancing Magic'] = {
