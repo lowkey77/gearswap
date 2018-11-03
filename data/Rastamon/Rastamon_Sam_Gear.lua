@@ -380,7 +380,7 @@ function init_gear_sets()
 		--body="Tatenashi Haramaki",
 		body="Kasuga Domaru +1",
 		hands="Wakido Kote +3",
-		legs="Tatena. Haidate",
+		legs="Tatenashi Haidate",
 		feet="Ryuo Sune-Ate +1",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",

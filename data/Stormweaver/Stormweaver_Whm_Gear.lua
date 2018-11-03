@@ -2,7 +2,7 @@
 function user_setup()
     state.OffenseMode:options('None', 'Normal')
     state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'PDT', 'TPEat', 'Regain')
+    state.IdleMode:options('Normal', 'PDT', 'MEVA', 'TPEat', 'Regain')
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -455,28 +455,58 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {
-		main="Yagrush",
-		--main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+		main="Mafic Cudgel",
 		sub="Ammurapi Shield",
 		ammo="Incantor Stone",
 		head="Befouled Crown",
 		body="Theophany Briault +3",
 		hands="Theophany Mitts +3",
 		legs="Ebers Pantaloons +1",
-		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-		neck="Orison Locket",
-		waist="Luminary Sash",
-		left_ear="Nourishing Earring +1",
-		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
+		feet="Inyanga Crackows +2",
+		neck="Loricate Torque +1",
+		waist="Fucho-no-obi",
+		left_ear="Ethereal Earring",
+		right_ear="Dominance Earring",
+		left_ring="Inyanga Ring",
 		right_ring="Persis Ring",
 		back="Alaunus's Cape",
 		}
 
-	sets.idle.PDT = {main="Terra's Staff", sub="Oneiros Grip",ammo="Staunch Tathlum",
-		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Odnowa Earring",ear2="Ethereal Earring",
-		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flax Sash",legs="Gende. Spats +1",feet=gear.chironic_refresh_feet}
+	sets.idle.PDT = {
+		main="Mafic Cudgel",
+		sub="Ammurapi Shield",
+		ammo="Incantor Stone",
+		head="Befouled Crown",
+		body="Theophany Briault +3",
+		hands="Theophany Mitts +3",
+		legs="Ebers Pantaloons +1",
+		feet="Inyanga Crackows +2",
+		neck="Loricate Torque +1",
+		waist="Fucho-no-obi",
+		left_ear="Ethereal Earring",
+		right_ear="Dominance Earring",
+		left_ring="Inyanga Ring",
+		right_ring="Persis Ring",
+		back="Alaunus's Cape",
+		}
+		
+	sets.idle.MEVA = {
+		main="Mafic Cudgel",
+		sub="Ammurapi Shield",
+		ammo="Incantor Stone",
+		head="Inyanga Tiara +2",
+		body="Inyanga Jubbah +2",
+		hands="Inyanga Dastanas +2",
+		legs="Inyanga Shalwar +2",
+		feet="Inyanga Crackows +2",
+		neck="Warder's Charm",
+		waist="Carrier's Sash",
+		left_ear="Ethereal Earring",
+		right_ear="Dominance Earring",
+		left_ring="Inyanga Ring",
+		right_ring="Persis Ring",
+		back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','Enmity-10','Occ. inc. resist. to stat. ailments+10',}},
+		}
 		
     sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque",ring2="Karieyh Ring"})
 	sets.idle.Regain = set_combine(sets.idle, {ring2="Karieyh Ring"})

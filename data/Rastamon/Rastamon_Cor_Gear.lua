@@ -12,7 +12,8 @@ function user_setup()
     gear.QDbullet = "Living Bullet"
     options.ammo_warning_limit = 15
 
-	gear.tp_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Snapshot"+10',}}
+	gear.tp_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10',}}
+	gear.snap_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Snapshot"+10',}}
 	gear.herculean_nuke_head = { name="Herculean Helm", augments={'Mag. Acc.+8','AGI+10','Damage taken-4%','Accuracy+3 Attack+3','Mag. Acc.+18 "Mag.Atk.Bns."+18',}}
 	gear.herculean_wsd_legs={ name="Herculean Trousers", augments={'Pet: "Mag.Atk.Bns."+22','STR+9','Weapon skill damage +6%','Accuracy+15 Attack+15','Mag. Acc.+8 "Mag.Atk.Bns."+8',}}
 	gear.ranger_wsd_jse_back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
@@ -98,7 +99,7 @@ function init_gear_sets()
 		hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
 		ring1="Ilabrat Ring",
 		ring2="Apate Ring",
-        back=gear.ranger_wsd_jse_back,
+        back=gear.snap_jse_back,
 		waist="Yemaya Belt",
 		legs="Adhemar Kecks",
 		feet="Meghanada Jambeaux +2"

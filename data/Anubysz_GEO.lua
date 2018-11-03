@@ -42,8 +42,8 @@ function init_gear_sets()
     sets.precast.JA['Life cycle'] = {body="Geomancy Tunic +3"}
     sets.precast.JA['Full Circle'] = {head="Azimuth Hood +1"}
     sets.precast.JA['Curative Recantation'] = {hands="Bagua Mitaines +1"}
-    sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +1"}
-    sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
+    sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +3"}
+    sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +2"}
      
     -- Fast cast sets for spells
  
@@ -142,7 +142,7 @@ function init_gear_sets()
 		head="Azimuth Hood +1",
 		body={ name="Bagua Tunic +3", augments={'Enhances "Bolster" effect',}},
 		hands="Geo. Mitaines +3",
-		legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
+		legs={ name="Bagua Pants +3", augments={'Enhances "Mending Halation" effect',}},
 		feet="Azimuth Gaiters +1",
 		neck="Incanter's Torque",
 		waist="Austerity Belt +1",
@@ -160,7 +160,7 @@ function init_gear_sets()
 		head="Azimuth Hood +1",
 		body={ name="Bagua Tunic +3", augments={'Enhances "Bolster" effect',}},
 		hands="Geo. Mitaines +3",
-		legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
+		legs={ name="Bagua Pants +3", augments={'Enhances "Mending Halation" effect',}},
 		feet="Azimuth Gaiters +1",
 		neck="Incanter's Torque",
 		waist="Austerity Belt +1",
@@ -279,7 +279,7 @@ function init_gear_sets()
 			head="Befouled Crown",
 			body={ name="Telchine Chas.", augments={'Accuracy+12 Attack+12','Pet: "Regen"+3','Pet: Damage taken -3%',}},
 			hands="Geo. Mitaines +3",
-			legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
+			legs={ name="Bagua Pants +3", augments={'Enhances "Mending Halation" effect',}},
 			feet="Regal Pumps +1",
 			neck="Colossus's Torque",
 			waist="Olympus Sash",
@@ -357,7 +357,7 @@ function init_gear_sets()
 		body={ name="Telchine Chas.", augments={'Accuracy+12 Attack+12','Pet: "Regen"+3','Pet: Damage taken -3%',}},
 		hands="Geo. Mitaines +3",
 		legs={ name="Telchine Braconi", augments={'Accuracy+14 Attack+14','Pet: "Regen"+2','Pet: Damage taken -3%',}},
-		feet={ name="Bagua Sandals +1", augments={'Enhances "Radial Arcana" effect',}},
+		feet={ name="Bagua Sandals +2", augments={'Enhances "Radial Arcana" effect',}},
 		neck="Loricate Torque +1",
 		waist="Isa Belt",
 		left_ear="Handler's Earring",
@@ -375,7 +375,7 @@ function init_gear_sets()
 		body={ name="Telchine Chas.", augments={'Accuracy+12 Attack+12','Pet: "Regen"+3','Pet: Damage taken -3%',}},
 		hands="Geo. Mitaines +3", 
 		legs={ name="Telchine Braconi", augments={'Accuracy+14 Attack+14','Pet: "Regen"+2','Pet: Damage taken -3%',}},
-		feet={ name="Bagua Sandals +1", augments={'Enhances "Radial Arcana" effect',}},
+		feet={ name="Bagua Sandals +2", augments={'Enhances "Radial Arcana" effect',}},
 		neck="Loricate Torque +1",
 		waist="Isa Belt",
 		left_ear="Handler's Earring",
@@ -386,10 +386,10 @@ function init_gear_sets()
 		}
  
     -- .Indi sets are for when an Indi-spell is active.
-    sets.idle.Indi = set_combine(sets.idle, {head="Azimuth Hood +1",legs="Bagua Pants +1",feet="Azimuth Gaiters +1"})
-    sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {head="Azimuth Hood +1",back="Lifestream Cape",legs="Bagua Pants +1",feet="Azimuth Gaiters +1"})
-    sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {head="Azimuth Hood +1",body="Azimuth Coat +1",back="Lifestream Cape",legs="Bagua Pants +1",feet="Azimuth Gaiters +1"})
-    sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {head="Azimuth Hood +1",body="Azimuth Coat +1",back="Lifestream Cape",legs="Bagua Pants +1",feet="Azimuth Gaiters +1"})
+    sets.idle.Indi = set_combine(sets.idle, {head="Azimuth Hood +1",legs="Bagua Pants +3",feet="Azimuth Gaiters +1"})
+    sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {head="Azimuth Hood +1",back="Lifestream Cape",legs="Bagua Pants +3",feet="Azimuth Gaiters +1"})
+    sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {head="Azimuth Hood +1",body="Azimuth Coat +1",back="Lifestream Cape",legs="Bagua Pants +3",feet="Azimuth Gaiters +1"})
+    sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {head="Azimuth Hood +1",body="Azimuth Coat +1",back="Lifestream Cape",legs="Bagua Pants +3",feet="Azimuth Gaiters +1"})
  
     -- sets.idle.Town = {
 		-- main="Tamaxchi",
@@ -405,7 +405,7 @@ function init_gear_sets()
 		-- ring2="Paguroidea Ring",
         -- back="Umbra Cape",
 		-- waist="Goading Belt",
-		-- legs="Bagua Pants +1",
+		-- legs="Bagua Pants +3",
 		-- feet="Geomancy Sandals +2"
 		-- }
  
