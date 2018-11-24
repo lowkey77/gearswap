@@ -593,7 +593,7 @@ function init_gear_sets()
 		head="Vitiation Chapeau +3",
 		body="Atrophy Tabard +3",
 		hands="Atrophy Gloves +3",
-		legs="Nares Trews",
+		legs="Vitiation tights +3",
 		feet="Vitiation Boots +3",
 		neck="Nodens Gorget",
 		waist="Fucho-no-Obi",
