@@ -104,7 +104,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Hasty Pinion +1",
 		head="Befouled Crown",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Kaykaus Bliaut",hands="Theophany Mitts +3",ring1="Rajas Ring",ring2="Stikini Ring",
+		body="Kaykaus Bliaut",hands="Theophany Mitts +3",ring1="Rajas Ring",ring2="Stikini Ring +1",
 		back="Rancorous Mantle",waist="Fotia Belt",legs="Assid. Pants +1",feet="Gende. Galosh. +1"}
 
     --sets.precast.WS['Flash Nova'] = {}
@@ -346,12 +346,12 @@ function init_gear_sets()
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
 	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Theophany Duckbills +3"}
 		
 	sets.midcast['Erase'] = {main="Yagrush",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Cleric's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Theophany Duckbills +3"}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
@@ -369,12 +369,12 @@ function init_gear_sets()
 	
 	sets.midcast.BarElement = {main="Gada",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head="Ebers Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body="Ebers Bliaud",hands="Ebers Mitts",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Ebers Bliaud",hands="Ebers Mitts",ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Perimede Cape",waist="Olympus Sash",legs="Piety Pantaloons",feet="Theophany Duckbills +3"}
 
 	sets.midcast.Impact = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Twilight Cloak",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Twilight Cloak",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Toro Cape",waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
 	sets.midcast['Elemental Magic'] = {main=gear.grioavolr_nuke_staff,sub="Zuuxowu Grip",ammo="Dosis Tathlum",
@@ -389,12 +389,12 @@ function init_gear_sets()
 
 	sets.midcast['Divine Magic'] = {main=-"Oranyan", sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Aurist's Cape +1",waist="Luminary Sash",legs="Theophany Pantaloons +2",feet="Chironic Slippers"}
 
 	sets.midcast['Dark Magic'] = {main="Oranyan", sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Aurist's Cape +1",waist="Yamabuki-no-Obi",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
     sets.midcast.Drain = {main="Rubicundity",sub="Sors Shield",ammo="Pemphredo Tathlum",
@@ -404,7 +404,7 @@ function init_gear_sets()
 
     sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Sors Shield",ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-        body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring",ring2="Stikini Ring",
+        body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring +1",ring2="Stikini Ring",
         back="Aurist's Cape +1",waist="Fucho-no-obi",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
     sets.midcast.Aspir = sets.midcast.Drain
@@ -412,22 +412,22 @@ function init_gear_sets()
 
 	sets.midcast.Stun = {main="Oranyan",sub="Enki Strap",ammo="Hasty Pinion +1",
 		head="Nahtirah Hat",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Kishar Ring",ring2="Stikini Ring",
+		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 
 	sets.midcast.Stun.Resistant = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		head="Nahtirah Hat",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Aurist's Cape +1",waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
 	sets.midcast['Enfeebling Magic'] = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Kishar Ring",ring2="Stikini Ring",
+		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet="Medium's Sabots"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet="Medium's Sabots"}
 		
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -443,7 +443,7 @@ function init_gear_sets()
 	sets.midcast.IntEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {waist="Acuity Belt +1"})
 
 	sets.midcast.MndEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {back="Alaunus's Cape"})
-	sets.midcast.MndEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {back="Alaunus's Cape",ring1="Stikini Ring"})
+	sets.midcast.MndEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {back="Alaunus's Cape",ring1="Stikini Ring +1"})
 
     -- Sets to return to when not performing an action.
 
@@ -467,7 +467,7 @@ function init_gear_sets()
 		waist="Fucho-no-obi",
 		left_ear="Ethereal Earring",
 		right_ear="Dominance Earring",
-		left_ring="Inyanga Ring",
+		left_ring="Stikini Ring +1",
 		right_ring="Persis Ring",
 		back="Alaunus's Cape",
 		}
