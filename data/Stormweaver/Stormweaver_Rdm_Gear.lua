@@ -383,7 +383,7 @@ function init_gear_sets()
 		left_ear="Hermetic Earring",
 		right_ear="Gwati Earring",
 		left_ring="Kishar Ring",
-		right_ring="Stikini Ring",
+		right_ring="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
 		}
 		
@@ -401,7 +401,7 @@ function init_gear_sets()
 		left_ear="Hermetic Earring",
 		right_ear="Gwati Earring",
 		left_ring="Kishar Ring",
-		right_ring="Stikini Ring",
+		right_ring="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		}
 		
@@ -419,7 +419,7 @@ function init_gear_sets()
 		left_ear="Hermetic Earring",
 		right_ear="Gwati Earring",
 		left_ring="Kishar Ring",
-		right_ring="Stikini Ring",
+		right_ring="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		}
 		
@@ -534,7 +534,7 @@ function init_gear_sets()
     right_ear="Dignitary's Earring",
     left_ear="Regal Earring",
     left_ring="Stikini Ring",
-    right_ring="Stikini Ring",
+    right_ring="Stikini Ring +1",
     back="Perimede Cape",
 		}
 
@@ -598,7 +598,7 @@ function init_gear_sets()
 		left_ear="Loquac. Earring",
 		right_ear="Gwati Earring",
 		left_ring="Stikini Ring",
-		right_ring="Stikini Ring",
+		right_ring="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
 		}
 		

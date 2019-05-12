@@ -105,19 +105,19 @@ function init_gear_sets()
 	sets.midcast.SongEffect = {main="Kali",sub="Genmei Shield",range="Linos",
 		head="Aoidos' Calot +2",neck="Aoidos' Matinee",ear2="Loquacious Earring",
 		body="Aoidos' Hongreline +2",hands="Aoidos' Manchettes +2",ring1="Prolix Ring",
-		back="Swith Cape +1",waist="Witful Belt",legs="Mdk. Shalwar +1",feet="Brioso Slippers +1"}
+		back="Swith Cape +1",waist="Witful Belt",legs="Mdk. Shalwar +1",feet="Brioso Slippers +2"}
 
 	-- For song defbuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {main="Legato Dagger",sub="Genmei Shield",range="Linos",
 		head="Bihu Roundlet +1",neck="Aoidos' Matinee",ear1="Gwati Earring",ear2="Digni. Earring",
 		body="Bihu Jstcorps +1",hands="Bihu Cuffs +1",ring1="Carb. Ring +1",ring2="Mephitas's Ring +1",
-		back="Rhapsode's Cape",waist="Aristo Belt",legs="Bihu Cannions +1",feet="Brioso Slippers +1"}
+		back="Rhapsode's Cape",waist="Aristo Belt",legs="Bihu Cannions +1",feet="Brioso Slippers +2"}
 
 	-- For song defbuffs (accuracy primary, duration secondary)
 	sets.midcast.ResistantSongDebuff = {main=gear.maccstaff,sub="Clerisy Strap +1",range="Linos",
 		head="Bihu Roundlet +1",neck="Sanctity Necklace",ear1="Gwati Earring",ear2="Digni. Earring",
 		body="Bihu Jstcorps +1",hands="Bihu Cuffs +1",ring1="Carb. Ring +1",ring2="Mephitas's Ring +1",
-		back="Rhapsode's Cape",waist="Aristo Belt",legs="Bihu Cannions +1",feet="Brioso Slippers +1"}
+		back="Rhapsode's Cape",waist="Aristo Belt",legs="Bihu Cannions +1",feet="Brioso Slippers +2"}
 
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {main=gear.maccstaff,sub="Clerisy Strap +1",

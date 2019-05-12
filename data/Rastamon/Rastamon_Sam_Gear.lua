@@ -1,7 +1,7 @@
 -- Setup vars that are user-dependent.
 function user_setup()
-    state.OffenseMode:options('Normal','SomeAcc','Acc','FullAcc','Zanshin','Fodder')
-    state.HybridMode:options('Normal','DTLite','PDT','Reraise')
+    state.OffenseMode:options('Zanshin','Normal','SomeAcc','Acc','FullAcc','Fodder')
+    state.HybridMode:options('Normal','DTLite','PDT','Reraise', 'MEVA')
     state.WeaponskillMode:options('Normal','SomeAcc','Acc','FullAcc','Fodder')
     state.RangedMode:options('Normal', 'Acc')
     state.PhysicalDefenseMode:options('PDT','PDTReraise')
@@ -61,7 +61,15 @@ function init_gear_sets()
     sets.precast.Waltz['Healing Waltz'] = {}
 
     -- Fast cast sets for spells
-    sets.precast.FC = {neck="Baetyl Pendant",left_ear="Enchntr. Earring +1",right_ear="Loquacious Earring",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring"}
+    sets.precast.FC = 
+	{
+		neck="Baetyl Pendant",
+		left_ear="Enchntr. Earring +1",
+		right_ear="Loquacious Earring",
+		hands="Leyline Gloves",
+		ring1="Lebeche Ring",
+		ring2="Prolix Ring"
+	}
 	   
     -- Ranged snapshot gear
     sets.precast.RA = {}
@@ -71,7 +79,8 @@ function init_gear_sets()
     sets.precast.WS = {
 		ammo="Knobkierrie",
         head=gear.valorous_wsd_head,
-		neck="Fotia Gorget",
+		neck="Samurai Nodowa +2",
+		--neck="Fotia Gorget",
 		left_ear="Brutal Earring",
 		right_ear="Ishvara Earring",
         --body="Dagon breastplate",
@@ -93,7 +102,20 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Tachi: Fudo'] = set_combine(sets.precast.WS, {left_ear="Moonshade Earring"})
     sets.precast.WS['Tachi: Fudo'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
-    sets.precast.WS['Tachi: Fudo'].Acc = set_combine(sets.precast.WS.Acc, {})
+    sets.precast.WS['Tachi: Fudo'].Acc = set_combine(sets.precast.WS.Acc, {sub="Utu Grip",
+		ammo="Ginsen",
+		head="Flamma Zucchetto +2",
+		body="Wakido Domaru +3",
+		hands="Wakido Kote +3",
+		legs="Wakido Haidate +3",
+		feet="Wakido Sune. +3",
+		neck="Moonbeam Nodowa",
+		waist="Ioskeha Belt",
+		left_ear="Telos Earring",
+		right_ear="Cessance Earring",
+		left_ring="Chirich Ring",
+		right_ring="Patricius Ring",
+		back=gear.stp_jse_back,})
     sets.precast.WS['Tachi: Fudo'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS['Tachi: Fudo'].Fodder = set_combine(sets.precast.WS.Fodder, {})
 	
@@ -228,7 +250,7 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	
-	sets.Kiting = {feet="Danzo Sune-ate"}
+	sets.Kiting = {}
 
     sets.Reraise = {head="Twilight Helm",body="Twilight Mail"}
 	
@@ -242,7 +264,7 @@ function init_gear_sets()
 		sub="Utu Grip",
 		ammo="Ginsen",
         head="Wakido Kabuto +3",
-		neck="Moonbeam Nodowa",
+		neck="Samurai's Nodowa +2",
 		body="Wakido Domaru +3",
 		left_ear="Telos Earring",
 		right_ear="Cessance Earring",
@@ -298,13 +320,13 @@ function init_gear_sets()
     sets.defense.PDTReraise = set_combine(sets.defense.PDT, sets.Reraise)
 		
     sets.defense.MDT = {
-		ammo="Ginsen",
-		head="Loess Barbuta +1",
+		ammo="Staunch Tathlum",
+		head="Wakido Kabuto +3",
 		body="Wakido Domaru +3",
-		hands="Wakido Kote +3",
+		hands="Volte Bracers",
 		legs="Wakido Haidate +3",
 		feet="Wakido Sune. +3",
-		neck="Loricate Torque +1",
+		neck="Warder's Charm +1",
 		waist="Ioskeha Belt",
 		left_ear="Odnowa Earring +1",
 		right_ear="Odnowa Earring",
@@ -316,13 +338,13 @@ function init_gear_sets()
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, sets.Reraise)
 	
     sets.defense.MEVA = {
-		ammo="Ginsen",
-		head="Loess Barbuta +1",
+		ammo="Staunch Tathlum",
+		head="Wakido Kabuto +3",
 		body="Wakido Domaru +3",
-		hands="Wakido Kote +3",
+		hands="Volte Bracers",
 		legs="Wakido Haidate +3",
 		feet="Wakido Sune. +3",
-		neck="Loricate Torque +1",
+		neck="Warder's Charm +1",
 		waist="Ioskeha Belt",
 		left_ear="Odnowa Earring +1",
 		right_ear="Odnowa Earring",
@@ -377,17 +399,18 @@ function init_gear_sets()
 		sub="Utu Grip",
 		ammo="Ginsen",
 		head="Flamma Zucchetto +2",
-		--body="Tatenashi Haramaki",
-		body="Kasuga Domaru +1",
+		body="Tatenashi Haramaki",
+		--body="Kasuga Domaru +1",
 		hands="Wakido Kote +3",
-		legs="Tatenashi Haidate",
+		--legs="Tatenashi Haidate",
+		legs="Kendatsuba hakama",
 		feet="Ryuo Sune-Ate +1",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",
-		left_ear="Dedition Earring",
+		left_ear="Brutal Earring",
 		right_ear="Cessance Earring",
-		left_ring="Regal Ring",
-		right_ring="Niqmaddu Ring",
+		left_ring="Flamma Ring",
+		right_ring="Chirich Ring",
 		back=gear.stp_jse_back,
 			}
 			
@@ -395,7 +418,7 @@ function init_gear_sets()
 		sub="Utu Grip",
 		ammo="Ginsen",
 		head="Flamma Zucchetto +2",
-		body="Dagon breastplate",
+		body="Wakido Domaru +3",
 		hands="Wakido Kote +3",
 		legs="Wakido Haidate +3",
 		feet="Wakido Sune. +3",
@@ -403,8 +426,8 @@ function init_gear_sets()
 		waist="Ioskeha Belt",
 		left_ear="Telos Earring",
 		right_ear="Cessance Earring",
-		left_ring="Regal Ring",
-		right_ring="Niqmaddu Ring",
+		left_ring="Chirich Ring",
+		right_ring="Patricius Ring",
 		back=gear.stp_jse_back,
 		}
     sets.engaged.FullAcc = {
@@ -589,6 +612,22 @@ function init_gear_sets()
 		right_ring="Defending Ring",
 		back="Moonbeam Cape",
 		}	
+		
+	sets.engaged.Zanshin.MEVA = {
+		ammo="Ginsen",
+		head="Loess Barbuta +1",
+		body="Wakido Domaru +3",
+		hands="Wakido Kote +3",
+		legs="Wakido Haidate +3",
+		feet="Wakido Sune. +3",
+		neck="Loricate Torque +1",
+		waist="Ioskeha Belt",
+		left_ear="Odnowa Earring +1",
+		right_ear="Odnowa Earring",
+		left_ring="Patricius Ring",
+		right_ring="Defending Ring",
+		back="Agema Cape",
+		}
 
     sets.engaged.Reraise = set_combine(sets.engaged, sets.Reraise)		
     sets.engaged.SomeAcc.Reraise = set_combine(sets.engaged.SomeAcc, sets.Reraise)		
@@ -614,7 +653,7 @@ function select_default_macro_book()
     elseif player.sub_job == 'WAR' then
         set_macro_page(1, 2)
     elseif player.sub_job == 'NIN' then
-        set_macro_page(10, 1)
+        set_macro_page(1, 2)
     elseif player.sub_job == 'THF' then
         set_macro_page(2, 1)
     else

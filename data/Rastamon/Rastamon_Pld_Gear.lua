@@ -143,34 +143,34 @@ function init_gear_sets()
     
     sets.precast.FC = {
 		ammo="Impatiens",
-		head="Carmine Mask",
+		head="Souveran Schaller +1",
 		neck="Baetyl Pendant",
 		ear1="Enchanter Earring +1",
 		ear2="Loquac. Earring",
 		body="Reverence Surcoat +2",
-		hands="Leyline Gloves",
+		hands="Regal Gauntlets",
 		ring1="Kishar Ring",
 		ring2="Veneficium Ring",
 		back="Repulse Mantle",
-		waist="Goading Belt",
-		legs="Rev. Breeches +1",
-		feet="Carmine Greaves",
+		waist="Rumination Sash",
+		legs="Carmine Cuisses +1",
+		feet="Odyssean Greaves",
 		}
 		
     sets.precast.FC.DT = {
 		ammo="Impatiens",
-		head="Carmine Mask",
+		head="Souveran Schaller +1",
 		neck="Baetyl Pendant",
 		ear1="Enchanter Earring +1",
 		ear2="Loquac. Earring",
 		body="Reverence Surcoat +2",
-		hands="Sulevia's Gauntlets +2",
+		hands="Regal Gauntlets",
 		ring1="Kishar Ring",
 		ring2="Veneficium Ring",
 		back="Repulse Mantle",
-		waist="Goading Belt",
-		legs="Rev. Breeches +1",
-		feet="Carmine Greaves",
+		waist="Rumination Sash",
+		legs="Carmine Cuisses +1",
+		feet="Odyssean Greaves",
 		}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {hands="Regal Gauntlets", body="Shabti Cuirass", waist="Siegel Sash"})

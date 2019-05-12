@@ -33,6 +33,7 @@ function init_gear_sets()
 	sets.precast.JA['Nether Void'] = {legs="Bale Flanchard +2"}
 	sets.precast.JA['Blood Weapon'] = {body="Fallen's Cuirass +1"}     
 	sets.precast.JA['Dark Seal'] = {body="Fallen's Burgeonet +1"}     
+	sets.precast.JA['Last Resort'] = {back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+6','Weapon skill damage +10%',}},}     
                    
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {
@@ -165,7 +166,7 @@ function init_gear_sets()
 		right_ear="Ishvara Earring",
 		left_ring="Karieyh Ring",
 		right_ring="Regal Ring",
-		back="Agema Cape",
+		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+6','Weapon skill damage +10%',}},
 	}
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {})
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
@@ -275,7 +276,7 @@ function init_gear_sets()
 		right_ear="Telos Earring",
 		left_ring="Karieyh Ring",
 		right_ring="Niqmaddu Ring",
-		back="Agema Cape",
+		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+6','Weapon skill damage +10%',}},
 	}
 		
     sets.idle.PDT = {

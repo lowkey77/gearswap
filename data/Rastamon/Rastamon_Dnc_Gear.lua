@@ -13,10 +13,6 @@ function user_setup()
     send_command('bind ^` input /ja "Chocobo Jig" <me>')
     send_command('bind !` input /ja "Chocobo Jig II" <me>')
 	send_command('bind @` gs c cycle SkillchainMode')
-	
-	gear.herculean_wsd_legs={ name="Herculean Trousers", augments={'Pet: "Mag.Atk.Bns."+22','STR+9','Weapon skill damage +6%','Accuracy+15 Attack+15','Mag. Acc.+8 "Mag.Atk.Bns."+8',}}
-	gear.herculean_wsd_hands={ name="Herculean Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Weapon skill damage +2%','CHR+9',}}
-	gear.herculean_nuke_head = { name="Herculean Helm", augments={'Mag. Acc.+8','AGI+10','Damage taken-4%','Accuracy+3 Attack+3','Mag. Acc.+18 "Mag.Atk.Bns."+18',}}
 
     select_default_macro_book()
 end
@@ -31,49 +27,59 @@ function init_gear_sets()
     
     -- Precast sets to enhance JAs
 
-    sets.precast.JA['No Foot Rise'] = {body="Horos Casaque"}
+    sets.precast.JA['No Foot Rise'] = {body="Horos Casaque +3"}
 
-    sets.precast.JA['Trance'] = {head="Horos Tiara"}
+    sets.precast.JA['Trance'] = {head="Horos Tiara +1"}
     
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
 		ammo="Yamarang",
-        head="Mummu Bonnet +2",
+        head="Horos Tiara +1",
 		neck="Unmoving Collar +1",
 		ear1="Enchntr. Earring +1",
-		ear2="Handler's Earring +1",
+		ear2="Etiolation Earring",
         body="Maxixi Casaque +1",
-		hands=gear.herculean_waltz_hands,
+		hands="Meghanada Gloves +2",
 		ring1="Defending Ring",
-		ring2="Valseur's Ring",
+		ring2="Moonbeam Ring",
         back="Moonbeam Cape",
 		waist="Chaac Belt",
-		legs="Dashing Subligar",
-		feet="Rawhide Boots"
+		legs="Mummu Kecks +2",
+		feet="Maxixi Toe Shoes"
 		}
         
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
     
-    sets.precast.Samba = {head="Maxixi Tiara"}
+    sets.precast.Samba = {head="Dancer's Tiara", back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Occ. inc. resist. to stat. ailments+10',}}}
 
-    sets.precast.Jig = {legs="Horos Tights", feet="Maxixi Toe Shoes"}
+    sets.precast.Jig = {legs="Horos Tights +1", feet="Maxixi Toe Shoes"}
 
-    sets.precast.Steps = {waist="Chaac Belt"}
-    sets.precast['Feather Step'] = {feet="Charis Shoes +2"}
+    sets.precast.Steps = {waist="Chaac Belt", feet="Horos Toe Shoes +2",}
+    sets.precast['Feather Step'] = {feet="Horos Toe Shoes +2"}
 
     sets.precast.Flourish1 = {}
-    sets.precast.Flourish1['Violent Flourish'] = {ear1="Gwati Earring",ear2="Digni. Earring",
-        body="Horos Casaque",hands="Buremte Gloves",ring2="Mephitas's Ring +1",
-        waist="Chaac Belt",legs="Iuitl Tights",feet="Iuitl Gaiters +1"} -- magic accuracy
-    sets.precast.Flourish1['Desperate Flourish'] = {ammo="Charis Feather",
+    sets.precast.Flourish1['Violent Flourish'] = 
+	{
+		body="Horos Casaque +3", 
+		ear1="Enchanter Earring +1",
+		ear2="Digni. Earring",
+		hands="Mummu Wrists +2",
+		ring2="Stikini Ring",
+		ring1="Stikini Ring",
+        waist="Eschan Stone",
+		legs="Mummu Kecks +2",
+		feet="Mummu Gamashes +2"
+	} -- magic accuracy
+	
+    sets.precast.Flourish1['Desperate Flourish'] = {ammo="Yamarang",
         head="Whirlpool Mask",neck="Combatant's Torque",
-        body="Horos Casaque",hands="Buremte Gloves",ring1="Beeline Ring",
-        back="Toetapper Mantle",waist="Hurch'lan Sash",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"} -- acc gear
+        body="Horos Casaque +3",hands="Buremte Gloves",ring1="Beeline Ring",
+        back={ name="Toetapper Mantle", augments={'"Store TP"+1','"Dual Wield"+1','"Rev. Flourish"+30',}},waist="Hurch'lan Sash",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"} -- acc gear
 
     sets.precast.Flourish2 = {}
-    sets.precast.Flourish2['Reverse Flourish'] = {hands="Charis Bangles +2", back="Toetapper Mantle"}
+    sets.precast.Flourish2['Reverse Flourish'] = {hands="Charis Bangles +2", back={ name="Toetapper Mantle", augments={'"Store TP"+1','"Dual Wield"+1','"Rev. Flourish"+30',}}}
 
     sets.precast.Flourish3 = {}
     sets.precast.Flourish3['Striking Flourish'] = {body="Charis Casaque +2"}
@@ -104,20 +110,20 @@ function init_gear_sets()
 		back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Occ. inc. resist. to stat. ailments+10',}},
 		}
 		
-    sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Falcon Eye", back="Toetapper Mantle"})
+    sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Falcon Eye", back={ name="Toetapper Mantle", augments={'"Store TP"+1','"Dual Wield"+1','"Rev. Flourish"+30',}}})
     
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {})
-    sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {ammo="Falcon Eye", back="Toetapper Mantle"})
+    sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {ammo="Falcon Eye", back={ name="Toetapper Mantle", augments={'"Store TP"+1','"Dual Wield"+1','"Rev. Flourish"+30',}}})
     sets.precast.WS['Exenterator'].Fodder = set_combine(sets.precast.WS['Exenterator'], {waist=gear.ElementalBelt})
 
     sets.precast.WS['Pyrrhic Kleos'] = set_combine(sets.precast.WS, {hands="Iuitl Wristbands"})
     sets.precast.WS['Pyrrhic Kleos'].Acc = set_combine(sets.precast.WS.Acc, {hands="Iuitl Wristbands"})
 
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {})
-    sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {ammo="Falcon Eye", back="Toetapper Mantle"})
+    sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {ammo="Falcon Eye", back={ name="Toetapper Mantle", augments={'"Store TP"+1','"Dual Wield"+1','"Rev. Flourish"+30',}}})
 
-    sets.precast.WS["Rudra's Storm"] = {
+    sets.precast.WS['Rudra\'s Storm'] = set_combine(sets.precast.WS["Rudra's Storm"], {
 		ammo="Yamarang",
 		head="Mummu Bonnet +2",
 		body={ name="Herculean Vest", augments={'Pet: DEX+1','"Mag.Atk.Bns."+17','Weapon skill damage +7%','Accuracy+4 Attack+4',}},
@@ -131,9 +137,9 @@ function init_gear_sets()
 		left_ring="Ilabrat Ring",
 		right_ring="Karieyh Ring",
 		back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Occ. inc. resist. to stat. ailments+10',}},
-		}
+		})
 		
-    sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {
+    sets.precast.WS['Rudra\'s Storm'].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {
 		ammo="Yamarang",
 		head="Mummu Bonnet +2",
 		body={ name="Herculean Vest", augments={'Pet: DEX+1','"Mag.Atk.Bns."+17','Weapon skill damage +7%','Accuracy+4 Attack+4',}},
@@ -149,21 +155,22 @@ function init_gear_sets()
 		back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Occ. inc. resist. to stat. ailments+10',}},
 		})
 
-    sets.precast.WS['Aeolian Edge'] = {
+    sets.precast.WS['Aeolian Edge'] = 
+	{
 		ammo="Yamarang",
-        head=gear.herculean_nuke_head,
+        head={ name="Herculean Helm", augments={'Mag. Acc.+8','AGI+10','Damage taken-4%','Accuracy+3 Attack+3','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
 		neck="Baetyl Pendant",
-		ear1="Moonshade Earring",
-		ear2="Friomisi Earring",
+		ear1="Friomisi Earring",
+		ear2="Moonshade Earring",
         body={ name="Herculean Vest", augments={'Pet: DEX+1','"Mag.Atk.Bns."+17','Weapon skill damage +7%','Accuracy+4 Attack+4',}},
-		hands=gear.herculean_wsd_hands,
-		ring1="Ilabrat Ring",
-		ring2="Karieyh Ring",
+		hands={ name="Herculean Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Weapon skill damage +2%','CHR+9',}},
+		ring1="Regal Ring",
+		ring2="Ilabrat Ring",
         back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Occ. inc. resist. to stat. ailments+10',}},
 		waist="Eschan Stone",
-		legs=gear.herculean_wsd_legs,
+		legs={ name="Herculean Trousers", augments={'Pet: "Mag.Atk.Bns."+22','STR+9','Weapon skill damage +6%','Accuracy+15 Attack+15','Mag. Acc.+8 "Mag.Atk.Bns."+8',}},
 		feet="Mummu Gamash. +2"
-		}
+	}
     
     sets.Skillchain = {hands="Charis Bangles +2"}
     
@@ -179,7 +186,7 @@ function init_gear_sets()
     sets.midcast.Utsusemi = {
         head="Felistris Mask",neck="Combatant's Torque",ear2="Loquacious Earring",
         body="Iuitl Vest",hands="Iuitl Wristbands",ring1="Beeline Ring",
-        back="Toetapper Mantle",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
+        back={ name="Toetapper Mantle", augments={'"Store TP"+1','"Dual Wield"+1','"Rev. Flourish"+30',}},legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
     
     -- Sets to return to when not performing an action.
@@ -195,7 +202,7 @@ function init_gear_sets()
     sets.idle = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Meg. Cuirie +2",
+		body="Horos Casaque +3",
 		hands="Meghanada Gloves +2",
 		legs="Mummu Kecks +2",
 		feet="Mummu Gamash. +2",
@@ -205,7 +212,7 @@ function init_gear_sets()
 		right_ear="Sherida Earring",
 		left_ring="Hetairoi Ring",
 		right_ring="Epona's Ring",
-		back="Toetapper Mantle",
+		back={ name="Toetapper Mantle", augments={'"Store TP"+1','"Dual Wield"+1','"Rev. Flourish"+30',}},
 		}
     
     sets.idle.Weak = {ammo="Iron Gobbet",
@@ -218,11 +225,11 @@ function init_gear_sets()
     sets.defense.Evasion = {
         head="Felistris Mask",neck="Combatant's Torque",
         body="Adhemar Jacket",hands="Iuitl Wristbands",ring1="Beeline Ring",ring2="Dark Ring",
-        back="Toetapper Mantle",waist="Flume Belt",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
+        back={ name="Toetapper Mantle", augments={'"Store TP"+1','"Dual Wield"+1','"Rev. Flourish"+30',}},waist="Flume Belt",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
     sets.defense.PDT = {ammo="Iron Gobbet",
         head="Felistris Mask",neck="Loricate Torque +1",
-        body="Adhemar Jacket",hands="Iuitl Wristbands",ring1="Defending Ring",ring2="Dark Ring",
+        body="Horos Casaque +3",hands="Iuitl Wristbands",ring1="Defending Ring",ring2="Dark Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Nahtirah Trousers",feet="Iuitl Gaiters +1"}
 
     sets.defense.MDT = {ammo="Demonry Stone",
@@ -244,14 +251,14 @@ function init_gear_sets()
     sets.engaged = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
 		waist="Reiki Yotai",
 		left_ear="Cessance Earring",
-		right_ear="Sherida Earring",
+		right_ear="Suppanomimi",
 		left_ring="Hetairoi Ring",
 		right_ring="Epona's Ring",
 		 back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Occ. inc. resist. to stat. ailments+10',}},
@@ -260,8 +267,8 @@ function init_gear_sets()
     sets.engaged.Fodder = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -276,8 +283,8 @@ function init_gear_sets()
     sets.engaged.Fodder.Evasion = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -292,8 +299,8 @@ function init_gear_sets()
     sets.engaged.Acc = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -308,8 +315,8 @@ function init_gear_sets()
     sets.engaged.Evasion = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -324,8 +331,8 @@ function init_gear_sets()
     sets.engaged.PDT = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -340,8 +347,8 @@ function init_gear_sets()
     sets.engaged.Acc.Evasion = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -356,8 +363,8 @@ function init_gear_sets()
     sets.engaged.Acc.PDT = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -373,8 +380,8 @@ function init_gear_sets()
     sets.engaged.HighHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -389,8 +396,8 @@ function init_gear_sets()
     sets.engaged.Fodder.HighHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -405,8 +412,8 @@ function init_gear_sets()
     sets.engaged.Fodder.Evasion.HighHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -421,8 +428,8 @@ function init_gear_sets()
     sets.engaged.Acc.HighHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -437,8 +444,8 @@ function init_gear_sets()
     sets.engaged.Evasion.HighHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -453,8 +460,8 @@ function init_gear_sets()
     sets.engaged.Acc.Evasion.HighHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -469,8 +476,8 @@ function init_gear_sets()
     sets.engaged.PDT.HighHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -485,8 +492,8 @@ function init_gear_sets()
     sets.engaged.Acc.PDT.HighHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -502,8 +509,8 @@ function init_gear_sets()
     sets.engaged.MaxHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -519,8 +526,8 @@ function init_gear_sets()
     sets.engaged.Fodder.MaxHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -535,8 +542,8 @@ function init_gear_sets()
     sets.engaged.Fodder.Evasion.MaxHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -551,8 +558,8 @@ function init_gear_sets()
     sets.engaged.Acc.MaxHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -567,8 +574,8 @@ function init_gear_sets()
     sets.engaged.Evasion.MaxHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -583,8 +590,8 @@ function init_gear_sets()
     sets.engaged.Acc.Evasion.MaxHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -599,8 +606,8 @@ function init_gear_sets()
     sets.engaged.PDT.MaxHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -615,8 +622,8 @@ function init_gear_sets()
     sets.engaged.Acc.PDT.MaxHaste = {
 		ammo="Yamarang",
 		head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
-		body="Horos Casaque +3",
-		hands="Mummu Wrists +2",
+		body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+		hands="Mummu Wrists +1",
 		legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet="Mummu Gamash. +2",
 		neck="Combatant's Torque",
@@ -633,7 +640,7 @@ function init_gear_sets()
 	sets.precast.AccMaxTP = {ear1="Zennaroi Earring",ear2="Steelflash Earring"}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Saber Dance'] = {legs="Horos Tights"}
+    sets.buff['Saber Dance'] = {legs="Horos Tights +1"}
     sets.buff['Climactic Flourish'] = {head="Charis Tiara +2"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}

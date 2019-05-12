@@ -53,7 +53,7 @@ function init_gear_sets()
 		ammo="Incantor Stone",
 		head="Chironic Hat",
 		body="Inyanga Jubbah +2",
-		hands="Repartie Gloves",
+		hands="Theophany Mitts +3",
 		legs="Artsieq Hose",
 		feet="Regal Pumps",
 		neck="Orison Locket",

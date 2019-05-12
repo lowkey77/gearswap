@@ -32,6 +32,8 @@ function user_setup()
     send_command('bind !\\\\ input /ja "Bolter\'s Roll" <me>')
 	send_command('bind ^@!\\\\ gs c toggle LuzafRing')
 	send_command('bind @f7 gs c toggle AutoShootMode')
+	
+	--require('rnghelper')
 
     select_default_macro_book()
 end
@@ -48,9 +50,10 @@ function init_gear_sets()
 	
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Culottes +1"}
-    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +2"}
+    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +3"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
+	sets.Obi = {waist="Hachirin-no-Obi"}
     
     sets.precast.CorsairRoll = {range="Compensator",
         head="Lanun Tricorne +1",neck="Regal Necklace",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -92,7 +95,7 @@ function init_gear_sets()
     sets.precast.RA = {
 		ammo=gear.RAbullet,
         head="Meghanada Visor +2",
-		neck="Ocachi Gorget",
+		neck="Iskur Gorget",
 		ear1="Enervating Earring",
 		ear2="Telos Earring",
         body="Laksamana's frac +3",
@@ -142,32 +145,32 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Laksamana's frac +3",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Karieyh Ring",
-        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
+        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Laksamana's frac +3",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Apate Ring",
-        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
+        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
 
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Dignir Ring",ring2="Archon Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
+        body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Dingir Ring",ring2="Archon Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
 
     sets.precast.WS['Leaden Salute'].Acc = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Baetyl Pendante",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Dignir Ring",ring2="Archon Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
+        body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Dingir Ring",ring2="Archon Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
 
-    sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
+    sets.precast.WS['Wildfire'] = {--ammo=gear.MAbullet,
         head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Novio Earring",ear2="Friomisi Earring",
-        body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Dignir Ring",ring2="Ilabrat Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
+        body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Dingir Ring",ring2="Ilabrat Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
         head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Novio Earring",ear2="Friomisi Earring",
-        body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Dignir Ring",ring2="Ilabrat Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
+        body="Lanun Frac +3",hands=gear.herculean_wsd_hands,ring1="Dingir Ring",ring2="Ilabrat Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.precast.MaxTP = {}
@@ -192,14 +195,14 @@ function init_gear_sets()
     sets.midcast.CorsairShot = {ammo=gear.QDbullet,
         head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Novio Earring",
         body="Lanun Frac +3",hands="Leyline Gloves",ring1="Ilabrat Ring",ring2="Shiva Ring +1",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +2"}
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Digni. Earring",ear2="Telos Earring",
         body="Lanun Frac +3",hands="Leyline Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Mummu Kecks +2",feet="Lanun Bottes +2"}
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Mummu Kecks +2",feet="Lanun Bottes +3"}
 
-    sets.midcast.CorsairShot['Dark Shot'] = set_combine(sets.midcast.CorsairShot['Light Shot'], {feet="Lanun Bottes +2"})
+    sets.midcast.CorsairShot['Dark Shot'] = set_combine(sets.midcast.CorsairShot['Light Shot'], {feet="Lanun Bottes +3"})
 
     -- Ranged gear
     sets.midcast.RA = {
@@ -243,7 +246,7 @@ function init_gear_sets()
 			body="Meg. Cuirie +2",
 			hands="Meg. Gloves +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Lanun Bottes +2",
+			feet="Lanun Bottes +3",
 			neck="Loricate Torque +1",
 			waist="Reiki Yotai",
 			left_ear="Etiolation Earring",
@@ -328,6 +331,7 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
 end
+
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()

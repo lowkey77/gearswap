@@ -148,7 +148,7 @@ function init_gear_sets()
 		body={ name="Herculean Vest", augments={'Accuracy+23 Attack+23','Weapon skill damage +4%','DEX+8','Accuracy+3',}},
 		hands="Meg. Gloves +2",
 		ring1="Ilabrat Ring",
-		ring2="Ramuh Ring +1",
+		ring2="Kareiyh Ring",
 		back=gear.ws_jse_back
 		})
     sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Dampening Tam",neck="Fotia Gorget",ear1="Moonshade Earring",body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",back=gear.ws_jse_back})

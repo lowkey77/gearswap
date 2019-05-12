@@ -34,11 +34,11 @@ function init_gear_sets()
 		main="Nirvana",
         head="Convoker's Horn +3",
 		neck="Incanter's Torque", 
-		ear2="Andoaa Earing",
+		ear2="Andoaa Earring",
         body="Beckoner's Doublet +1",
 		hands="Glyphic Bracers +1",
 		ring1="Evoker's Ring",
-		ring2="Stikini Ring",
+		ring2="Stikini Ring +1",
         legs="Tatsumaki Sitagoromo",
 		feet="Beckoner's Pigaches +1", 
 		waist="Kobo Obi", 
@@ -56,7 +56,7 @@ function init_gear_sets()
 		body="Convoker's Doublet +3", -- I -15
 		hands="Beckoner's Bracers +1", 
 		ring1="Evoker's Ring", 
-		ring2="Stikini Ring",
+		ring2="Stikini Ring +1",
 		ear2="Andoaa Earring", -- I -1
 		ear1="Evans Earring", -- I -2
 		waist="Kobo Obi", 
@@ -70,7 +70,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {
-		main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",
+		main=gear.grioavolr_fc_staff,sub="Clerisy Strap",
 		head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		ammo="Impatiens",
 		neck="Baetyl Pendant", 
@@ -85,7 +85,7 @@ function init_gear_sets()
 		feet="Amalric Nails",
 		}
 
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Serenity",sub="Clerisy Strap +1"})
+    sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Serenity",sub="Clerisy Strap"})
 		
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -149,7 +149,7 @@ function init_gear_sets()
 
     sets.midcast.FastRecast = {
 		main=gear.grioavolr_fc_staff,
-		sub="Clerisy Strap +1",
+		sub="Clerisy Strap",
 		ammo="Sancus Sachet +1",
 		head={ name="Merlinic Hood", augments={'"Mag.Atk.Bns."+20','Magic burst dmg.+10%','INT+4',}},
 		body="Zendik Robe",
@@ -209,7 +209,7 @@ function init_gear_sets()
 		
     sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head=gear.merlinic_nuke_head,neck="Incanter's Torque",ear1="Digni. Earring",ear2="Gwati Earring",
-        body="Merlinic Jubbah",hands="Amalric Gages",ring1="Stikini Ring",ring2="Stikini Ring",
+        body="Merlinic Jubbah",hands="Amalric Gages",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back="Aurist's Cape +1",waist="Yamabuki-no-Obi",legs="Merlinic Shalwar",feet=gear.merlinic_aspir_feet}
 	
 	sets.midcast.Drain = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
@@ -219,24 +219,24 @@ function init_gear_sets()
     
     sets.midcast.Aspir = sets.midcast.Drain
 		
-    sets.midcast.Stun = {main="Oranyan",sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
+    sets.midcast.Stun = {main="Oranyan",sub="Clerisy Strap",ammo="Hasty Pinion +1",
 		head="Amalric Coif",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-		body="Inyanga Jubbah +1",hands="Helios Gloves",ring1="Kishar Ring",ring2="Stikini Ring",
+		body="Inyanga Jubbah +1",hands="Helios Gloves",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		
-    sets.midcast.Stun.Resistant = {main="Oranyan",sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
+    sets.midcast.Stun.Resistant = {main="Oranyan",sub="Clerisy Strap",ammo="Hasty Pinion +1",
 		head="Amalric Coif",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Gwati Earring",
-		body="Inyanga Jubbah +1",hands="Helios Gloves",ring1="Kishar Ring",ring2="Stikini Ring",
+		body="Inyanga Jubbah +1",hands="Helios Gloves",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		
 	sets.midcast['Enfeebling Magic'] = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Erra Pendant",ear1="Digni. Earring",ear2="Gwati Earring",
-		body="Merlinic Jubbah",hands="Lurid Mitts",ring1="Kishar Ring",ring2="Stikini Ring",
+		body="Merlinic Jubbah",hands="Lurid Mitts",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Luminary Sash",legs="Psycloth Lappas",feet="Uk'uxkaj Boots"}
 		
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan",sub="Clerisy Strap +1",ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan",sub="Clerisy Strap",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Erra Pendant",ear1="Digni. Earring",ear2="Gwati Earring",
-		body="Merlinic Jubbah",hands="Lurid Mitts",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Merlinic Jubbah",hands="Lurid Mitts",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Medium's Sabots"}
 		
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -247,7 +247,7 @@ function init_gear_sets()
 		
 	sets.midcast['Enhancing Magic'] = {main="Oranyan",sub="Fulcio Grip",ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif"})
@@ -273,7 +273,7 @@ function init_gear_sets()
 		left_ear="Evans Earring",
 		right_ear="Andoaa Earring",
 		left_ring="Evoker's Ring",
-		right_ring="Stikini Ring",
+		right_ring="Stikini Ring +1",
 		back={ name="Conveyance Cape", augments={'Summoning magic skill +4','Pet: Enmity+11','Blood Pact Dmg.+3','Blood Pact ab. del. II -3',}},
 		}
 
@@ -286,7 +286,7 @@ function init_gear_sets()
 		hands="Lamassu Mitts +1",
 		right_ear="Andoaa Earring",
 		ring1="Evoker's Ring",
-		ring2="Stikini Ring",
+		ring2="Stikini Ring +1",
         waist="Kobo Obi",
 		legs="Beckoner's Spats +1", 
 		feet="Beckoner's Pigaches +1", 
@@ -299,7 +299,7 @@ function init_gear_sets()
 		main="Nirvana",
 		sub="Elan Strap",
 		ammo="Sancus Sachet +1",
-		head={ name="Apogee Crown +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
+		head={ name="Apogee Crown +1", augments={'Pet: Attack+25','Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8',}},
 		left_ring="Varar Ring",
 		body="Convoker's Doublet +3",
 		hands="Convoker's Bracers +3",
@@ -366,19 +366,19 @@ function init_gear_sets()
     
     -- Resting sets
     sets.resting = {main="Nirvana",ammo="Sancus Sachet +1",
-        head="Beckoner's Horn +1",neck="Wiglen Gorget",ear1="Evans Earring",ear2="Loquacious Earring",
-        body="Shomonjijoe +1",hands=" Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Varar Ring",
-        back="Campestres's Cape",waist="Convoker's Pigaches +2",legs="Assiduity pants +1",feet="Baayami Sabots"}
+        head="Beckoner's Horn +1",neck="Nodens Gorget",ear1="Evans Earring",ear2="Loquacious Earring",
+        body="Witching Robe",hands="Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Varar Ring",
+        back="Campestres's Cape",waist="Fucho-no-obi",legs="Assiduity pants +1",feet="Baayami Sabots"}
     
     -- Idle sets
     sets.idle = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Shulmanu Collar",ear1="Gelos Earring",ear2="Lugalbanda Earring",
-        body="Witching Robe", hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
+        body="Witching Robe", hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Varar Ring",
         back="Campestres's Cape",waist="Regal Belt",legs="Assiduity pants +1",feet="Baayami Sabots",}
 
     sets.idle.PDT = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Twilight Torque",ear1="Evans Earring",ear2="Loquacious Earring",
-        body="Shomonjijoe +1", hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Sangoma Ring",
+        body="Witching Robe", hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Varar Ring",
         back="Campestres's Cape",waist="Convoker's Pigaches +2",legs="Hagondes Pants",feet="Baayami Sabots",}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque",ring2="Karieyh Ring"})
@@ -517,7 +517,7 @@ function init_gear_sets()
 		body="Inyanga Jubbah +1",hands="Telchine Gloves",ring1="Vengeful Ring",Ring2="Purity Ring",
         back="Aurist's Cape +1",waist="Luminary Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		
-    sets.Kiting = {feet="Herald's Gaiters"}
+    sets.Kiting = {}
     sets.latent_refresh = {}
 	sets.DayIdle = {}
 	sets.NightIdle = {}
@@ -528,7 +528,7 @@ function init_gear_sets()
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {neck="Sacrifice Torque"}
-	sets.Weapons = {main="Gridarvor", sub="Elan Strap"}
+	sets.Weapons = {main="Nirvana", sub="Elan Strap"}
     --------------------------------------
     -- Engaged sets
     --------------------------------------
