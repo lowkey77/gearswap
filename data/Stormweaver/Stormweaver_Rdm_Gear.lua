@@ -20,7 +20,7 @@ function user_setup()
 	gear.merlinic_nuke_head = { name="Merlinic Hood", augments={'"Mag.Atk.Bns."+20','Magic burst dmg.+10%','INT+4',}}
 	gear.merlinic_nuke_feet = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+19','Magic burst dmg.+11%','Mag. Acc.+10',}}
 	
-	gear.grioavolr_fc_staff = { name="Grioavolr", augments={'Pet: INT+10','Pet: Mag. Acc.+30','Pet: "Mag.Atk.Bns."+30',}}
+	gear.grioavolr_fc_staff = { name="Grioavolr", augments={'Enfb.mag. skill +15','MND+5','Mag. Acc.+14','"Mag.Atk.Bns."+16','Magic Damage +5',}}
 	
 		-- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
@@ -370,7 +370,7 @@ function init_gear_sets()
 	sets.midcast.BoostStat = set_combine(sets.midcast['Enhancing Magic'], {hands="Vitiation Gloves +3"})
 	
 	sets.midcast['Enfeebling Magic'] = {                         
-		main="Contemplator",
+		main={ name="Grioavolr", augments={'Enfb.mag. skill +15','MND+5','Mag. Acc.+14','"Mag.Atk.Bns."+16','Magic Damage +5',}},
 		sub="Enki Strap",
 		ammo="Regal Gem",
 		head="Befouled Crown",
@@ -388,7 +388,7 @@ function init_gear_sets()
 		}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {
-		main="Contemplator",
+		main={ name="Grioavolr", augments={'Enfb.mag. skill +15','MND+5','Mag. Acc.+14','"Mag.Atk.Bns."+16','Magic Damage +5',}},
 		sub="Enki Strap",
 		ammo="Regal Gem",
 		head="Befouled Crown",
@@ -406,7 +406,7 @@ function init_gear_sets()
 		}
 		
 	sets.midcast['Dispel'] = {                         
-		main="Contemplator",
+		main={ name="Grioavolr", augments={'Enfb.mag. skill +15','MND+5','Mag. Acc.+14','"Mag.Atk.Bns."+16','Magic Damage +5',}},
 		sub="Enki Strap",
 		ammo="Regal Gem",
 		head="Befouled Crown",
