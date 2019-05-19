@@ -57,7 +57,7 @@ function user_setup()
     pick_tp_weapon()
     
     -- Adjust this if using the Terpander (new +song instrument)
-    info.ExtraSongInstrument = 'Terpander'
+    info.ExtraSongInstrument = 'Daurdabla'
     -- How many extra songs we can keep from Daurdabla/Terpander
     info.ExtraSongs = 1
     
@@ -202,7 +202,7 @@ function init_gear_sets()
 		body="Fili Hongreline +1",
 		hands="Inyanga Dastanas +2",
 		legs="Inyanga Shalwar +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Luminary Sash",
 		left_ear="Hermetic Earring",
@@ -237,7 +237,7 @@ function init_gear_sets()
 		body="Fili Hongreline +1",
 		hands="Fili Manchettes +1",
 		legs="Inyanga Shalwar +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		--waist="Aoidos' Matinee",
 		waist="Witful Belt",
@@ -257,7 +257,7 @@ function init_gear_sets()
 		body="Brioso Justau. +2",
 		hands="Brioso Cuffs +2",
 		legs="Brioso Cannions +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Luminary Sash",
 		left_ear="Hermetic Earring",
@@ -357,7 +357,7 @@ function init_gear_sets()
 		hands="Inyan. Dastanas +2",
 		legs="Inyanga Shalwar +2",
 		feet="Inyan. Crackows +2",
-		neck="Incanter's Torque",
+		neck="Moonbow Whistle +1",
 		waist="Fucho-no-Obi",
 		left_ear="Loquac. Earring",
 		right_ear="Genmei Earring",
@@ -393,7 +393,7 @@ function init_gear_sets()
 		hands="Inyan. Dastanas +2",
 		legs="Inyanga Shalwar +2",
 		feet="Inyan. Crackows +2",
-		neck="Incanter's Torque",
+		neck="Moonbow Whistle +1",
 		waist="Fucho-no-Obi",
 		left_ear="Loquac. Earring",
 		right_ear="Genmei Earring",
@@ -759,8 +759,8 @@ function calculate_duration(spellName, spellMap)
     if player.equipment.neck == "Aoidos' Matinee" then mult = mult + 0.1 end
     if player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
     if player.equipment.legs == "Mdk. Shalwar +1" then mult = mult + 0.1 end
-    if player.equipment.feet == "Brioso Slippers +2" then mult = mult + 0.1 end
-    if player.equipment.feet == "Brioso Slippers +2" then mult = mult + 0.11 end
+    if player.equipment.feet == "Brioso Slippers +3" then mult = mult + 0.1 end
+    if player.equipment.feet == "Brioso Slippers +3" then mult = mult + 0.11 end
     
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet" then mult = mult + 0.1 end
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +1" then mult = mult + 0.1 end
