@@ -30,6 +30,7 @@ function user_setup()
 	send_command('bind !\\\\ input /ja "Mug" <t>')
 
     select_default_macro_book()
+	set_lockstyle()
 end
 
 -- Define sets and vars used by this job file.
@@ -367,6 +368,11 @@ function select_default_macro_book()
     else
         set_macro_page(1, 9)
     end
+end
+
+-- Lockstyle
+function set_lockstyle()
+	send_command('wait 6;input /lockstyleset 9')
 end
 
 --Dynamis Trust Overwrite
