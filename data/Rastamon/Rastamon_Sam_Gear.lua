@@ -87,7 +87,7 @@ function init_gear_sets()
 		body="Sakonji Domaru +3",
 		hands=gear.valorous_wsd_hands,
 		right_ring="Karieyh Ring",
-		left_ring="Niqmaddu Ring",
+		left_ring="Epaminondas's Ring",
         back=gear.ws_jse_back,
 		waist="Fotia Belt",
 		legs="Wakido Haidate +3",
@@ -167,7 +167,7 @@ function init_gear_sets()
 		left_ear="Friomisi Earring",
 		right_ear="Moonshade Earring",
 		left_ring="Karieyh Ring",
-		right_ring="Regal Ring",
+		right_ring="Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 	})
     sets.precast.WS['Tachi: Jinpu'].SomeAcc = set_combine(sets.precast.WS, {
@@ -182,7 +182,7 @@ function init_gear_sets()
 		left_ear="Friomisi Earring",
 		right_ear="Ishvara Earring",
 		left_ring="Karieyh Ring",
-		right_ring="Niqmaddu Ring",
+		right_ring="Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 	})
     sets.precast.WS['Tachi: Jinpu'].Acc = set_combine(sets.precast.WS, {
@@ -197,7 +197,7 @@ function init_gear_sets()
 		left_ear="Friomisi Earring",
 		right_ear="Ishvara Earring",
 		left_ring="Karieyh Ring",
-		right_ring="Niqmaddu Ring",
+		right_ring="Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 	})
     sets.precast.WS['Tachi: Jinpu'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
