@@ -76,6 +76,38 @@ function init_gear_sets()
 		feet="Chevalier's Sabatons +1" -- 11 --
 		}
 		
+	sets.midcast['Jettatura'] = {
+		ammo="Iron Gobbet", -- 2 --
+		head="Loess Barbuta +1", -- 9~14 --
+		neck="Unmoving Collar +1", -- 10 --
+		left_ear="Cryptic Earring", -- 4 -- 
+		right_ear="Thureous Earring", -- 0 --
+		body="Souveran Cuirass +1", -- 11 --
+		hands="Cab. Gauntlets +1", -- 6 --
+		left_ring="Petrov Ring", -- 4 --
+		right_ring="Supershear Ring", -- 3 --
+		back="Agema Cape", -- 5 --
+		waist="Creed Baudrier", -- 5 --
+		legs="Souveran Diechlings +1", -- 9 --
+		feet="Chevalier's Sabatons +1" -- 11 --
+		}
+		
+	sets.midcast['Geist Wall'] = {
+		ammo="Iron Gobbet", -- 2 --
+		head="Loess Barbuta +1", -- 9~14 --
+		neck="Unmoving Collar +1", -- 10 --
+		left_ear="Cryptic Earring", -- 4 -- 
+		right_ear="Thureous Earring", -- 0 --
+		body="Souveran Cuirass +1", -- 11 --
+		hands="Cab. Gauntlets +1", -- 6 --
+		left_ring="Petrov Ring", -- 4 --
+		right_ring="Supershear Ring", -- 3 --
+		back="Agema Cape", -- 5 --
+		waist="Creed Baudrier", -- 5 --
+		legs="Souveran Diechlings +1", -- 9 --
+		feet="Chevalier's Sabatons +1" -- 11 --
+		}
+		
     
     -- Precast sets to enhance JAs
     sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1"})
@@ -222,7 +254,7 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		left_ear="Brutal Earring",
 		right_ear="Cessance Earring",
-		left_ring="Enlivened Ring",
+		left_ring="Epaminondas's Ring",
 		right_ring="Karieyh Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}
 		}
@@ -234,7 +266,7 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",ear1="Brutal Earring",ear2="Moonshade Earring"})
     sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {neck="Fotia Gorget",ear1="Zennaroi Earring",ear2="Moonshade Earring"})
 
-	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",ear1="Ishvara Earring",ear2="Moonshade Earring",ring1="Karieyh Ring"})
+	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",ear1="Ishvara Earring",ear2="Moonshade Earring",ring1="Karieyh Ring", ring2="Epaminondas's Ring"})
     sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Zennaroi Earring",ear2="Telos Earring"})
 	
 	sets.precast.WS['Flat Blade'] = {ammo="Ginsen",
