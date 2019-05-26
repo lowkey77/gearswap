@@ -205,7 +205,7 @@ function init_gear_sets()
 		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Luminary Sash",
-		left_ear="Hermetic Earring",
+		left_ear="Dignitary's Earring",
 		right_ear="Gwati Earring",
 		left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring",
@@ -260,7 +260,7 @@ function init_gear_sets()
 		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Luminary Sash",
-		left_ear="Hermetic Earring",
+		left_ear="Dignitary's Earring",
 		right_ear="Gwati Earring",
 		left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring",
@@ -533,9 +533,9 @@ function job_precast(spell, action, spellMap, eventArgs)
         elseif spell.english == "Wind Carol" then
 			state.ExtraSongsMode.value = 'Dummy'
 		--elseif spell.english == "Fire Carol" then 
-			state.ExtraSongsMode.value = 'Dummy'
+			--state.ExtraSongsMode.value = 'Dummy'
 		--elseif spell.english == "Earth Carol" then
-			state.ExtraSongsMode.value = 'Dummy'
+			--state.ExtraSongsMode.value = 'Dummy'
 		elseif spell.english == "Lightning Carol" then
 			state.ExtraSongsMode.value = 'Dummy'
 		elseif spell.english == "Ice Carol" then
