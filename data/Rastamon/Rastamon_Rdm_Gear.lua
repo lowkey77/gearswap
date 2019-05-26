@@ -139,7 +139,7 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		left_ear="Friomisi Earring",
 		right_ear="Regal Earring",
-		left_ring="Rufescent Ring",
+		left_ring="Epaminondas's Ring",
 		right_ring="Karieyh Ring",
 		back={ name="Sucellos's Cape", augments={'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%',}},
 		}
@@ -193,7 +193,7 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		left_ear="Moonshade Earring",
 		right_ear="Cessance Earring",
-		left_ring="Rufescent Ring",
+		left_ring="Epaminondas's Ring",
 		right_ring="Karieyh Ring",
 		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Attack+10','"Dual Wield"+10',}},
 	})
@@ -211,7 +211,7 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		left_ear="Moonshade Earring",
 		right_ear="Regal Earring",
-		left_ring="Rufescent Ring",
+		left_ring="Epaminondas's Ring",
 		right_ring="Karieyh Ring",
 		back={ name="Sucellos's Cape", augments={'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%',}},
 	})
