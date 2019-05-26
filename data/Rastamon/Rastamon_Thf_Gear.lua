@@ -148,11 +148,11 @@ function init_gear_sets()
 		ear2="Ishvara Earring",
 		body={ name="Herculean Vest", augments={'Accuracy+23 Attack+23','Weapon skill damage +4%','DEX+8','Accuracy+3',}},
 		hands="Meg. Gloves +2",
-		ring1="Ilabrat Ring",
+		ring1="Epaminondas's Ring",
 		ring2="Kareiyh Ring",
 		back=gear.ws_jse_back
 		})
-    sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Dampening Tam",neck="Fotia Gorget",ear1="Moonshade Earring",body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",back=gear.ws_jse_back})
+    sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Dampening Tam",neck="Fotia Gorget",ear1="Moonshade Earring",body="Meg. Cuirie +2",hands="Meg. Gloves +2",back=gear.ws_jse_back})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring2="Ramuh Ring +1",back=gear.ws_jse_back})
 	sets.precast.WS["Rudra's Storm"].FullAcc = set_combine(sets.precast.WS.FullAcc, {back=gear.ws_jse_back})
     sets.precast.WS["Rudra's Storm"].Fodder = set_combine(sets.precast.WS["Rudra's Storm"], {body="Adhemar Jacket"})
@@ -178,7 +178,7 @@ function init_gear_sets()
     sets.precast.WS["Shark Bite"].TA = set_combine(sets.precast.WS["Shark Bite"].Fodder, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",legs="Darraigner's Brais"})
     sets.precast.WS["Shark Bite"].SATA = set_combine(sets.precast.WS["Shark Bite"].Fodder, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",legs="Darraigner's Brais"})
 	
-    sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +2",ring1="Begrudging Ring",waist="Fotia Belt",legs="Darraigner's Brais",feet="Mummu Gamash. +2"})
+    sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Qirmiz Tathlum",head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +2",waist="Fotia Belt",legs="Darraigner's Brais",feet="Mummu Gamash. +2"})
     sets.precast.WS['Evisceration'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Adhemar Bonnet",neck="Fotia Gorget",body="Abnoba Kaftan",hands="Mummu Wrists +2",ring1="Begrudging Ring",waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS.Acc, {head="Mummu Bonnet +2",ring1="Begrudging Ring",neck="Fotia Gorget",body="Meg. Cuirie +2",hands="Mummu Wrists +2",waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Evisceration'].FullAcc = set_combine(sets.precast.WS.FullAcc, {head="Mummu Bonnet +2",body="Meg. Cuirie +2",hands="Mummu Wrists +2",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
@@ -201,7 +201,7 @@ function init_gear_sets()
         body={ name="Herculean Vest", augments={'Pet: DEX+1','"Mag.Atk.Bns."+17','Weapon skill damage +7%','Accuracy+4 Attack+4',}},
 		hands="Leyline Gloves",
 		ring1="Karieyh Ring",
-		ring2="Shiva Ring +1",
+		ring2="Epaminondas's Ring",
         back=gear.ws_jse_back,
 		waist="Chaac Belt",
 		legs=gear.herculean_wsd_legs,
