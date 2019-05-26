@@ -420,15 +420,41 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring +1",ring2="Stikini Ring",
 		back="Aurist's Cape +1",waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
-	sets.midcast['Enfeebling Magic'] = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
-		head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
-		back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet="Medium's Sabots"}
+	sets.midcast['Enfeebling Magic'] = {
+		main={ name="Grioavolr", augments={'Enfb.mag. skill +15','MND+5','Mag. Acc.+14','"Mag.Atk.Bns."+16','Magic Damage +5',}},
+		sub="Enki Strap",
+		ammo="Pemphredo Tathlum",
+		head="Befouled Crown",
+		neck="Incanter's Torque",
+		ear1="Regal Earring",
+		ear2="Digni. Earring",
+		body="Theophany Briault +3",
+		hands="Inyanga Dastanas +1",
+		ring1="Kishar Ring",
+		ring2="Stikini Ring +1",
+		back="Aurist's Cape +1",
+		waist="Luminary Sash",
+		legs="Inyanga Shalwar +2",
+		feet="Skaoi Boots"
+		}
 
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
-		head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring +1",ring2="Stikini Ring",
-		back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet="Medium's Sabots"}
+	sets.midcast['Enfeebling Magic'].Resistant = {
+		main={ name="Grioavolr", augments={'Enfb.mag. skill +15','MND+5','Mag. Acc.+14','"Mag.Atk.Bns."+16','Magic Damage +5',}},
+		sub="Enki Strap",
+		ammo="Pemphredo Tathlum",
+		head="Befouled Crown",
+		neck="Incanter's Torque",
+		ear1="Regal Earring",
+		ear2="Digni. Earring",
+		body="Theophany Briault +3",
+		hands="Inyanga Dastanas +1",
+		ring1="Stikini Ring",
+		ring2="Stikini Ring +1",
+		back="Aurist's Cape +1",
+		waist="Luminary Sash",
+		legs="Inyanga Shalwar +2",
+		feet="Skaoi Boots"
+		}
 		
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -492,7 +518,7 @@ function init_gear_sets()
 		
 	sets.idle.MEVA = {
 		main="Mafic Cudgel",
-		sub="Ammurapi Shield",
+		sub="Genbu Shield",
 		ammo="Incantor Stone",
 		head="Inyanga Tiara +2",
 		body="Inyanga Jubbah +2",
