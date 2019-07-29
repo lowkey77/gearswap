@@ -13,10 +13,11 @@ function user_setup()
 
 	gear.ws_jse_back = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
 	gear.stp_jse_back = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}
-	gear.valorous_wsd_head = { name="Valorous Mask", augments={'Accuracy+17 Attack+17','Weapon skill damage +5%','Accuracy+12','Attack+7',}}
+	gear.valorous_wsd_head = { name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}}
 	gear.valorous_wsd_body = { name="Valorous Mail", augments={'Accuracy+27','Weapon skill damage +4%','VIT+1',}}
-	gear.valorous_wsd_hands = { name="Valorous Mitts", augments={'Accuracy+18 Attack+18','Weapon skill damage +3%','AGI+2','Accuracy+13','Attack+6',}}
-	gear.valorous_mab_feet = { name="Valorous Greaves", augments={'Accuracy+17','Weapon skill damage +4%','CHR+7',}}
+	gear.valorous_wsd_hands = { name="Valorous Mitts", augments={'Accuracy+12 Attack+12','Weapon skill damage +4%','STR+9','Accuracy+4',}}
+	gear.valorous_wsd_feet = { name="Valorous Greaves", augments={'"Mag.Atk.Bns."+23','Weapon skill damage +3%','STR+9',}}
+	gear.valorous_mab_feet = { name="Valorous Greaves", augments={'"Mag.Atk.Bns."+23','Weapon skill damage +3%','STR+9',}}
     -- Additional local binds
     send_command('bind ^` input /ja "Hasso" <me>')
     send_command('bind !` input /ja "Seigan" <me>')
@@ -91,7 +92,7 @@ function init_gear_sets()
         back=gear.ws_jse_back,
 		waist="Fotia Belt",
 		legs="Wakido Haidate +3",
-		feet={ name="Valorous Greaves", augments={'Attack+27','Weapon skill damage +5%','VIT+5','Accuracy+2',}},
+		feet=gear.valorous_wsd_feet,
 		}
 		
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {})
@@ -108,7 +109,7 @@ function init_gear_sets()
 		body="Wakido Domaru +3",
 		hands="Wakido Kote +3",
 		legs="Wakido Haidate +3",
-		feet="Wakido Sune. +3",
+		--feet="Wakido Sune. +3",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",
 		left_ear="Telos Earring",
@@ -399,11 +400,12 @@ function init_gear_sets()
 		sub="Utu Grip",
 		ammo="Ginsen",
 		head="Flamma Zucchetto +2",
-		body="Tatenashi Haramaki",
+		body="Kendatsuba Samue",
+		--body="Tatenashi Haramaki",
 		--body="Kasuga Domaru +1",
 		hands="Wakido Kote +3",
 		--legs="Tatenashi Haidate",
-		legs="Kendatsuba hakama",
+		legs="Kendatsuba Hakama",
 		feet="Ryuo Sune-Ate +1",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",
@@ -420,7 +422,7 @@ function init_gear_sets()
 		head="Flamma Zucchetto +2",
 		body="Wakido Domaru +3",
 		hands="Wakido Kote +3",
-		legs="Wakido Haidate +3",
+		legs="Kendatsuba Hakama",
 		feet="Wakido Sune. +3",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",
@@ -436,7 +438,7 @@ function init_gear_sets()
 		head="Flamma Zucchetto +2",
 		body="Wakido Domaru +3",
 		hands="Wakido Kote +3",
-		legs="Wakido Haidate +3",
+		legs="Kendatsuba Hakama",
 		feet="Wakido Sune. +3",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",
@@ -452,7 +454,7 @@ function init_gear_sets()
 		head="Flamma Zucchetto +2",
 		body="Dagon breastplate",
 		hands="Wakido Kote +3",
-		legs="Wakido Haidate +3",
+		legs="Kendatsuba Hakama",
 		feet="Wakido Sune. +3",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",
@@ -639,7 +641,7 @@ function init_gear_sets()
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {neck="Vim Torque +1"}
-	sets.buff.Hasso = {legs="Kasuga Haidate +1"}
+	--sets.buff.Hasso = {legs="Kasuga Haidate +1"}
     sets.buff.Sekkanoki = {hands="Kasuga Kote +1"}
     sets.buff.Sengikori = {feet="Kas. Sune-Ate +1"}
     sets.buff['Meikyo Shisui'] = {feet="Sak. Sune-Ate"}
