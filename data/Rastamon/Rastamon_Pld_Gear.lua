@@ -423,7 +423,7 @@ function init_gear_sets()
     sets.idle = {
 		ammo="Homiliary", 
 		head={ name="Valorous Mask", augments={'Accuracy+17 Attack+17','Weapon skill damage +5%','Accuracy+12','Attack+7',}},
-		body="Arke Corazza",
+		body="Hjarrandi Breastplate",
 		hands="Regal Gauntlets",
 		legs={ name="Souveran Diechlings +1", augments={'STR+10','VIT+10','Accuracy+15',}},
 		feet="Souveran Schuhs +1",
@@ -438,8 +438,8 @@ function init_gear_sets()
 		
     sets.idle.PDT = {
 		ammo="Staunch Tathlum",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -454,8 +454,8 @@ function init_gear_sets()
 		
     sets.idle.MDT = {
 		ammo="Staunch Tathlum",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -471,7 +471,7 @@ function init_gear_sets()
 	sets.idle.Refresh = {
 		ammo="Homiliary", 
 		head={ name="Valorous Mask", augments={'Accuracy+17 Attack+17','Weapon skill damage +5%','Accuracy+12','Attack+7',}},
-		body="Arke Corazza",
+		body="Hjarrandi Breastplate",
 		hands="Regal Gauntlets",
 		legs={ name="Souveran Diechlings +1", augments={'STR+10','VIT+10','Accuracy+15',}},
 		feet="Reverence Leggings +3",
@@ -486,8 +486,8 @@ function init_gear_sets()
 
 	sets.idle.Tank = {
 		ammo="Amar Cluster",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -502,8 +502,8 @@ function init_gear_sets()
 		
 	sets.idle.KiteTank = {
 		ammo="Amar Cluster",
-		head="Souveran Schaller +1", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Souveran Handschuhs +1", --5--
 		legs="Souveran Diechlings +1", --7--
 		feet="Souveran Schuhs +1", --0--
@@ -577,8 +577,8 @@ function init_gear_sets()
 	
     sets.defense.PDT = {
 		ammo="Staunch Tathlum",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -593,7 +593,7 @@ function init_gear_sets()
 		
     sets.defense.PDT_HP = {
 		ammo="Staunch Tathlum",
-		head="Sulevia's Mask +2", --5--
+		head="Hjarrandi Helm", --5--
 		body="Souveran Cuirass +1", 
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
@@ -629,8 +629,8 @@ function init_gear_sets()
 		
 	sets.defense.Tank = {
 		ammo="Amar Cluster",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -645,8 +645,8 @@ function init_gear_sets()
 		
 	sets.defense.MEVA = {
 		ammo="Amar Cluster",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -670,7 +670,7 @@ function init_gear_sets()
 		neck="Unmoving Collar +1",
 		ear1="Zennaroi Earring",
 		ear2="Ethereal Earring",
-		body="Arke Corazza",--12--
+		body="Hjarrandi Breastplate",--12--
 		hands="Souv. Handschuhs", -- 4 DT 2/5 Souv. Set --
 		ring1="Defending Ring", -- 10 DT --
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}, -- 3 DT --
@@ -685,7 +685,7 @@ function init_gear_sets()
 		sub="Ochain",
 		ammo="Amar Cluster",
 		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -701,8 +701,8 @@ function init_gear_sets()
     sets.defense.OchainNoShellMDT = {
 		sub="Ochain",
 		ammo="Amar Cluster",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -718,8 +718,8 @@ function init_gear_sets()
     sets.defense.AegisMDT = {
 		sub="Aegis",
 		ammo="Amar Cluster",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -735,8 +735,8 @@ function init_gear_sets()
     sets.defense.AegisNoShellMDT = {
 		sub="Aegis",
 		ammo="Amar Cluster",
-		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		head="Hjarrandi Helm", --5--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -756,7 +756,7 @@ function init_gear_sets()
 	sets.engaged = {
 		ammo="Amar Cluster",
 		head="Flamma Zucchetto +2",
-		body="Arke Corazza",--12--
+		body="Hjarrandi Breastplate",--12--
 		hands="Sulevia's Gauntlets +2",--4--
 		legs="Sulevia's Cuisses +2",--6--
 		feet="Reverence Leggings +3",
@@ -772,7 +772,7 @@ function init_gear_sets()
     sets.engaged.Acc = {		
 		ammo="Amar Cluster",
 		head="Flamma Zucchetto +2",
-		body="Arke Corazza",--12--
+		body="Hjarrandi Breastplate",--12--
 		hands="Regal Gauntlets",
 		legs="Sulevia's Cuisses +2",
 		feet="Reverence Leggings +3",
@@ -798,7 +798,7 @@ function init_gear_sets()
 	sets.engaged.Tank = {
 		ammo="Amar Cluster",
 		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -814,7 +814,7 @@ function init_gear_sets()
 	sets.engaged.BreathTank = {
 		ammo="Amar Cluster",
 		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -830,7 +830,7 @@ function init_gear_sets()
 	sets.engaged.Acc.BreathTank = {
 		ammo="Amar Cluster",
 		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -846,7 +846,7 @@ function init_gear_sets()
 	sets.engaged.DDTank = {		
 		ammo="Amar Cluster",
 		head="Flamma Zucchetto +2",
-		body="Arke Corazza",--12--
+		body="Hjarrandi Breastplate",--12--
 		hands={ name="Valorous Mitts", augments={'Accuracy+18 Attack+18','Weapon skill damage +3%','AGI+2','Accuracy+13','Attack+6',}},
 		legs="Sulevia's Cuisses +2",
 		feet="Reverence Leggings +3",
@@ -861,7 +861,7 @@ function init_gear_sets()
 	sets.engaged.Acc.DDTank = {		
 		ammo="Amar Cluster",
 		head="Flamma Zucchetto +2",
-		body="Arke Corazza",--12--
+		body="Hjarrandi Breastplate",--12--
 		hands={ name="Valorous Mitts", augments={'Accuracy+18 Attack+18','Weapon skill damage +3%','AGI+2','Accuracy+13','Attack+6',}},
 		legs="Sulevia's Cuisses +2",
 		feet="Reverence Leggings +3",
@@ -876,7 +876,7 @@ function init_gear_sets()
 	sets.engaged.NoShellTank = {
 		ammo="Amar Cluster",
 		head="Sulevia's Mask +2", --5--
-		body="Arke Corazza", --12--
+		body="Hjarrandi Breastplate", --12--
 		hands="Sulevia's Gauntlets +2", --5--
 		legs="Sulevia's Cuisses +2", --7--
 		feet="Reverence Leggings +3", --0--
@@ -892,7 +892,7 @@ function init_gear_sets()
     sets.engaged.Acc.Tank = {		
 		ammo="Amar Cluster",
 		head="Flamma Zucchetto +2",
-		body="Arke Corazza",--12--
+		body="Hjarrandi Breastplate",--12--
 		hands={ name="Valorous Mitts", augments={'Accuracy+18 Attack+18','Weapon skill damage +3%','AGI+2','Accuracy+13','Attack+6',}},
 		legs="Sulevia's Cuisses +2",
 		feet="Reverence Leggings +3",
