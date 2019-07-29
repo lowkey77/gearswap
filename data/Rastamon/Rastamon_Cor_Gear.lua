@@ -318,12 +318,12 @@ function init_gear_sets()
     sets.engaged.Acc = {
 		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
 		body="Meg. Cuirie +2",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_acc_feet}
+		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Mummu Gamash. +2"}
 
     sets.engaged.DW = {
 		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket",hands="Floral Gauntlets",ring1="Chirich Ring",ring2="Regal Ring",
-		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet=gear.herculean_ta_feet}
+		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet="Mummu Gamash. +2"}
     
     sets.engaged.DW.Acc = {
 		head="Dampening Tam",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
