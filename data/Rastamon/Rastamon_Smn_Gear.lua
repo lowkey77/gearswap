@@ -300,7 +300,7 @@ function init_gear_sets()
 		sub="Elan Strap",
 		ammo="Sancus Sachet +1",
 		head={ name="Apogee Crown +1", augments={'Pet: Attack+25','Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8',}},
-		left_ring="Varar Ring",
+		left_ring="Varar Ring +1",
 		body="Convoker's Doublet +3",
 		hands="Convoker's Bracers +3",
 		legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
@@ -309,7 +309,7 @@ function init_gear_sets()
 		waist="Incarnation Sash",
 		left_ear="Gelos Earring",
 		right_ear="Lugalbanda Earring",		
-		right_ring="Varar Ring",
+		right_ring="Varar Ring +1",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
 		
@@ -320,12 +320,12 @@ function init_gear_sets()
         ammo="Sancus Sachet +1",
 		head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
 		neck="Adad Amulet", 
-		ring1="Varar Ring",
+		ring1="Varar Ring +1",
         body="Convoker's Doublet +3",
 		left_ear="Gelos Earring",
 		right_ear="Lugalbanda Earring",
 		hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+22','Blood Pact Dmg.+10','Pet: Mag. Acc.+9',}},
-		ring2="Varar Ring",
+		ring2="Varar Ring +1",
         waist="Regal Belt",
 		legs="Enticer's Pants", 
 		feet="Convoker's Pigaches +3", 
@@ -355,8 +355,8 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Gelos Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
-		right_ring="Varar Ring",
+		left_ring="Varar Ring +1",
+		right_ring="Varar Ring +1",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
 
@@ -367,18 +367,18 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {main="Nirvana",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Nodens Gorget",ear1="Evans Earring",ear2="Loquacious Earring",
-        body="Witching Robe",hands="Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Varar Ring",
+        body="Witching Robe",hands="Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Varar Ring +1",
         back="Campestres's Cape",waist="Fucho-no-obi",legs="Assiduity pants +1",feet="Baayami Sabots"}
     
     -- Idle sets
     sets.idle = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Shulmanu Collar",ear1="Gelos Earring",ear2="Lugalbanda Earring",
-        body="Witching Robe", hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Varar Ring",
+        body="Witching Robe", hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Varar Ring +1",
         back="Campestres's Cape",waist="Regal Belt",legs="Assiduity pants +1",feet="Baayami Sabots",}
 
     sets.idle.PDT = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Twilight Torque",ear1="Evans Earring",ear2="Loquacious Earring",
-        body="Witching Robe", hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Varar Ring",
+        body="Witching Robe", hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Varar Ring +1",
         back="Campestres's Cape",waist="Convoker's Pigaches +2",legs="Hagondes Pants",feet="Baayami Sabots",}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque",ring2="Karieyh Ring"})
@@ -417,7 +417,7 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
+		left_ring="Varar Ring +1",
 		right_ring="Speaker's Ring",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
@@ -435,7 +435,7 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
+		left_ring="Varar Ring +1",
 		right_ring="Speaker's Ring",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
@@ -453,7 +453,7 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
+		left_ring="Varar Ring +1",
 		right_ring="Speaker's Ring",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
@@ -471,7 +471,7 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring",
+		left_ring="Varar Ring +1",
 		right_ring="Speaker's Ring",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
@@ -545,8 +545,8 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Telos Earring",
-		left_ring="Varar Ring",
-		right_ring="Varar Ring",
+		left_ring="Varar Ring +1",
+		right_ring="Varar Ring +1",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
 end
