@@ -51,7 +51,7 @@ function init_gear_sets()
 		main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
 		sub="Sors Shield",
 		ammo="Incantor Stone",
-		head="Chironic Hat",
+		head="Merlinic Hood",
 		body="Inyanga Jubbah +2",
 		hands="Theophany Mitts +3",
 		legs="Artsieq Hose",
@@ -74,7 +74,7 @@ function init_gear_sets()
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
-		head="Piety Cap", 
+		head="Piety Cap +1", 
 		hands="Chironic Gloves", 
 		legs="Ebers Pantaloons +1",
 		feet="Hygieia Clogs +1", 
@@ -91,7 +91,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
     sets.precast.JA.Benediction = {body="Piety Briault +3"}
-	sets.precast.JA.Devotion = {head="Piety Cap"}
+	sets.precast.JA.Devotion = {head="Piety Cap +1"}
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
@@ -364,13 +364,13 @@ function init_gear_sets()
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaloons",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaloons",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaloons +3",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaloons +3",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	
 	sets.midcast.BarElement = {main="Gada",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head="Ebers Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 		body="Ebers Bliaud",hands="Ebers Mitts",ring1="Stikini Ring +1",ring2="Stikini Ring",
-		back="Perimede Cape",waist="Olympus Sash",legs="Piety Pantaloons",feet="Theophany Duckbills +3"}
+		back="Perimede Cape",waist="Olympus Sash",legs="Piety Pantaloons +3",feet="Theophany Duckbills +3"}
 
 	sets.midcast.Impact = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
@@ -482,19 +482,19 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {
 		main="Mafic Cudgel",
-		sub="Ammurapi Shield",
+		sub="Genbu's Shield",
 		ammo="Incantor Stone",
-		head="Befouled Crown",
+		head="Inyanga Tiara +2",
 		body="Theophany Briault +3",
-		hands="Theophany Mitts +3",
-		legs="Ebers Pantaloons +1",
+		hands="Inyanga Dastanas +2",
+		legs="Inyanga Shalwar +2",
 		feet="Inyanga Crackows +2",
 		neck="Loricate Torque +1",
 		waist="Fucho-no-obi",
 		left_ear="Ethereal Earring",
 		right_ear="Dominance Earring",
-		left_ring="Stikini Ring +1",
-		right_ring="Persis Ring",
+		left_ring="Inyanga Ring",
+		right_ring="Stikini Ring +1",
 		back="Alaunus's Cape",
 		}
 
@@ -518,7 +518,7 @@ function init_gear_sets()
 		
 	sets.idle.MEVA = {
 		main="Mafic Cudgel",
-		sub="Genbu Shield",
+		sub="Genbu's Shield",
 		ammo="Incantor Stone",
 		head="Inyanga Tiara +2",
 		body="Inyanga Jubbah +2",
