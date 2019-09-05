@@ -35,7 +35,7 @@ function init_gear_sets()
         head="Convoker's Horn +3",
 		neck="Incanter's Torque", 
 		ear2="Andoaa Earring",
-        body="Beckoner's Doublet +1",
+        body="Baayami Robe",
 		hands="Glyphic Bracers +1",
 		ring1="Evoker's Ring",
 		ring2="Stikini Ring +1",
@@ -264,7 +264,7 @@ function init_gear_sets()
 		sub="Vox Grip",
 		ammo="Sancus Sachet +1",
 		head="Convoker's Horn +3",
-		body="Beck. Doublet +1",
+		body="Baayami Robe",
 		hands="Lamassu Mitts +1",
 		legs="Beck. Spats +1",
 		feet="Baayami Sabots",
@@ -282,7 +282,7 @@ function init_gear_sets()
 		ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",
 		neck="Incanter's Torque",
-        body="Beckoner's Doublet +1",
+        body="Baayami Robe",
 		hands="Lamassu Mitts +1",
 		right_ear="Andoaa Earring",
 		ring1="Evoker's Ring",
@@ -409,7 +409,7 @@ function init_gear_sets()
 		sub="Elan Strap",
 		ammo="Sancus Sachet +1",
 		head="Beckoner's Horn +1",
-		body="Convoker's Doublet +3",
+		body="Witching Robe",
 		hands="Asteria Mitts +1",
 		legs="Assid. Pants +1",
 		feet="Convoker's Pigaches +3",
@@ -417,8 +417,8 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring +1",
-		right_ring="Speaker's Ring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
 		
@@ -435,8 +435,8 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring +1",
-		right_ring="Speaker's Ring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
 
@@ -453,8 +453,8 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring +1",
-		right_ring="Speaker's Ring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
 		
@@ -471,8 +471,8 @@ function init_gear_sets()
 		waist="Regal Belt",
 		left_ear="Enmerkar Earring",
 		right_ear="Lugalbanda Earring",
-		left_ring="Varar Ring +1",
-		right_ring="Speaker's Ring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10',}},
 		}
 		
