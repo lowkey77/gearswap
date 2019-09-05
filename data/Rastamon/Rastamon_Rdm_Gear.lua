@@ -226,8 +226,9 @@ function init_gear_sets()
 	
 	-- Gear for Magic Burst mode.
     sets.MagicBurst = {
+		head="Ea Hat",
 		neck="Mizu. Kubikazari",
-		body={ name="Merlinic Jubbah", augments={'INT+8','CHR+8','Magic burst dmg.+12%','Accuracy+6 Attack+6','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
+		body="Ea Houppelande",
 		left_ring="Mujin Band",
 		right_ring="Locus Ring",
 		feet="Jhakri Pigaches +2"
@@ -367,8 +368,10 @@ function init_gear_sets()
 	sets.buff.ComposureOther = {
 		head="Lethargy Chappel +1",
 		neck="Duelist Torque +2",
-		body="Lethargy Sayon +1",
-		hands="Lethargy Gantherots +1",
+		--body="Lethargy Sayon +1",
+		body={ name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}},
+		--hands="Lethargy Gantherots +1",
+		hands="Atrophy Gloves +3",
 		legs="Lethargy Fuseau +1",
 		feet="Lethargy Houseaux +1"
 		}
@@ -508,8 +511,8 @@ function init_gear_sets()
         --body={ name="Merlinic Jubbah", augments={'"Mag.Atk.Bns."+23','Magic burst dmg.+10%','MND+7','Mag. Acc.+12',}},
 		hands="Jhakri Cuffs +2",
 		left_ring="Jhakri Ring",
-		right_ring="Locus Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+		right_ring="Freke Ring",
+        back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Mag. Evasion+15',}},
 		waist=gear.obi_high_nuke_waist,
 		legs="Jhakri Slops +2",
 		feet="Vitiation Boots +3"
@@ -527,7 +530,7 @@ function init_gear_sets()
         --body={ name="Merlinic Jubbah", augments={'"Mag.Atk.Bns."+23','Magic burst dmg.+10%','MND+7','Mag. Acc.+12',}},
 		hands="Jhakri Cuffs +2",
 		left_ring="Jhakri Ring",
-		right_ring="Locus Ring",
+		right_ring="Freke Ring",
         back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		waist=gear.ElementalObi,
 		legs="Jhakri Slops +2",
@@ -558,7 +561,7 @@ function init_gear_sets()
         body="Helios Jacket",hands="Gende. Gages +1",left_ring="Kishar Ring",right_ring="Prolix Ring",
         back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		
-	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {sub="Niobid Strap",ammo="Regal Gem",left_ear="Regal Earring"})
+	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {sub="Niobid Strap",ammo="Pemphredo Tathlum",left_ear="Regal Earring"})
 	sets.midcast['Elemental Magic'].Resistant.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Resistant, {left_ear="Regal Earring"})
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {sub="Alber Strap",ammo="Regal Gem",left_ear="Regal Earring"})
 		
