@@ -45,35 +45,35 @@ function init_gear_sets()
 	--------------------------------------
 	
     sets.Enmity = {
-		ammo="Iron Gobbet", -- 2 --
-		head="Loess Barbuta +1", -- 9~14 --
-		neck="Unmoving Collar +1", -- 10 --
+		ammo="Staunch Tathlum", -- 2 --
+		head="Souveran Schaller +1", -- 9~14 --
+		neck="Moonbeam Necklace", -- 10 --
 		left_ear="Cryptic Earring", -- 4 -- 
 		right_ear="Thureous Earring", -- 0 --
 		body="Souveran Cuirass +1", -- 11 --
-		hands="Cab. Gauntlets +1", -- 6 --
+		hands="Regal Gauntlets", -- 6 --
 		left_ring="Petrov Ring", -- 4 --
 		right_ring="Supershear Ring", -- 3 --
-		back="Agema Cape", -- 5 --
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Spell interruption rate down-10%',}},
 		waist="Creed Baudrier", -- 5 --
-		legs="Souveran Diechlings +1", -- 9 --
-		feet="Chevalier's Sabatons +1" -- 11 --
+		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
+		feet={ name="Odyssean Greaves", augments={'Accuracy+28','Weapon skill damage +3%','DEX+10',}},
 		}
 
     sets.Enmity.DT = {
-		ammo="Iron Gobbet", -- 2 --
-		head="Loess Barbuta +1", -- 9~14 --
-		neck="Unmoving Collar +1", -- 10 --
+		ammo="Staunch Tathlum", -- 2 --
+		head="Souveran Schaller +1", -- 9~14 --
+		neck="Moonbeam Necklace", -- 10 --
 		left_ear="Cryptic Earring", -- 4 -- 
 		right_ear="Thureous Earring", -- 0 --
 		body="Souveran Cuirass +1", -- 11 --
-		hands="Cab. Gauntlets +1", -- 6 --
+		hands="Regal Gauntlets", -- 6 --
 		left_ring="Petrov Ring", -- 4 --
 		right_ring="Supershear Ring", -- 3 --
-		back="Agema Cape", -- 5 --
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Spell interruption rate down-10%',}},
 		waist="Creed Baudrier", -- 5 --
-		legs="Souveran Diechlings +1", -- 9 --
-		feet="Chevalier's Sabatons +1" -- 11 --
+		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
+		feet={ name="Odyssean Greaves", augments={'Accuracy+28','Weapon skill damage +3%','DEX+10',}},
 		}
 		
 	sets.midcast['Jettatura'] = {
@@ -166,7 +166,7 @@ function init_gear_sets()
 		
 	sets.precast.JA['Violent Flourish'] = {ammo="Ginsen",
         head="Founder's Corona",neck="Erra Pendant",ear1="Gwati Earring",ear2="Digni. Earring",
-        body="Found. Breastplate",hands="Leyline Gloves",ring1="Defending Ring",ring2="Stikini Ring",
+        body="Found. Breastplate",hands="Leyline Gloves",ring1="Moonbeam Ring",ring2="Stikini Ring",
         back="Ground. Mantle +1",waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Founder's Greaves"}
 		
 	sets.precast.JA['Animated Flourish'] = set_combine(sets.Enmity, {})
@@ -175,12 +175,12 @@ function init_gear_sets()
     
     sets.precast.FC = {
 		ammo="Impatiens",
-		head="Souveran Schaller +1",
+		head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
 		neck="Baetyl Pendant",
 		ear1="Enchanter Earring +1",
 		ear2="Loquac. Earring",
-		body="Reverence Surcoat +2",
-		hands="Regal Gauntlets",
+		body={ name="Odyss. Chestplate", augments={'"Mag.Atk.Bns."+13','"Fast Cast"+5','INT+5',}},
+		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
 		ring1="Kishar Ring",
 		ring2="Veneficium Ring",
 		back="Repulse Mantle",
@@ -191,12 +191,12 @@ function init_gear_sets()
 		
     sets.precast.FC.DT = {
 		ammo="Impatiens",
-		head="Souveran Schaller +1",
+head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
 		neck="Baetyl Pendant",
 		ear1="Enchanter Earring +1",
 		ear2="Loquac. Earring",
-		body="Reverence Surcoat +2",
-		hands="Regal Gauntlets",
+		body={ name="Odyss. Chestplate", augments={'"Mag.Atk.Bns."+13','"Fast Cast"+5','INT+5',}},
+		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
 		ring1="Kishar Ring",
 		ring2="Veneficium Ring",
 		back="Repulse Mantle",
@@ -235,7 +235,7 @@ function init_gear_sets()
 		ear2="Brutal Earring",
 		body="Sulevia's Plate. +2",
 		hands="Sulevia's Gauntlets +2",
-		ring1="Defending Ring",
+		ring1="Moonbeam Ring",
 		ring2="Patricius Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},
 		waist="Fotia Belt",
@@ -271,7 +271,7 @@ function init_gear_sets()
 	
 	sets.precast.WS['Flat Blade'] = {ammo="Ginsen",
         head="Founder's Corona",neck="Baetyl Pendant",ear1="Gwati Earring",ear2="Digni. Earring",
-        body="Sulevia's Plate. +2",hands="Leyline Gloves",ring1="Defending Ring",ring2="Stikini Ring",
+        body="Sulevia's Plate. +2",hands="Leyline Gloves",ring1="Moonbeam Ring",ring2="Stikini Ring",
         back="Ground. Mantle +1",waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Founder's Greaves"}
 
 	sets.precast.WS['Flat Blade'].Acc = {ammo="Ginsen",
@@ -288,7 +288,7 @@ function init_gear_sets()
 
     sets.precast.WS['Atonement'] = {ammo="Paeapua",
 		head="Loess Barbuta +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-		body="Phorcys Korazin",hands=gear.odyssean_wsd_hands,ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Phorcys Korazin",hands=gear.odyssean_wsd_hands,ring1="Moonbeam Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Fotia Belt",legs="Acro Breeches",feet="Eschite Greaves"}
 
     sets.precast.WS['Atonement'].Acc = sets.precast.WS['Atonement']
@@ -306,12 +306,12 @@ function init_gear_sets()
 
     sets.midcast.FastRecast = {ammo="Paeapua",
         head="Chev. Armet +1",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-        body="Shabti Cuirass",hands="Regal Gauntlets",ring1="Defending Ring",ring2="Kishar Ring",
+        body="Shabti Cuirass",hands="Regal Gauntlets",ring1="Moonbeam Ring",ring2="Kishar Ring",
         waist="Goading Belt",legs=gear.odyssean_fc_legs,feet="Odyssean Greaves"}
 		
 	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum",
 		head="Souveran Schaller +1",neck="Loricate Torque +1",ear1="Creed Earring",ear2="Thureous Earring",
-		body="Tartarus Platemail",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Tartarus Platemail",hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Founder's Hose",feet="Odyssean Greaves"}
 
     sets.midcast.Flash = set_combine(sets.Enmity, {})
@@ -416,13 +416,13 @@ function init_gear_sets()
 
     sets.resting = {ammo="Homiliary",
 		head="Jumalik Helm",neck="Coatl Gorget +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Jumalik Mail",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Sheltered Ring",
+		body="Jumalik Mail",hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Sheltered Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Sulevia's Cuisses +2",feet="Cab. Leggings +1"}
 
     -- Idle sets
     sets.idle = {
 		ammo="Homiliary", 
-		head={ name="Valorous Mask", augments={'Accuracy+17 Attack+17','Weapon skill damage +5%','Accuracy+12','Attack+7',}},
+		head="Hjarrandi Helm", --5--
 		body="Hjarrandi Breastplate",
 		hands="Regal Gauntlets",
 		legs={ name="Souveran Diechlings +1", augments={'STR+10','VIT+10','Accuracy+15',}},
@@ -533,7 +533,7 @@ function init_gear_sets()
 		}
 		
     sets.idle.Reraise = set_combine(sets.idle.Tank, {head="Twilight Helm",neck="Loricate Torque +1",
-		body="Twilight Mail",ring1="Defending Ring",ring2="Sheltered Ring",back="Moonbeam Cape"})	
+		body="Twilight Mail",ring1="Moonbeam Ring",ring2="Sheltered Ring",back="Moonbeam Cape"})	
 		
     sets.idle.Weak = {
 		ammo="Staunch Tathlum",
@@ -614,17 +614,17 @@ function init_gear_sets()
 		
     sets.defense.PDT_Reraise = {ammo="Staunch Tathlum",
         head="Twilight Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Thureous Earring",
-        body="Twilight Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+        body="Twilight Mail",hands="Macabre Gaunt. +1",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Chev. Cuisses +1",feet="Souveran Schuhs +1"}
 		
     sets.defense.MDT_Reraise = {ammo="Staunch Tathlum",
         head="Twilight Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Twilight Mail",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+        body="Twilight Mail",hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
 		back="Engulfer Cape +1",waist="Flume Belt",legs=gear.odyssean_fc_legs,feet="Cab. Leggings +1"}
 
 	sets.defense.BDT = {ammo="Staunch Tathlum",
 		head="Loess Barbuta +1",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Sanare Earring",
-		body="Tartarus Platemail",hands="Sulevia's Gauntlets +2",ring1="Defending Ring",ring2="Shadow Ring",
+		body="Tartarus Platemail",hands="Sulevia's Gauntlets +2",ring1="Moonbeam Ring",ring2="Shadow Ring",
 		back="Moonbeam Cape",waist="Asklepian Belt",legs="Sulevia's Cuisses +2",feet="Amm Greaves"}
 		
 	sets.defense.Tank = {
@@ -672,7 +672,7 @@ function init_gear_sets()
 		ear2="Ethereal Earring",
 		body="Hjarrandi Breastplate",--12--
 		hands="Souv. Handschuhs", -- 4 DT 2/5 Souv. Set --
-		ring1="Defending Ring", -- 10 DT --
+		ring1="Moonbeam Ring", -- 10 DT --
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}, -- 3 DT --
 		waist="Flume Belt +1", -- 4 --
 		legs={ name="Souveran Diechlings +1", augments={'STR+10','VIT+10','Accuracy+15',}}, -- 15 --
@@ -907,8 +907,8 @@ function init_gear_sets()
     sets.engaged.Reraise = set_combine(sets.engaged.Tank, sets.Reraise)
     sets.engaged.Acc.Reraise = set_combine(sets.engaged.Acc.Tank, sets.Reraise)
 
-    sets.engaged.DW.Tank = set_combine(sets.engaged.DW, {neck="Loricate Torque +1",ring1="Defending Ring",ring2="Patricius Ring"})
-    sets.engaged.DW.Acc.Tank = set_combine(sets.engaged.DW.Acc, {neck="Loricate Torque +1",ring1="Defending Ring",ring2="Patricius Ring"})
+    sets.engaged.DW.Tank = set_combine(sets.engaged.DW, {neck="Loricate Torque +1",ring1="Moonbeam Ring",ring2="Patricius Ring"})
+    sets.engaged.DW.Acc.Tank = set_combine(sets.engaged.DW.Acc, {neck="Loricate Torque +1",ring1="Moonbeam Ring",ring2="Patricius Ring"})
     sets.engaged.DW.Reraise = set_combine(sets.engaged.DW, sets.Reraise)
     sets.engaged.DW.Acc.Reraise = set_combine(sets.engaged.DW.Acc, sets.Reraise)
 		
