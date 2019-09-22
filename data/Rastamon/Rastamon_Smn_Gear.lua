@@ -82,7 +82,7 @@ function init_gear_sets()
         back="Swith Cape +1",
 		waist="Witful Belt",
 		legs="Gyve Trousers",
-		feet="Amalric Nails",
+		feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+19','Magic burst dmg.+11%','Mag. Acc.+10',}},
 		}
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Serenity",sub="Clerisy Strap"})
@@ -207,12 +207,12 @@ function init_gear_sets()
         body="Merlinic Jubbah",hands="Amalric Gages",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back="Toro Cape",waist="Sekhmet Corset",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
-    sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
+    sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
         head=gear.merlinic_nuke_head,neck="Incanter's Torque",ear1="Digni. Earring",ear2="Gwati Earring",
         body="Merlinic Jubbah",hands="Amalric Gages",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back="Aurist's Cape +1",waist="Yamabuki-no-Obi",legs="Merlinic Shalwar",feet=gear.merlinic_aspir_feet}
 	
-	sets.midcast.Drain = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
+	sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Incanter's Torque",ear1="Digni. Earring",ear2="Gwati Earring",
         body="Merlinic Jubbah",hands="Amalric Gages",ring1="Archon Ring",ring2="Evanescence Ring",
         back="Aurist's Cape +1",waist="Fucho-no-obi",legs="Merlinic Shalwar",feet=gear.merlinic_aspir_feet}
@@ -368,13 +368,13 @@ function init_gear_sets()
     sets.resting = {main="Nirvana",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Nodens Gorget",ear1="Evans Earring",ear2="Loquacious Earring",
         body="Witching Robe",hands="Beckoner's Bracers +1",ring1="Evoker's Ring",ring2="Varar Ring +1",
-        back="Campestres's Cape",waist="Fucho-no-obi",legs="Assiduity pants +1",feet="Baayami Sabots"}
+        back="Campestres's Cape",waist="Fucho-no-obi",legs="Volte Brais",feet="Baayami Sabots"}
     
     -- Idle sets
     sets.idle = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Shulmanu Collar",ear1="Gelos Earring",ear2="Lugalbanda Earring",
         body="Witching Robe", hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Varar Ring +1",
-        back="Campestres's Cape",waist="Regal Belt",legs="Assiduity pants +1",feet="Baayami Sabots",}
+        back="Campestres's Cape",waist="Regal Belt",legs="Volte Brais",feet="Baayami Sabots",}
 
     sets.idle.PDT = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Twilight Torque",ear1="Evans Earring",ear2="Loquacious Earring",

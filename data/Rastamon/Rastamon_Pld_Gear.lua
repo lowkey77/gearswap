@@ -174,7 +174,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {
-		ammo="Impatiens",
+		ammo="Sapience Orb",
 		head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
 		neck="Baetyl Pendant",
 		ear1="Enchanter Earring +1",
@@ -184,14 +184,14 @@ function init_gear_sets()
 		ring1="Kishar Ring",
 		ring2="Veneficium Ring",
 		back="Repulse Mantle",
-		waist="Rumination Sash",
+		waist="Creed Baudrier",
 		legs="Carmine Cuisses +1",
 		feet="Odyssean Greaves",
 		}
 		
     sets.precast.FC.DT = {
-		ammo="Impatiens",
-head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
+		ammo="Sapience Orb",
+		head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
 		neck="Baetyl Pendant",
 		ear1="Enchanter Earring +1",
 		ear2="Loquac. Earring",
@@ -200,7 +200,7 @@ head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+
 		ring1="Kishar Ring",
 		ring2="Veneficium Ring",
 		back="Repulse Mantle",
-		waist="Rumination Sash",
+		waist="Creed Baudrier",
 		legs="Carmine Cuisses +1",
 		feet="Odyssean Greaves",
 		}

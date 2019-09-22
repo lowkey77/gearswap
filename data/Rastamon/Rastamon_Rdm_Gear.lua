@@ -70,7 +70,7 @@ function init_gear_sets()
 	--85% FC
 	sets.precast.FC = {
 		main="Crocea Mors",
-		sub="Culminus",
+		sub="Ammurapi Shield",
 		ammo="Impatiens",
 		head="Atrophy chapeau +3", --16%
 		body="Vitiation Tabard +3",--15%
@@ -575,7 +575,7 @@ function init_gear_sets()
     --sub="Enki Strap",
     ammo="Regal Gem",
     head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-    body="Psycloth Vest",
+    body="Atrophy Tabard +3",
     hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
     legs="Jhakri Slops +2",
     feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},
@@ -589,7 +589,7 @@ function init_gear_sets()
 		}
 
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {main={ name="Rubicundity", augments={'Mag. Acc.+10','"Mag.Atk.Bns."+10','Dark magic skill +10','"Conserve MP"+7',}},
-    sub="Culminus", ring1="Excelsis Ring", waist="Fucho-no-Obi"})
+    sub="Ammurapi Shield", ring1="Excelsis Ring", waist="Fucho-no-Obi"})
 
 	sets.midcast.Aspir = sets.midcast.Drain
 		
@@ -636,7 +636,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {
 		main="Murgleis",
-		sub="Culminus",
+		sub="Ammurapi Shield",
 		ammo="Homiliary",
 		head="Vitiation Chapeau +3",
 		body="Atrophy Tabard +3",

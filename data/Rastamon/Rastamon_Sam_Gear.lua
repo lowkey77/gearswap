@@ -16,8 +16,8 @@ function user_setup()
 	gear.valorous_wsd_head = { name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}}
 	gear.valorous_wsd_body = { name="Valorous Mail", augments={'Accuracy+27','Weapon skill damage +4%','VIT+1',}}
 	gear.valorous_wsd_hands = { name="Valorous Mitts", augments={'Accuracy+12 Attack+12','Weapon skill damage +4%','STR+9','Accuracy+4',}}
-	gear.valorous_wsd_feet = { name="Valorous Greaves", augments={'"Mag.Atk.Bns."+23','Weapon skill damage +3%','STR+9',}}
-	gear.valorous_mab_feet = { name="Valorous Greaves", augments={'"Mag.Atk.Bns."+23','Weapon skill damage +3%','STR+9',}}
+	gear.valorous_wsd_feet = { name="Valorous Greaves", augments={'Rng.Atk.+4','MND+8','Weapon skill damage +7%',}}
+	gear.valorous_mab_feet = { name="Valorous Greaves", augments={'Rng.Atk.+4','MND+8','Weapon skill damage +7%',}}
     -- Additional local binds
     send_command('bind ^` input /ja "Hasso" <me>')
     send_command('bind !` input /ja "Seigan" <me>')
@@ -177,7 +177,7 @@ function init_gear_sets()
 		body={ name="Found. Breastplate", augments={'Accuracy+15','Mag. Acc.+15','Attack+15','"Mag.Atk.Bns."+15',}},
 		hands={ name="Founder's Gauntlets", augments={'STR+9','Attack+13','"Mag.Atk.Bns."+14','Phys. dmg. taken -4%',}},
 		legs={ name="Valor. Hose", augments={'Accuracy+10','Pet: Mag. Acc.+13','Accuracy+7 Attack+7','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-		feet={ name="Valorous Greaves", augments={'"Mag.Atk.Bns."+14','"Store TP"+1','Accuracy+10 Attack+10','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+		feet={ name="Founder's Greaves", augments={'VIT+10','Accuracy+15','"Mag.Atk.Bns."+15','Mag. Evasion+15',}},
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Friomisi Earring",
@@ -192,7 +192,7 @@ function init_gear_sets()
 		body={ name="Found. Breastplate", augments={'Accuracy+15','Mag. Acc.+15','Attack+15','"Mag.Atk.Bns."+15',}},
 		hands={ name="Founder's Gauntlets", augments={'STR+9','Attack+13','"Mag.Atk.Bns."+14','Phys. dmg. taken -4%',}},
 		legs={ name="Valor. Hose", augments={'Accuracy+10','Pet: Mag. Acc.+13','Accuracy+7 Attack+7','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-		feet={ name="Valorous Greaves", augments={'"Mag.Atk.Bns."+14','"Store TP"+1','Accuracy+10 Attack+10','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+		feet={ name="Founder's Greaves", augments={'VIT+10','Accuracy+15','"Mag.Atk.Bns."+15','Mag. Evasion+15',}},
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Friomisi Earring",
