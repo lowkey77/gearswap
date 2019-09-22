@@ -155,7 +155,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
 		ammo="Seeth. Bomblet +1",
-		head={ name="Valorous Mask", augments={'Accuracy+17 Attack+17','Weapon skill damage +5%','Accuracy+12','Attack+7',}},
+		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
 		body="Dagon Breastplate",
 		hands={ name="Valorous Mitts", augments={'Accuracy+18 Attack+18','Weapon skill damage +3%','AGI+2','Accuracy+13','Attack+6',}},
 		legs={ name="Valor. Hose", augments={'Weapon skill damage +5%','AGI+9','Accuracy+15','Attack+11',}},
@@ -165,7 +165,7 @@ function init_gear_sets()
 		left_ear="Cessance Earring",
 		right_ear="Ishvara Earring",
 		left_ring="Karieyh Ring",
-		right_ring="Regal Ring",
+		right_ring="Epaminondas's Ring",
 		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+6','Weapon skill damage +10%',}},
 	}
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {})
@@ -265,12 +265,12 @@ function init_gear_sets()
            
     sets.idle = {
 		ammo="Seeth. Bomblet +1",
-		head={ name="Valorous Mask", augments={'Accuracy+17 Attack+17','Weapon skill damage +5%','Accuracy+12','Attack+7',}},
-		body="Dagon Breast.",
+		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
+		body="Dagon Breastplate",
 		hands="Sulev. Gauntlets +2",
 		legs="Sulev. Cuisses +2",
 		feet="Flamma Gambieras +2",
-		neck="Ganesha's Mala",
+		neck="Sanctity Necklace",
 		waist="Ioskeha Belt",
 		left_ear="Cessance Earring",
 		right_ear="Telos Earring",
@@ -374,22 +374,23 @@ function init_gear_sets()
      
 	-- Engaged sets
     sets.engaged = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Ginsen",
 		head="Flamma Zucchetto +2",
 		body="Dagon Breast.",
 		hands="Sulev. Gauntlets +2",
 		legs="Sulev. Cuisses +2",
 		feet="Flamma Gambieras +2",
+		--feet="Sulev. Leggings +2",
 		neck="Ganesha's Mala",
 		waist="Ioskeha Belt",
 		left_ear="Cessance Earring",
 		right_ear="Telos Earring",
-		left_ring="Regal Ring",
+		left_ring="Flamma Ring",
 		right_ring="Niqmaddu Ring",
-		back="Agema Cape",
+		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
 	sets.engaged.SomeAcc = {
-			ammo="Seeth. Bomblet +1",
+			ammo="Ginsen",
 			head="Flamma Zucchetto +2",
 			body="Dagon Breast.",
 			hands="Sulev. Gauntlets +2",
@@ -401,10 +402,10 @@ function init_gear_sets()
 			right_ear="Telos Earring",
 			left_ring="Regal Ring",
 			right_ring="Niqmaddu Ring",
-			back="Agema Cape",
+			back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 		}
 	sets.engaged.Acc = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Ginsen",
 		head="Flamma Zucchetto +2",
 		body="Dagon Breast.",
 		hands="Sulev. Gauntlets +2",
@@ -416,10 +417,10 @@ function init_gear_sets()
 		right_ear="Digni. Earring",
 		left_ring="Chirich Ring",
 		right_ring="Cacoethic Ring +1",
-		back="Agema Cape",
+		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
 	sets.engaged.FullAcc = {
-			ammo="Seeth. Bomblet +1",
+			ammo="Ginsen",
 			head="Flamma Zucchetto +2",
 			body="Dagon Breast.",
 			hands="Sulev. Gauntlets +2",
@@ -431,7 +432,7 @@ function init_gear_sets()
 			right_ear="Telos Earring",
 			left_ring="Chirich Ring",
 			right_ring="Niqmaddu Ring",
-			back="Agema Cape",
+			back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 		}
 	sets.engaged.Fodder = {
 			ammo="Seeth. Bomblet +1",
@@ -446,7 +447,7 @@ function init_gear_sets()
 			right_ear="Telos Earring",
 			left_ring="Chirich Ring",
 			right_ring="Niqmaddu Ring",
-			back="Agema Cape",
+			back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 		}
 	
     -- sets.engaged.Adoulin = {}
