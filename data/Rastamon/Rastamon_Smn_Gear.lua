@@ -167,7 +167,7 @@ function init_gear_sets()
 	
     sets.midcast.Cure = {
 		main="Serenity",
-		sub="Elan Strap",
+		sub="Elan Strap +1",
         head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
 		neck="Incanter's Torque",
 		ear2="Loquacious Earring",
@@ -297,7 +297,7 @@ function init_gear_sets()
     
     sets.midcast.Pet.PhysicalBloodPactRage = {
 		main="Nirvana",
-		sub="Elan Strap",
+		sub="Elan Strap +1",
 		ammo="Sancus Sachet +1",
 		head={ name="Apogee Crown +1", augments={'Pet: Attack+25','Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8',}},
 		left_ring="Varar Ring +1",
@@ -344,7 +344,7 @@ function init_gear_sets()
     
 	sets.midcast.Pet['Flaming Crush'] = {
 		main="Nirvana",
-		sub="Elan Strap",
+		sub="Elan Strap +1",
 		ammo="Sancus Sachet +1",
 		head={ name="Apogee Crown +1", augments={'Pet: Attack+25','Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8',}},
 		body="Con. Doublet +3",
@@ -371,12 +371,12 @@ function init_gear_sets()
         back="Campestres's Cape",waist="Fucho-no-obi",legs="Volte Brais",feet="Baayami Sabots"}
     
     -- Idle sets
-    sets.idle = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
+    sets.idle = {main="Nirvana",sub="Elan Strap +1",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Shulmanu Collar",ear1="Gelos Earring",ear2="Lugalbanda Earring",
         body="Witching Robe", hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Varar Ring +1",
         back="Campestres's Cape",waist="Regal Belt",legs="Volte Brais",feet="Baayami Sabots",}
 
-    sets.idle.PDT = {main="Nirvana",sub="Elan Strap",ammo="Sancus Sachet +1",
+    sets.idle.PDT = {main="Nirvana",sub="Elan Strap +1",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Twilight Torque",ear1="Evans Earring",ear2="Loquacious Earring",
         body="Witching Robe", hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Varar Ring +1",
         back="Campestres's Cape",waist="Convoker's Pigaches +2",legs="Hagondes Pants",feet="Baayami Sabots",}
@@ -406,7 +406,7 @@ function init_gear_sets()
     
     sets.idle.Avatar = {
 		main="Nirvana",
-		sub="Elan Strap",
+		sub="Elan Strap +1",
 		ammo="Sancus Sachet +1",
 		head="Beckoner's Horn +1",
 		body="Witching Robe",
@@ -424,7 +424,7 @@ function init_gear_sets()
 		
     sets.idle.PDT.Avatar = {
 		main="Nirvana",
-		sub="Elan Strap",
+		sub="Elan Strap +1",
 		ammo="Sancus Sachet +1",
 		head="Beckoner's Horn +1",
 		body="Convoker's Doublet +3",
@@ -442,7 +442,7 @@ function init_gear_sets()
 
     sets.idle.Spirit = {
 		main="Nirvana",
-		sub="Elan Strap",
+		sub="Elan Strap +1",
 		ammo="Sancus Sachet +1",
 		head="Beckoner's Horn +1",
 		body="Convoker's Doublet +3",
@@ -460,7 +460,7 @@ function init_gear_sets()
 		
     sets.idle.PDT.Spirit = {
 		main="Nirvana",
-		sub="Elan Strap",
+		sub="Elan Strap +1",
 		ammo="Sancus Sachet +1",
 		head="Beckoner's Horn +1",
 		body="Convoker's Doublet +3",
@@ -528,13 +528,15 @@ function init_gear_sets()
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {neck="Sacrifice Torque"}
-	sets.Weapons = {main="Nirvana", sub="Elan Strap"}
+	sets.Weapons = {main="Nirvana", sub="Elan Strap +1"}
     --------------------------------------
     -- Engaged sets
     --------------------------------------
     
     -- Normal melee group
     sets.engaged = {
+		main="Nirvana",
+		sub="Elan Strap +1",
 		ammo="Sancus Sachet +1",
 		head="Convoker's Horn +3",
 		body="Convoker's Doublet +3",

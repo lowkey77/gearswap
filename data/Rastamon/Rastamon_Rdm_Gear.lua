@@ -79,8 +79,8 @@ function init_gear_sets()
 		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic Damage +9','MND+5','Mag. Acc.+7',}},--5%
 		neck="Loricate Torque +1",
 		waist="Witful Belt",--3%
-		left_ear="Etiolation Earring",--1%
-		right_ear="Thureous Earring",
+		left_ear="Malignance Earring",--1%
+		right_ear="Enchanter Earring +1",
 		left_ring="Veneficium Ring",
 		right_ring="Defending Ring",
 		back="Perimede Cape",
@@ -203,10 +203,12 @@ function init_gear_sets()
 	{
 		ammo="Regal Gem",
 		head="Vitiation Chapeau +3",
-		body="Vitiation Tabard +3",
+		body="Malignance Tabard",
+		--body="Vitiation Tabard +3",
 		hands="Jhakri Cuffs +2",
 		legs="Jhakri Slops +2",
-		feet="Jhakri Pigaches +2",
+		feet="Malignance Boots",
+		--feet="Jhakri Pigaches +2",
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Moonshade Earring",
@@ -317,8 +319,10 @@ function init_gear_sets()
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Oranyan",sub="Clemency Grip"})
 		
 	sets.midcast.Curaga = sets.midcast.Cure
+	
 	sets.Self_Healing = {neck="Phalaina Locket",left_ear="Etiolation Earring",hands="Buremte Gloves",right_ring="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Cure_Recieved = {neck="Phalaina Locket",hands="Buremte Gloves",right_ring="Kunaji Ring",waist="Gishdubar Sash"}
+	
 	sets.Self_Refresh = {
 		head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		neck="Duelist's Torque +2",
@@ -390,6 +394,7 @@ function init_gear_sets()
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {head="Umuthi Hat", neck="Nodens Gorget", waist="Siegel Sash" , legs="Doyen pants"})
 	
 	sets.midcast['Shock Spikes'] = set_combine(sets.midcast['Enhancing Magic'], {legs="Vitiation Tights +3"})
+	
 	sets.midcast['Ice Spikes'] = set_combine(sets.midcast['Enhancing Magic'], {legs="Vitiation Tights +3"})
 	
 	sets.midcast.Enspell = set_combine(sets.midcast['Enhancing Magic'], {head="Umuthi Hat", hands="Ayanmo Manopolas +2", back="Ghostfyre Cape"})
@@ -410,7 +415,7 @@ function init_gear_sets()
 		neck="Duelist's Torque +2",
 		waist="Rumination Sash",
 		left_ear="Regal Earring",
-		right_ear="Digni. Earring",
+		right_ear="Malignance Earring",
 		left_ring="Kishar Ring",
 		right_ring="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
@@ -429,7 +434,7 @@ function init_gear_sets()
 		neck="Duelist's Torque +2",
 		waist="Rumination Sash",
 		left_ear="Regal Earring",
-		right_ear="Dignitary's Earring",
+		right_ear="Malignance Earring",
 		left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}}
@@ -448,7 +453,7 @@ function init_gear_sets()
 		neck="Duelist's Torque +2",
 		waist="Luminary Sash",
 		left_ear="Regal Earring",
-		right_ear="Digni. Earring",
+		right_ear="Malignance Earring",
 		left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
@@ -467,7 +472,7 @@ function init_gear_sets()
 		neck="Duelist's Torque +2",
 		waist="Rumination Sash",
 		left_ear="Regal Earring",
-		right_ear="Digni. Earring",
+		right_ear="Malignance Earring",
 		left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
@@ -505,17 +510,17 @@ function init_gear_sets()
 		ammo="Pemphredo Tathlum",
         head="Jhakri Coronal +2",
 		neck="Sanctity Necklace",
-		left_ear="Regal Earring",
+		left_ear="Malignance Earring",
 		right_ear="Friomisi Earring",
-		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic Damage +10','INT+3','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
+		body={ name="Amalric Doublet +1", augments={'MP+80','"Mag.Atk.Bns."+25','"Fast Cast"+4',}},
         --body={ name="Merlinic Jubbah", augments={'"Mag.Atk.Bns."+23','Magic burst dmg.+10%','MND+7','Mag. Acc.+12',}},
 		hands="Jhakri Cuffs +2",
 		left_ring="Jhakri Ring",
 		right_ring="Freke Ring",
         back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Mag. Evasion+15',}},
 		waist=gear.obi_high_nuke_waist,
-		legs="Jhakri Slops +2",
-		feet="Vitiation Boots +3"
+		legs={ name="Amalric Slops +1", augments={'MP+80','"Mag.Atk.Bns."+25','Enmity-6',}},
+		feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
 		}
 		
     sets.midcast['Elemental Magic'].Resistant = {
@@ -524,7 +529,7 @@ function init_gear_sets()
 		ammo="Regal Gem",
         head="Jhakri Coronal +2",
 		neck="Mizu. Kubikazari",
-		left_ear="Regal Earring",
+		left_ear="Malignance Earring",
 		right_ear="Friomisi Earring",
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic Damage +10','INT+3','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
         --body={ name="Merlinic Jubbah", augments={'"Mag.Atk.Bns."+23','Magic burst dmg.+10%','MND+7','Mag. Acc.+12',}},
@@ -543,7 +548,7 @@ function init_gear_sets()
 		ammo="Regal Gem",
         head=gear.merlinic_nuke_head,
 		neck="Mizu. Kubikazari",
-		left_ear="Regal Earring",
+		left_ear="Malignance Earring",
 		right_ear="Friomisi Earring",
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic Damage +10','INT+3','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
         --body={ name="Merlinic Jubbah", augments={'"Mag.Atk.Bns."+23','Magic burst dmg.+10%','MND+7','Mag. Acc.+12',}},
@@ -652,15 +657,15 @@ function init_gear_sets()
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		}
 		
-	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",ammo="Impatiens",
-		head="Vitiation Chapeau +3",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
-		body="Emet Harness +1",hands="Hagondes Cuffs +1",left_ring="Defending Ring",right_ring="Dark Ring",
-		back="Umbra Cape",waist="Flume Belt",legs="Volte Brais",feet="Gende. Galosh. +1"}
+	sets.idle.PDT = {main="Murgleis",sub="Genmei Shield",ammo="Impatiens",
+		head="Vitiation Chapeau +3",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
+		body="Malignance Tabard",hands="Volte Bracers",left_ring="Defending Ring",right_ring="Shadow Ring",
+		back="Engulfer Cape +1",waist="Flume Belt",legs="Volte Brais",feet="Malignance Boots"}
 		
 	sets.idle.MDT = {main="Murgleis",sub="Genmei Shield",ammo="Impatiens",
 		head="Vitiation Chapeau +3",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-		body="Vrikodara Jupon",hands="Volte Bracers",left_ring="Defending Ring",right_ring="Shadow Ring",
-		back="Engulfer Cape +1",waist="Flume Belt",legs="Volte Brais",feet="Gende. Galosh. +1"}
+		body="Malignance Tabard",hands="Volte Bracers",left_ring="Defending Ring",right_ring="Shadow Ring",
+		back="Engulfer Cape +1",waist="Flume Belt",legs="Volte Brais",feet="Malignance Boots"}
 		
 	sets.idle.Weak = {main="Murgleis",sub="Genmei Shield",ammo="Homiliary",
 		head="Vitiation Chapeau +3",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
@@ -670,22 +675,22 @@ function init_gear_sets()
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {back="Umbra Cape",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 	
 	-- Defense sets
-	sets.defense.PDT = {main="Terra's Staff",sub="Umbra Strap",ammo="Impatiens",
-		head="Hagondes Hat +1",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
-		body="Emet Harness +1",hands="Hagondes Cuffs +1",left_ring="Defending Ring",right_ring="Dark Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Hagondes Pants +1",feet="Gende. Galosh. +1"}
+	sets.defense.PDT = {main="Murgleis",sub="Genmei Shield",ammo="Impatiens",
+		head="Vitiation Chapeau +3",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
+		body="Malignance Tabard",hands="Volte Bracers",left_ring="Defending Ring",right_ring="Shadow Ring",
+		back="Engulfer Cape +1",waist="Flume Belt",legs="Volte Brais",feet="Malignance Boots"}
 
 	sets.defense.NukeLock = sets.midcast['Elemental Magic']
 		
 	sets.defense.MDT = {main="Murgleis",sub="Genmei Shield",ammo="Impatiens",
-		head="Hagondes Hat +1",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-		body="Vrikodara Jupon",hands="Volte Bracers",left_ring="Defending Ring",right_ring="Dark Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Hagondes Pants +1",feet="Gende. Galosh. +1"}
+		head="Vitiation Chapeau +3",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
+		body="Malignance Tabard",hands="Volte Bracers",left_ring="Defending Ring",right_ring="Shadow Ring",
+		back="Engulfer Cape +1",waist="Flume Belt",legs="Volte Brais",feet="Malignance Boots"}
 		
-    sets.defense.MEVA = {main="Terra's Staff",sub="Enki Strap",ammo="Regal Gem",
-        head=empty,neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-		body="Respite Cloak",hands="Telchine Gloves",left_ring="Vengeful Ring",right_ring="Purity Ring",
-        back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},waist="Rumination Sash",legs="Lethargy Fuseau +1",feet="Telchine Pigaches"}
+    sets.defense.MEVA = {main="Murgleis",sub="Genmei Shield",ammo="Impatiens",
+		head="Vitiation Chapeau +3",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
+		body="Malignance Tabard",hands="Volte Bracers",left_ring="Defending Ring",right_ring="Shadow Ring",
+		back="Engulfer Cape +1",waist="Flume Belt",legs="Volte Brais",feet="Malignance Boots"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque",right_ring="Karieyh Ring"})
 	sets.idle.Regain = set_combine(sets.idle, {right_ring="Karieyh Ring"})
@@ -713,10 +718,10 @@ function init_gear_sets()
 	sets.engaged = {
 		ammo="Paeapua",
 		head="Aya. Zucchetto +2",
-		body="Ayanmo Corazza +2",
+		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Aya. Cosciales +2",
-		feet="Aya. Gambieras +2",
+		feet="Malignance Boots",
 		neck="Combatant's Torque",
 		waist="Windbuffet belt +1",
 		left_ear="Telos Earring",
@@ -745,10 +750,10 @@ function init_gear_sets()
 	sets.engaged.DW = {
 		ammo="Ginsen",
 		head="Aya. Zucchetto +2",
-		body="Ayanmo Corazza +2",
+		body="Malignance Tabard",
 		hands="Carmine finger gauntlets +1",
 		legs="Carmine cuisses +1",
-		feet="Aya. Gambieras +2",
+		feet="Malignance Boots",
 		neck="Combatant's Torque",
 		waist="Windbuffet Belt +1",
 		left_ear="Telos Earring",
@@ -761,10 +766,10 @@ function init_gear_sets()
 	sets.engaged.PhysicalDef = {
 		ammo="Ginsen",
 		head="Aya. Zucchetto +2",
-		body="Ayanmo Corazza +2",
+		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Aya. Cosciales +2",
-		feet="Aya. Gambieras +2",
+		feet="Malignance Boots",
 		neck="Combatant's Torque",
 		waist="Kentarch Belt",
 		left_ear="Telos Earring",
@@ -777,10 +782,10 @@ function init_gear_sets()
 	sets.engaged.MagicalDef = {
 		ammo="Homiliary",
 		head="Aya. Zucchetto +2",
-		body="Ayanmo Corazza +2",
+		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Aya. Cosciales +2",
-		feet="Aya. Gambieras +2",
+		feet="Malignance Boots",
 		neck="Combatant's Torque",
 		waist="Kentarch Belt",
 		left_ear="Telos Earring",
