@@ -83,7 +83,7 @@ function init_gear_sets()
 		neck="Samurai Nodowa +2",
 		--neck="Fotia Gorget",
 		left_ear="Brutal Earring",
-		right_ear="Ishvara Earring",
+		right_ear="Thrud Earring",
         --body="Dagon breastplate",
 		body="Sakonji Domaru +3",
 		hands=gear.valorous_wsd_hands,
@@ -101,7 +101,7 @@ function init_gear_sets()
     sets.precast.WS.Fodder = set_combine(sets.precast.WS, {ring2="Karieyh Ring"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Tachi: Fudo'] = set_combine(sets.precast.WS, {left_ear="Moonshade Earring"})
+    sets.precast.WS['Tachi: Fudo'] = set_combine(sets.precast.WS, {left_ear="Ishvara Earring"})
     sets.precast.WS['Tachi: Fudo'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS['Tachi: Fudo'].Acc = set_combine(sets.precast.WS.Acc, {sub="Utu Grip",
 		ammo="Ginsen",
@@ -114,7 +114,7 @@ function init_gear_sets()
 		waist="Ioskeha Belt",
 		left_ear="Telos Earring",
 		right_ear="Cessance Earring",
-		left_ring="Chirich Ring",
+		left_ring="Chirich Ring +1",
 		right_ring="Patricius Ring",
 		back=gear.stp_jse_back,})
     sets.precast.WS['Tachi: Fudo'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -181,7 +181,7 @@ function init_gear_sets()
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Friomisi Earring",
-		right_ear="Ishvara Earring",
+		right_ear="Thrud Earring",
 		left_ring="Karieyh Ring",
 		right_ring="Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
@@ -196,7 +196,7 @@ function init_gear_sets()
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Friomisi Earring",
-		right_ear="Ishvara Earring",
+		right_ear="Thrud Earring",
 		left_ring="Karieyh Ring",
 		right_ring="Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
@@ -400,11 +400,8 @@ function init_gear_sets()
 		sub="Utu Grip",
 		ammo="Ginsen",
 		head="Flamma Zucchetto +2",
-		--body="Kendatsuba Samue",
 		body="Tatenashi Haramaki",
-		--body="Kasuga Domaru +1",
 		hands="Wakido Kote +3",
-		--legs="Tatenashi Haidate",
 		legs="Kendatsuba Hakama",
 		feet="Ryuo Sune-Ate +1",
 		neck="Moonbeam Nodowa",
@@ -412,7 +409,7 @@ function init_gear_sets()
 		left_ear="Brutal Earring",
 		right_ear="Cessance Earring",
 		left_ring="Flamma Ring",
-		right_ring="Chirich Ring",
+		right_ring="Chirich Ring +1",
 		back=gear.stp_jse_back,
 			}
 			
@@ -428,7 +425,7 @@ function init_gear_sets()
 		waist="Ioskeha Belt",
 		left_ear="Telos Earring",
 		right_ear="Cessance Earring",
-		left_ring="Chirich Ring",
+		left_ring="Chirich Ring +1",
 		right_ring="Patricius Ring",
 		back=gear.stp_jse_back,
 		}
@@ -445,7 +442,7 @@ function init_gear_sets()
 		left_ear="Telos Earring",
 		right_ear="Cessance Earring",
 		left_ring="Regal Ring",
-		right_ring="Chirich Ring",
+		right_ring="Chirich Ring +1",
 		back=gear.stp_jse_back,
 		}
     sets.engaged.Fodder = {
@@ -620,15 +617,15 @@ function init_gear_sets()
 		head="Loess Barbuta +1",
 		body="Wakido Domaru +3",
 		hands="Wakido Kote +3",
-		legs="Wakido Haidate +3",
+		legs="Kendatsuba Hakama",
 		feet="Wakido Sune. +3",
-		neck="Loricate Torque +1",
+		neck="Warder's Charm +1",
 		waist="Ioskeha Belt",
 		left_ear="Odnowa Earring +1",
 		right_ear="Odnowa Earring",
 		left_ring="Patricius Ring",
 		right_ring="Defending Ring",
-		back="Agema Cape",
+		back="Moonbeam Cape",
 		}
 
     sets.engaged.Reraise = set_combine(sets.engaged, sets.Reraise)		

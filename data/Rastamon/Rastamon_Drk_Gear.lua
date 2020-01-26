@@ -415,7 +415,7 @@ function init_gear_sets()
 		waist="Ioskeha Belt",
 		left_ear="Cessance Earring",
 		right_ear="Digni. Earring",
-		left_ring="Chirich Ring",
+		left_ring="Chirich Ring +1",
 		right_ring="Cacoethic Ring +1",
 		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
@@ -430,7 +430,7 @@ function init_gear_sets()
 			waist="Ioskeha Belt",
 			left_ear="Cessance Earring",
 			right_ear="Telos Earring",
-			left_ring="Chirich Ring",
+			left_ring="Chirich Ring +1",
 			right_ring="Niqmaddu Ring",
 			back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 		}
@@ -445,7 +445,7 @@ function init_gear_sets()
 			waist="Ioskeha Belt",
 			left_ear="Cessance Earring",
 			right_ear="Telos Earring",
-			left_ring="Chirich Ring",
+			left_ring="Chirich Ring +1",
 			right_ring="Niqmaddu Ring",
 			back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 		}

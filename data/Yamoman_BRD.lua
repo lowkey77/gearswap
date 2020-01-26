@@ -69,6 +69,7 @@ function user_setup()
     send_command('bind !` input /ma "Chocobo Mazurka" <me>')
 
     select_default_macro_book()
+	set_lockstyle()
 end
 
 
@@ -370,20 +371,21 @@ function init_gear_sets()
     back="Solemnity Cape",}
 
     sets.idle.Town = {main="Carnwenhan",
-	    sub="Genmei Shield",
-		range="Gjallarhorn",
-		head="Fili Calot +1",
-		body="Vrikodara Jupon",
-		hands="Fili Manchettes +1",
-		legs={ name="Lengo Pants", augments={'INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+3','"Refresh"+1',}},
-		feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
-		neck="Sanctity Necklace",
-		waist="Flume Belt",
-		left_ear="Infused Earring",
-		right_ear="Eabani Earring",
-		left_ring="Paguroidea Ring",
-		right_ring="Sheltered Ring",
-		back="Kumbira Cape",
+    sub="Genmei Shield",
+    range="Ebisu Fishing Rod",
+    ammo="Sliced Cod",
+    head="Fili Calot +1",
+    body="Fisherman's Apron",
+    hands="Angler's Gloves",
+    legs="Fisherman's Hose",
+    feet="Waders",
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Infused Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Paguroidea Ring",
+    right_ring="Warp Ring",
+    back="Solemnity Cape",
 		}
     
     sets.idle.Weak = {main="Carnwenhan",
@@ -791,6 +793,10 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
     set_macro_page(7, 13)
+end
+
+function set_lockstyle()
+    send_command('wait 5; input /lockstyleset 100')
 end
 
 

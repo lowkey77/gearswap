@@ -155,8 +155,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 
@@ -173,8 +173,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 
@@ -191,8 +191,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 
@@ -209,8 +209,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 
@@ -227,8 +227,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 
@@ -245,8 +245,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 
@@ -263,8 +263,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 		
@@ -281,8 +281,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 		
@@ -299,8 +299,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 		}
 
@@ -315,8 +315,8 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Persis Ring",
+		left_ring="Menelaus's Ring",
+		right_ring="Janniston Ring",
 		back="Twilight Cape",
 	}
 
@@ -333,7 +333,7 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		left_ear="Nourishing Earring +1",
 		right_ear="Mendicant's Earring",
-		left_ring="Ephedra Ring",
+		left_ring="Menelaus's Ring",
 		right_ring="Ephedra Ring",
 		back="Alaunus's Cape",
 	}

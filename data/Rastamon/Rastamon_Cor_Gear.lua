@@ -105,7 +105,7 @@ function init_gear_sets()
         back=gear.snap_jse_back,
 		waist="Yemaya Belt",
 		legs="Adhemar Kecks",
-		feet="Meghanada Jambeaux +2"
+		feet="Malignance Boots"
 		}
 
        
@@ -113,8 +113,8 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos Earring",
-        body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Karieyh Ring",
-        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Meghanada Jambeaux +2"}
+        body="Malignance Tabard",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Karieyh Ring",
+        back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -139,7 +139,7 @@ function init_gear_sets()
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
         head="Carmine Mask +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Karieyh Ring",
+        body="Malignance Tabard",hands="Meghanada Gloves +2",ring1="Regal Ring",ring2="Karieyh Ring",
         back=gear.ranger_wsd_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Mummu Gamashes +2"}
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
@@ -211,20 +211,20 @@ function init_gear_sets()
 		neck="Iskur Gorget",
 		ear1="Enervating Earring",
 		ear2="Telos Earring",
-        body="Mummu Jacket +2",
+        body="Malignance Tabard",
 		hands="Meghanada Gloves +2",
 		ring1="Ilabrat Ring",
 		ring2="Apate Ring",
         back=gear.ranger_wsd_jse_back,
 		waist="Eschan Stone",
-		legs="Adhemar Kecks",
-		feet="Meghanada Jambeaux +2"
+		legs="Malignance Tights",
+		feet="Malignance Boots",
 		}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Combatant's Torque",ear1="Enervating Earring",ear2="Telos Earring",
-        body="Meg. Cuirie +2",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Apate Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Carmine Cuisses +1",feet="Meghanada Jambeaux +2"}
+        body="Malignance Tabard",hands="Meghanada Gloves +2",ring1="Ilabrat Ring",ring2="Apate Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
 	sets.buff['Triple Shot'] = {head="Oshosi Mask", body="Chasseur's Frac +1", legs="Oshosi Trousers"}
     
@@ -243,10 +243,10 @@ function init_gear_sets()
     sets.idle = {
 			ammo=gear.RAbullet,
 			head="Meghanada Visor +2",
-			body="Meg. Cuirie +2",
+			body="Malignance Tabard",
 			hands="Meg. Gloves +2",
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Lanun Bottes +3",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
 			neck="Loricate Torque +1",
 			waist="Reiki Yotai",
 			left_ear="Etiolation Earring",
@@ -265,10 +265,10 @@ function init_gear_sets()
     sets.defense.PDT = {
 			ammo=gear.RAbullet,
 			head="Meghanada Visor +2",
-			body="Meg. Cuirie +2",
+			body="Malignance Tabard",
 			hands="Meg. Gloves +2",
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Mummu Gamash. +2",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
 			neck="Loricate Torque +1",
 			waist="Reiki Yotai",
 			left_ear="Etiolation Earring",
@@ -281,10 +281,10 @@ function init_gear_sets()
     sets.defense.MDT = {
 			ammo=gear.RAbullet,
 			head="Meghanada Visor +2",
-			body="Meg. Cuirie +2",
+			body="Malignance Tabard",
 			hands="Meg. Gloves +2",
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Mummu Gamash. +2",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
 			neck="Loricate Torque +1",
 			waist="Reiki Yotai",
 			left_ear="Etiolation Earring",
@@ -311,23 +311,51 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {
-		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Meg. Cuirie +2",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
-		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+		head="Dampening Tam",
+		neck="Combatant's Torque",
+		ear1="Cessance Earring",
+		ear2="Brutal Earring",
+		body="Malignance Tabard",
+		hands="Floral Gauntlets",
+		ring1="Ilabrat Ring",
+		ring2="Regal Ring",
+		back=gear.tp_jse_back,waist="Reiki Yotai",
+		legs="Samnuha Tights",
+		feet="Malignance Boots"
+		}
     
     sets.engaged.Acc = {
-		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
-		body="Meg. Cuirie +2",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Mummu Gamash. +2"}
+		head="Dampening Tam",
+		neck="Combatant's Torque",
+		ear1="Cessance Earring",
+		ear2="Brutal Earring",
+		body="Malignance Tabard",
+		hands="Floral Gauntlets",
+		ring1="Ilabrat Ring",
+		ring2="Regal Ring",
+		back=gear.tp_jse_back,waist="Reiki Yotai",
+		legs="Samnuha Tights",
+		feet="Malignance Boots"
+		}
 
     sets.engaged.DW = {
-		head="Dampening Tam",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Suppanomimi",
-		body="Adhemar Jacket",hands="Floral Gauntlets",ring1="Chirich Ring",ring2="Regal Ring",
-		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet="Mummu Gamash. +2"}
+		head="Dampening Tam",
+		neck="Combatant's Torque",
+		ear1="Cessance Earring",
+		ear2="Suppanomimi",
+		body="Adhemar Jacket",
+		hands="Floral Gauntlets",
+		ring1="Chirich Ring +1",
+		ring2="Regal Ring",
+		back=gear.tp_jse_back,
+		waist="Reiki Yotai",
+		legs="Carmine Cuisses +1",
+		feet="Malignance Boots"
+		}
     
     sets.engaged.DW.Acc = {
 		head="Dampening Tam",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
-		body="Meg. Cuirie +2",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
+		body="Malignance Tabard",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
 end
