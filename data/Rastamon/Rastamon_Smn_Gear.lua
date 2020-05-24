@@ -41,7 +41,7 @@ function init_gear_sets()
 		ring2="Stikini Ring +1",
         legs="Tatsumaki Sitagoromo",
 		feet="Beckoner's Pigaches +1", 
-		waist="Kobo Obi", 
+		waist="Ligeia Sash", 
 		back="Conveyance Cape"
 		}
 

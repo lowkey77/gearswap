@@ -457,10 +457,21 @@ function init_gear_sets()
 	
 	-- Caps with Magic Haste Cap, +5DW = Change Earrings, 10DW
 	
-	sets.engaged = {main="Tizona", sub="Almace",ammo="Ginsen",
-			    head="Dampening Tam",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-			    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's Ring",ring2="Petrov Ring",
-			    back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+	sets.engaged = {
+		ammo="Sapience Orb",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Combatant's Torque",
+		waist="Reiki Yotai",
+		left_ear="Telos Earring",
+		right_ear="Cessance Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Ilabrat Ring",
+		back="Moonbeam Cape",
+		}
 				
 	sets.engaged.AM = {ammo="Ginsen",
 			    head="Dampening Tam",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Telos Earring",

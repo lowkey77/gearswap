@@ -4,7 +4,7 @@ function user_setup()
     state.RangedMode:options('Normal', 'Acc')
     state.WeaponskillMode:options('Normal', 'Acc', 'Att', 'Mod')
     state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'PDT', 'Refresh')
+    state.IdleMode:options('Normal', 'PDT', 'MDT')
 
     gear.RAbullet = "Chrono Bullet"
     gear.WSbullet = "Chrono Bullet"
@@ -226,6 +226,22 @@ function init_gear_sets()
         body="Mekosu. Harness",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Rawhide Trousers",feet=gear.herculean_dt_feet}
     
+	sets.idle.MDT = {
+			ammo=gear.RAbullet,
+			head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
+			neck="Loricate Torque +1",
+			waist="Carrier's Sash",
+			left_ear="Merman's Earring",
+			right_ear="Odnowa Earring",
+			left_ring="Ilabrat Ring",
+			right_ring="Defending Ring",
+			back="Moonbeam Cape",
+		}
+	
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",

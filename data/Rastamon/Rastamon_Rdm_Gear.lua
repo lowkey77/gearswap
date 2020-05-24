@@ -415,7 +415,7 @@ function init_gear_sets()
 	
 	sets.midcast['Ice Spikes'] = set_combine(sets.midcast['Enhancing Magic'], {legs="Vitiation Tights +3"})
 	
-	sets.midcast.Enspell = set_combine(sets.midcast['Enhancing Magic'], {head="Umuthi Hat", hands="Ayanmo Manopolas +2", back="Ghostfyre Cape"})
+	sets.midcast.Enspell = set_combine(sets.midcast['Enhancing Magic'], {head="Umuthi Hat", hands="Ayanmo Manopolas +2", legs="Vitiation Tights +3", back="Ghostfyre Cape"})
 	
 	--Set for Gain spells
 	sets.midcast.BoostStat = set_combine(sets.midcast['Enhancing Magic'], {hands="Vitiation Gloves +3"})
@@ -696,25 +696,38 @@ function init_gear_sets()
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		}
 		
-	sets.idle.PDT = {main="Murgleis",sub="Genmei Shield",ammo="Impatiens",
-		head="Vitiation Chapeau +3",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-		body="Malignance Tabard",hands="Volte Bracers",left_ring="Defending Ring",right_ring="Shadow Ring",
-		back="Engulfer Cape +1",waist="Flume Belt",legs="Volte Brais",feet="Malignance Boots"}
-		
-	sets.idle.MDT = {
-		ammo="Paeapua",
-		head="Aya. Zucchetto +2",
+	sets.idle.PDT = {
+		ammo="Ginsen",
+		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		neck="Combatant's Torque",
-		waist="Windbuffet belt +1",
+		--waist="Windbuffet Belt +1",
+		waist="Orpheus's Sash",
 		left_ear="Telos Earring",
-		right_ear="Cessance Earring",
+		right_ear="Sherida Earring",
 		left_ring="Hetairoi Ring",
 		right_ring="Chirich Ring +1",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Attack+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+		}
+		
+	sets.idle.MDT = {
+		ammo="Ginsen",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Combatant's Torque",
+		--waist="Windbuffet Belt +1",
+		waist="Orpheus's Sash",
+		left_ear="Telos Earring",
+		right_ear="Sherida Earring",
+		left_ring="Hetairoi Ring",
+		right_ring="Chirich Ring +1",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Attack+10','"Dual Wield"+10',}},
 		}
 		
 	sets.idle.Weak = {main="Murgleis",sub="Genmei Shield",ammo="Homiliary",
@@ -767,7 +780,7 @@ function init_gear_sets()
 
 	sets.engaged = {
 		ammo="Paeapua",
-		head="Aya. Zucchetto +2",
+		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
@@ -778,45 +791,28 @@ function init_gear_sets()
 		right_ear="Cessance Earring",
 		left_ring="Hetairoi Ring",
 		right_ring="Chirich Ring +1",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Attack+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 		}
-
-	-- sets.engaged.DW = {
-		-- ammo="Ginsen",
-		-- head="Aya. Zucchetto +2",
-		-- body="Ayanmo Corazza +2",
-		-- hands="Aya. Manopolas +2",
-		-- legs="Carmine cuisses +1",
-		-- feet="Aya. Gambieras +2",
-		-- neck="Combatant's Torque",
-		-- waist="Reiki Yotai",
-		-- left_ear="Suppanomimi",
-		-- right_ear="Sherida Earring",
-		-- left_ring="Hetairoi Ring",
-		-- right_ring="Chirich Ring +1",
-		-- back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Attack+10','"Dual Wield"+10',}},
-		-- }
 		
 	sets.engaged.DW = {
 		ammo="Ginsen",
-		head="Aya. Zucchetto +2",
+		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		neck="Combatant's Torque",
-		--waist="Windbuffet Belt +1",
 		waist="Orpheus's Sash",
 		left_ear="Telos Earring",
 		right_ear="Sherida Earring",
 		left_ring="Hetairoi Ring",
 		right_ring="Chirich Ring +1",
-		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Attack+10','"Dual Wield"+10',}},
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Attack+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 		}
 		
 	sets.engaged.PhysicalDef = {
 		ammo="Ginsen",
-		head="Aya. Zucchetto +2",
+		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Aya. Cosciales +2",
@@ -832,7 +828,7 @@ function init_gear_sets()
 		
 	sets.engaged.MagicalDef = {
 		ammo="Homiliary",
-		head="Aya. Zucchetto +2",
+		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Aya. Cosciales +2",

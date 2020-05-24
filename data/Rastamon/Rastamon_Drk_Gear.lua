@@ -26,13 +26,13 @@ function init_gear_sets()
 	--------------------------------------
 	-- Precast Sets
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Diabolic Eye'] = {hands="Fallen's Finger Gauntlets +1"}
+	sets.precast.JA['Diabolic Eye'] = {hands="Fallen's finger gauntlets +3"}
 	sets.precast.JA['Arcane Circle'] = {feet="Ignominy Sollerets +1"}
 	sets.precast.JA['Souleater'] = {head="Ignominy Burgeonet +1"}
 	sets.precast.JA['Weapon Bash'] = {hands="Ignominy Gauntlets +1"}
 	sets.precast.JA['Nether Void'] = {legs="Bale Flanchard +2"}
-	sets.precast.JA['Blood Weapon'] = {body="Fallen's Cuirass +1"}     
-	sets.precast.JA['Dark Seal'] = {body="Fallen's Burgeonet +1"}     
+	sets.precast.JA['Blood Weapon'] = {body="Fallen's Cuirass"}     
+	sets.precast.JA['Dark Seal'] = {body="Fallen's Burgeonet +3"}     
 	sets.precast.JA['Last Resort'] = {back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+6','Weapon skill damage +10%',}},}     
                    
 	-- Waltz set (chr and vit)
@@ -59,12 +59,28 @@ function init_gear_sets()
 		feet="Odyssean Greaves",
 		neck="Baetyl Pendant",
 		waist="Ioskeha Belt",
-		left_ear="Loquac. Earring",
+		left_ear="Malignance Earring",
 		right_ear="Enchntr. Earring +1",
 		left_ring="Prolix Ring",
 		right_ring="Kishar Ring",
 		back="Moonbeam Cape",
 	}			
+	
+	sets.precast.FC['Dark Magic'] = {
+		ammo="Sapience Orb",
+		head="Fallen's Burgeonet +3",
+		body={ name="Odyss. Chestplate", augments={'"Mag.Atk.Bns."+13','"Fast Cast"+5','INT+5',}},
+		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+		legs="Sulev. Cuisses +2",
+		feet="Odyssean Greaves",
+		neck="Baetyl Pendant",
+		waist="Ioskeha Belt",
+		left_ear="Malignance Earring",
+		right_ear="Enchntr. Earring +1",
+		left_ring="Prolix Ring",
+		right_ring="Kishar Ring",
+		back="Moonbeam Cape",
+	}
 
 	sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 		
@@ -78,7 +94,7 @@ function init_gear_sets()
 		feet="Sulevia's Leggings +2",
 		neck="Baetyl Pendant",
 		waist="Ioskeha Belt",
-		left_ear="Loquac. Earring",
+		left_ear="Malignance Earring",
 		right_ear="Enchntr. Earring +1",
 		left_ring="Prolix Ring",
 		right_ring="Kishar Ring",
@@ -88,7 +104,7 @@ function init_gear_sets()
 	-- Specific spells
  
 	sets.midcast['Dark Magic'] = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Amar Cluster",
 		head="Flamma Zucchetto +2",
 		body={ name="Found. Breastplate", augments={'Accuracy+15','Mag. Acc.+15','Attack+15','"Mag.Atk.Bns."+15',}},
 		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
@@ -104,7 +120,7 @@ function init_gear_sets()
 	}
            
 	sets.midcast['Enfeebling Magic'] = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Amar Cluster",
 		head="Flamma Zucchetto +2",
 		body={ name="Found. Breastplate", augments={'Accuracy+15','Mag. Acc.+15','Attack+15','"Mag.Atk.Bns."+15',}},
 		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
@@ -124,7 +140,7 @@ function init_gear_sets()
 	sets.midcast['Absorb-TP'] = set_combine(sets.midcast['Dark Magic'], {body="Bale Gauntlets +2"})
            
 	sets.midcast.Stun = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Amar Cluster",
 		head="Flamma Zucchetto +2",
 		body={ name="Found. Breastplate", augments={'Accuracy+15','Mag. Acc.+15','Attack+15','"Mag.Atk.Bns."+15',}},
 		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
@@ -139,7 +155,18 @@ function init_gear_sets()
 		back="Moonbeam Cape",
 	}
                    
-	sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {waist="Fucho-no-obi"})
+	sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {
+		head="Pixie Hairpin +1",
+		hands="Fallen's finger gauntlets +3",
+		neck="Erra Pendant",
+		waist="Eschan Stone",
+		legs="Fallen's Flanchard +3",
+		feet="Ratri Sollerets",
+		left_ear="Enchntr. Earring +1",
+		right_ear="Friomisi Earring",
+		left_ring="Archon Ring",
+		right_ring="Stikini Ring +1",
+		})
                    
 	sets.midcast.Aspir = sets.midcast.Drain
 	
@@ -154,17 +181,17 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Knobkierrie",
 		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
-		body="Dagon Breastplate",
-		hands={ name="Valorous Mitts", augments={'Accuracy+18 Attack+18','Weapon skill damage +3%','AGI+2','Accuracy+13','Attack+6',}},
-		legs={ name="Valor. Hose", augments={'Weapon skill damage +5%','AGI+9','Accuracy+15','Attack+11',}},
+		body="Ignominy Cuirass +3",
+		    hands={ name="Valorous Mitts", augments={'Accuracy+12 Attack+12','Weapon skill damage +4%','STR+9','Accuracy+4',}},
+		legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
 		feet="Sulevia's Leggings +2",
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
-		left_ear="Cessance Earring",
-		right_ear="Ishvara Earring",
-		left_ring="Karieyh Ring",
+		left_ear="Ishvara Earring",
+		right_ear="Thrud Earring",
+		left_ring="Regal Ring",
 		right_ring="Epaminondas's Ring",
 		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+6','Weapon skill damage +10%',}},
 	}
@@ -208,45 +235,45 @@ function init_gear_sets()
 		neck="Fotia Gorget", 
 		left_ear="Moonshade Earring", 
 		waist="Fotia Belt", 
-		head="Flamma Zucchetto +2", 
-		hands="Odyssean Gauntlets", 
-		legs={ name="Valor. Hose", augments={'Weapon skill damage +5%','AGI+9','Accuracy+15','Attack+11',}},
+		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
+		hands={ name="Odyssean Gauntlets", augments={'Accuracy+26','Weapon skill damage +1%','VIT+13','Attack+3',}},
+		legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
 		feet="Sulev. Leggings +2",}
 	)
     sets.precast.WS['Torcleaver'].SomeAcc = set_combine(sets.precast.WS, {
 		neck="Fotia Gorget", 
 		left_ear="Moonshade Earring", 
 		waist="Fotia Belt", 
-		head="Flamma Zucchetto +2", 
+		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
 		hands="Odyssean Gauntlets", 
-		legs={ name="Valor. Hose", augments={'Weapon skill damage +5%','AGI+9','Accuracy+15','Attack+11',}},
+		hands={ name="Odyssean Gauntlets", augments={'Accuracy+26','Weapon skill damage +1%','VIT+13','Attack+3',}},
 		feet="Sulev. Leggings +2",}
 	)
     sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS, {
 		neck="Fotia Gorget", 
 		left_ear="Moonshade Earring", 
 		waist="Fotia Belt", 
-		head="Flamma Zucchetto +2", 
-		hands="Odyssean Gauntlets", 
-		legs={ name="Valor. Hose", augments={'Weapon skill damage +5%','AGI+9','Accuracy+15','Attack+11',}},
+		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
+		hands={ name="Odyssean Gauntlets", augments={'Accuracy+26','Weapon skill damage +1%','VIT+13','Attack+3',}},
+		legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
 		feet="Sulev. Leggings +2",}
 	)
     sets.precast.WS['Torcleaver'].FullAcc = set_combine(sets.precast.WS, {
 		neck="Fotia Gorget", 
 		left_ear="Moonshade Earring", 
 		waist="Fotia Belt", 
-		head="Flamma Zucchetto +2", 
-		hands="Odyssean Gauntlets", 
-		legs={ name="Valor. Hose", augments={'Weapon skill damage +5%','AGI+9','Accuracy+15','Attack+11',}},
+		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
+		hands={ name="Odyssean Gauntlets", augments={'Accuracy+26','Weapon skill damage +1%','VIT+13','Attack+3',}},
+		legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
 		feet="Sulev. Leggings +2",}
 	)
     sets.precast.WS['Torcleaver'].Fodder = set_combine(sets.precast.WS, {
 		neck="Fotia Gorget", 
 		left_ear="Moonshade Earring", 
 		waist="Fotia Belt", 
-		head="Flamma Zucchetto +2", 
+		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
 		hands="Odyssean Gauntlets", 
-		legs={ name="Valor. Hose", augments={'Weapon skill damage +5%','AGI+9','Accuracy+15','Attack+11',}},
+		legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
 		feet="Sulev. Leggings +2",}
 	)
      
@@ -264,7 +291,7 @@ function init_gear_sets()
             -- Idle sets
            
     sets.idle = {
-		ammo="Seeth. Bomblet +1",
+		ammo="Staunch Tathlum",
 		head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}},
 		body="Dagon Breastplate",
 		hands="Sulev. Gauntlets +2",
@@ -274,9 +301,9 @@ function init_gear_sets()
 		waist="Ioskeha Belt",
 		left_ear="Cessance Earring",
 		right_ear="Telos Earring",
-		left_ring="Karieyh Ring",
+		left_ring="Regal Ring",
 		right_ring="Niqmaddu Ring",
-		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+6','Weapon skill damage +10%',}},
+		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
 		
     sets.idle.PDT = {
@@ -378,7 +405,7 @@ function init_gear_sets()
 		head="Flamma Zucchetto +2",
 		body="Dagon Breast.",
 		hands="Sulev. Gauntlets +2",
-		legs="Sulev. Cuisses +2",
+		legs="Ignominy Flanchard +3",
 		feet="Flamma Gambieras +2",
 		--feet="Sulev. Leggings +2",
 		neck="Ganesha's Mala",
@@ -386,7 +413,7 @@ function init_gear_sets()
 		left_ear="Cessance Earring",
 		right_ear="Telos Earring",
 		left_ring="Flamma Ring",
-		right_ring="Niqmaddu Ring",
+		right_ring="Chirich Ring +1",
 		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
 	sets.engaged.SomeAcc = {
@@ -394,14 +421,14 @@ function init_gear_sets()
 			head="Flamma Zucchetto +2",
 			body="Dagon Breast.",
 			hands="Sulev. Gauntlets +2",
-			legs="Sulev. Cuisses +2",
+			legs="Ignominy Flanchard +3",
 			feet="Flamma Gambieras +2",
 			neck="Combatant's Torque",
 			waist="Ioskeha Belt",
 			left_ear="Cessance Earring",
 			right_ear="Telos Earring",
 			left_ring="Regal Ring",
-			right_ring="Niqmaddu Ring",
+			right_ring="Chirich Ring +1",
 			back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 		}
 	sets.engaged.Acc = {
@@ -409,7 +436,7 @@ function init_gear_sets()
 		head="Flamma Zucchetto +2",
 		body="Dagon Breast.",
 		hands="Sulev. Gauntlets +2",
-		legs="Sulev. Cuisses +2",
+		legs="Ignominy Flanchard +3",
 		feet="Flamma Gambieras +2",
 		neck="Combatant's Torque",
 		waist="Ioskeha Belt",
@@ -424,7 +451,7 @@ function init_gear_sets()
 			head="Flamma Zucchetto +2",
 			body="Dagon Breast.",
 			hands="Sulev. Gauntlets +2",
-			legs="Sulev. Cuisses +2",
+			legs="Ignominy Flanchard +3",
 			feet="Flamma Gambieras +2",
 			neck="Combatant's Torque",
 			waist="Ioskeha Belt",

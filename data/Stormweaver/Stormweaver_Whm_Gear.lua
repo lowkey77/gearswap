@@ -327,7 +327,7 @@ function init_gear_sets()
 		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
 		body="Ebers Bliaud",
 		hands="Fanatic Gloves",
-		legs="Theophany Pantaloons +2",
+		legs="Theophany Pantaloons +3",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Malison Medallion",
 		waist="Luminary Sash",
@@ -360,7 +360,7 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Sors Shield",waist="Emphatikos Rope",legs="Shedir Seraweels"})
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",sub="Genmei Shield",head="Inyanga Tiara +2", body="Piety Briault +3",hands="Ebers Mitts",legs="Theophany Pantaloons +2"})
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",sub="Genmei Shield",head="Inyanga Tiara +2", body="Piety Briault +3",hands="Ebers Mitts",legs="Theophany Pantaloons +3"})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
@@ -390,7 +390,7 @@ function init_gear_sets()
 	sets.midcast['Divine Magic'] = {main=-"Oranyan", sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +1",ring1="Stikini Ring +1",ring2="Stikini Ring",
-		back="Aurist's Cape +1",waist="Luminary Sash",legs="Theophany Pantaloons +2",feet="Chironic Slippers"}
+		back="Aurist's Cape +1",waist="Luminary Sash",legs="Theophany Pantaloons +3",feet="Chironic Slippers"}
 
 	sets.midcast['Dark Magic'] = {main="Oranyan", sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
@@ -576,7 +576,7 @@ function init_gear_sets()
 		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
 		body="Theophany Briault +3",
 		hands="Theophany Mitts +3",
-		legs="Theophany Pantaloons +2",
+		legs="Theophany Pantaloons +3",
 		feet="Theophany Duckbills +3",
 		neck="Incanter's Torque",
 		waist="Eschan Stone",

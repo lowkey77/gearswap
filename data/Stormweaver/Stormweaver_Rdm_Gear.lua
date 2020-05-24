@@ -232,8 +232,8 @@ function init_gear_sets()
 		}
 
     sets.midcast.Cure = {
-		main={ name="Serenity", augments={'MP+50','Enha.mag. skill +10','"Cure" potency +5%','"Cure" spellcasting time -10%',}},
-		sub="Clerisy Strap",
+		main="Daybreak",
+		sub="Sors Shield",
 		ammo="Homiliary",
 		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
 		body={ name="Chironic Doublet", augments={'Attack+10','"Cure" potency +8%','CHR+9','Mag. Acc.+8','"Mag.Atk.Bns."+12',}},
@@ -250,8 +250,8 @@ function init_gear_sets()
 		}
 		
     sets.midcast.LightWeatherCure = {
-		main={ name="Serenity", augments={'MP+50','Enha.mag. skill +10','"Cure" potency +5%','"Cure" spellcasting time -10%',}},
-		sub="Clerisy Strap",
+		main="Daybreak",
+		sub="Sors Shield",
 		ammo="Homiliary",
 		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
 		body={ name="Chironic Doublet", augments={'Attack+10','"Cure" potency +8%','CHR+9','Mag. Acc.+8','"Mag.Atk.Bns."+12',}},
@@ -269,8 +269,8 @@ function init_gear_sets()
 		
 		--Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {
-		main={ name="Serenity", augments={'MP+50','Enha.mag. skill +10','"Cure" potency +5%','"Cure" spellcasting time -10%',}},
-		sub="Clerisy Strap",
+		main="Daybreak",
+		sub="Sors Shield",
 		ammo="Homiliary",
 		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
 		body={ name="Chironic Doublet", augments={'Attack+10','"Cure" potency +8%','CHR+9','Mag. Acc.+8','"Mag.Atk.Bns."+12',}},
@@ -312,7 +312,7 @@ function init_gear_sets()
 		legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
 		feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},
 		neck="Incanter's Torque",
-		waist="Siegel Sash",
+		waist="Embla Sash",
 		left_ear="Loquac. Earring",
 		right_ear="Dignitary's Earring",
 		left_ring="Stikini Ring",
@@ -345,12 +345,13 @@ function init_gear_sets()
 		body="Lethargy Sayon",
 		hands="Lethargy Gantherots",
 		legs="Lethargy Fuseau",
-		feet="Lethargy Houseaux"
+		feet="Lethargy Houseaux",
+		waist="Embla Sash"
 		}
 		
 	sets.buff.RefreshOther = set_combine(sets.buff.ComposureOther,{
 		head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-		body="Atrophy Tabard +3",
+		body="Atrophy Tabard +3", waist="Embla Sash"
 		})
 
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {body="Atrophy Tabard +3", head="Almaric Coif", legs="Lethargy Fuseau +1"})
@@ -607,10 +608,20 @@ function init_gear_sets()
 		body="Emet Harness +1",hands="Hagondes Cuffs +1",left_ring="Defending Ring",right_ring="Dark Ring",
 		back="Umbra Cape",waist="Flume Belt",legs="Hagondes Pants +1",feet="Gende. Galosh. +1"}
 		
-	sets.idle.MDT = {main="Murgleis",sub="Genmei Shield",ammo="Impatiens",
-		head="Vitiation Chapeau +3",neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-		body="Vrikodara Jupon",hands="Hagondes Cuffs +1",left_ring="Defending Ring",right_ring="Shadow Ring",
-		back="Engulfer Cape +1",waist="Flume Belt",legs="Hagondes Pants +1",feet="Gende. Galosh. +1"}
+	sets.idle.MDT = {
+			head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
+			neck="Loricate Torque +1",
+			waist="Carrier's Sash",
+			left_ear="Merman's Earring",
+			right_ear="Odnowa Earring",
+			left_ring="Persis Ring",
+			right_ring="Defending Ring",
+			back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}},
+		}
 		
 	sets.idle.Weak = {main="Murgleis",sub="Genmei Shield",ammo="Homiliary",
 		head="Vitiation Chapeau +3",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
