@@ -69,7 +69,7 @@ function init_gear_sets()
     -- No other FC sets necessary.
 	--85% FC
 	sets.precast.FC = {
-		main="Crocea Mors",
+		main="Crocea Mors", --20%
 		sub="Ammurapi Shield",
 		ammo="Impatiens",
 		head="Atrophy chapeau +3", --16%
@@ -344,7 +344,8 @@ function init_gear_sets()
 	sets.Self_Refresh = {
 		head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		neck="Duelist's Torque +2",
-		body="Atrophy Tabard +3", 
+		body="Atrophy Tabard +3",
+		legs="Lethargy Fuseau +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		waist="Gishdubar Sash"
 		}
@@ -367,23 +368,23 @@ function init_gear_sets()
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Haste+10',}},
 		}
 		
-		sets.midcast['Temper II'] = {
-			main="Murgleis",
-			sub="Ammurapi Shield",
-			ammo="Regal Gem",
-			head="Befouled Crown",
-			body={ name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}},
-			hands={ name="Viti. Gloves +3", augments={'Enhances "Phalanx II" effect',}},
-			legs="Atrophy Tights +3",
-			feet="Leth. Houseaux +1",
-			neck="Incanter's Torque",
-			waist="Fucho-no-Obi",
-			left_ear="Regal Earring",
-			right_ear="Andoaa Earring",
-			left_ring="Stikini Ring +1",
-			right_ring="Stikini Ring +1",
-			back="Fi Follet Cape +1",
-			}
+	sets.midcast['Temper II'] = {
+		main="Murgleis",
+		sub="Ammurapi Shield",
+		ammo="Regal Gem",
+		head="Befouled Crown",
+		body={ name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}},
+		hands={ name="Viti. Gloves +3", augments={'Enhances "Phalanx II" effect',}},
+		legs="Atrophy Tights +3",
+		feet="Leth. Houseaux +1",
+		neck="Incanter's Torque",
+		waist="Fucho-no-Obi",
+		left_ear="Regal Earring",
+		right_ear="Andoaa Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		back="Fi Follet Cape +1",
+		}
 		
 	-- Sets for special buff conditions on spells.
 		
@@ -400,6 +401,7 @@ function init_gear_sets()
 		
 	sets.buff.RefreshOther = set_combine(sets.buff.ComposureOther,{
 		head={ name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+		legs="Lethargy Fuseau +1",
 		body="Atrophy Tabard +3",
 		})
 
@@ -799,6 +801,7 @@ function init_gear_sets()
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
+		--hands="Ayanmo Manopolas +2",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		neck="Combatant's Torque",
