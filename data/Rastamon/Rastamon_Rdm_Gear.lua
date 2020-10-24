@@ -180,6 +180,24 @@ function init_gear_sets()
 		right_ring="Epaminondas's Ring",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','Weapon skill damage +10%',}},
 		}
+
+	-- 50% MND / 30% STR
+	sets.precast.WS['Aeolian Edge'] =
+	{
+		ammo="Pemphredo Tathlum",
+		head="Vitiation Chapeau +3",
+		body="Amalric Doublet +1",
+		hands="Jhakri Cuffs +2",
+		legs="Amalric Slops +1",
+		feet="Vitiation Boots +3",
+		neck="Baetyl Pendant",
+		waist="Orpheus's Sash",
+		left_ear="Malignance Earring",
+		right_ear="Moonshade Earring",
+		left_ring="Freke Ring",
+		right_ring="Epaminondas's Ring",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','Weapon skill damage +10%',}},
+		}
 		
 	-- 73~85% MND
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, 
