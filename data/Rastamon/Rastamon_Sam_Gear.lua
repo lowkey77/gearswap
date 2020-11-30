@@ -402,7 +402,7 @@ function init_gear_sets()
 		head="Flamma Zucchetto +2",
 		body="Tatenashi Haramaki +1",
 		hands="Wakido Kote +3",
-		legs="Kendatsuba Hakama",
+		legs="Tatenashi Haidate +1",
 		feet="Ryuo Sune-Ate +1",
 		neck="Moonbeam Nodowa",
 		waist="Ioskeha Belt",
