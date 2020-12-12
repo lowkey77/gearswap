@@ -14,7 +14,7 @@ function user_setup()
 	gear.ws_jse_back = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
 	gear.stp_jse_back = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}
 	gear.valorous_wsd_head = { name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +4%','STR+6','Attack+3',}}
-	gear.valorous_wsd_body = { name="Valorous Mail", augments={'Accuracy+27','Weapon skill damage +4%','VIT+1',}}
+	gear.valorous_wsd_body = { name="Valorous Mail", augments={'Attack+28','Weapon skill damage +4%','STR+13',}}
 	gear.valorous_wsd_hands = { name="Valorous Mitts", augments={'Accuracy+12 Attack+12','Weapon skill damage +4%','STR+9','Accuracy+4',}}
 	gear.valorous_wsd_feet = { name="Valorous Greaves", augments={'Rng.Atk.+4','MND+8','Weapon skill damage +7%',}}
 	gear.valorous_mab_feet = { name="Valorous Greaves", augments={'Rng.Atk.+4','MND+8','Weapon skill damage +7%',}}
@@ -81,13 +81,11 @@ function init_gear_sets()
 		ammo="Knobkierrie",
         head=gear.valorous_wsd_head,
 		neck="Samurai Nodowa +2",
-		--neck="Fotia Gorget",
 		left_ear="Brutal Earring",
 		right_ear="Thrud Earring",
-        --body="Dagon breastplate",
 		body="Sakonji Domaru +3",
 		hands=gear.valorous_wsd_hands,
-		right_ring="Karieyh Ring",
+		right_ring="Niqmaddu Ring",
 		left_ring="Epaminondas's Ring",
         back=gear.ws_jse_back,
 		waist="Fotia Belt",
@@ -106,7 +104,7 @@ function init_gear_sets()
     sets.precast.WS['Tachi: Fudo'].Acc = set_combine(sets.precast.WS.Acc, {sub="Utu Grip",
 		ammo="Ginsen",
 		head="Flamma Zucchetto +2",
-		body="Wakido Domaru +3",
+		body="Sakonji Domaru +3",
 		hands="Wakido Kote +3",
 		legs="Wakido Haidate +3",
 		--feet="Wakido Sune. +3",
@@ -132,19 +130,19 @@ function init_gear_sets()
     sets.precast.WS['Tachi: Rana'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS['Tachi: Rana'].Fodder = set_combine(sets.precast.WS.Fodder, {})
 
-    sets.precast.WS['Tachi: Kasha'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Kasha'] = set_combine(sets.precast.WS, {left_ear="Ishvara Earring"})
     sets.precast.WS['Tachi: Kasha'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS['Tachi: Kasha'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Tachi: Kasha'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS['Tachi: Kasha'].Fodder = set_combine(sets.precast.WS.Fodder, {})
 
-    sets.precast.WS['Tachi: Gekko'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Gekko'] = set_combine(sets.precast.WS, {left_ear="Ishvara Earring"})
     sets.precast.WS['Tachi: Gekko'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS['Tachi: Gekko'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Tachi: Gekko'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS['Tachi: Gekko'].Fodder = set_combine(sets.precast.WS.Fodder, {})
 
-    sets.precast.WS['Tachi: Yukikaze'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Yukikaze'] = set_combine(sets.precast.WS, {left_ear="Ishvara Earring"})
     sets.precast.WS['Tachi: Yukikaze'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS['Tachi: Yukikaze'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Tachi: Yukikaze'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
