@@ -99,7 +99,7 @@ function init_gear_sets()
     sets.precast.WS.Fodder = set_combine(sets.precast.WS, {ring2="Karieyh Ring"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Tachi: Fudo'] = set_combine(sets.precast.WS, {left_ear="Ishvara Earring"})
+    sets.precast.WS['Tachi: Fudo'] = set_combine(sets.precast.WS, {left_ear="Ishvara Earring", waist={ name="Sailfi Belt +1", augments={'Path: A',}},})
     sets.precast.WS['Tachi: Fudo'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS['Tachi: Fudo'].Acc = set_combine(sets.precast.WS.Acc, {sub="Utu Grip",
 		ammo="Ginsen",
@@ -122,7 +122,13 @@ function init_gear_sets()
     sets.precast.WS['Tachi: Shoha'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS['Tachi: Shoha'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Tachi: Shoha'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
-    sets.precast.WS['Tachi: Shoha'].Fodder = set_combine(sets.precast.WS.Fodder, {})
+	sets.precast.WS['Tachi: Shoha'].Fodder = set_combine(sets.precast.WS.Fodder, {})
+	
+	sets.precast.WS['Impulse Drive'] = set_combine(sets.precast.WS, {left_ear="Moonshade Earring"})
+    sets.precast.WS['Impulse Drive'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
+    sets.precast.WS['Impulse Drive'].Acc = set_combine(sets.precast.WS.Acc, {})
+    sets.precast.WS['Impulse Drive'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
+    sets.precast.WS['Impulse Drive'].Fodder = set_combine(sets.precast.WS.Fodder, {})
 
     sets.precast.WS['Tachi: Rana'] = set_combine(sets.precast.WS, {left_ear="Telos Earring",right_ear="Cessance Earring", body="Dagon breastplate",})
     sets.precast.WS['Tachi: Rana'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
@@ -401,9 +407,9 @@ function init_gear_sets()
 		body="Tatenashi Haramaki +1",
 		hands="Wakido Kote +3",
 		legs="Tatenashi Haidate +1",
-		feet="Ryuo Sune-Ate +1",
+		feet="Tatenashi sune-ate +1",
 		neck="Moonbeam Nodowa",
-		waist="Ioskeha Belt",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Brutal Earring",
 		right_ear="Cessance Earring",
 		left_ring="Flamma Ring",
